@@ -24,6 +24,8 @@ npm config set registry https://registry.npm.taobao.org/
 vscode配置通过编辑器自带的功能同步
 
 
+
+
 取消开机声音
 ```
 sudo nvram StartupMute=%01

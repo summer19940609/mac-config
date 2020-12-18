@@ -31,3 +31,8 @@ vscode配置通过编辑器自带的功能同步
 sudo nvram StartupMute=%01
 ```
 
+同步远程分支
+```
+git remote prune origin
+```
+

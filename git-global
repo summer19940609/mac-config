@@ -1,0 +1,7 @@
+[user]
+	name = xia.nianjun
+	email = xia.nianjun@mwee.cn
+[credential]
+	helper = store
+[core]
+	editor = code --wait

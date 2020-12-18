@@ -8,3 +8,8 @@ git config --global core.editor "code --wait"
 git config --global -e
 ```
 
+# npm
+使用淘宝仓库
+```
+npm config set registry https://registry.npm.taobao.org/
+```

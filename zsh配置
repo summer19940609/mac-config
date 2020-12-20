@@ -1,4 +1,5 @@
 # If you come from bash you might have to change your $PATH.
+# 替换成当前电脑用户名
 export ZSH="/Users/mw/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"

@@ -5,6 +5,10 @@
 
 https://developer.apple.com/download/more/
 
+```
+brew update && brew upgrade && brew cu -a -y 
+```
+
 # git
 使用vscode作为git默认编辑器
 ```

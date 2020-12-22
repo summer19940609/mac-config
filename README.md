@@ -7,6 +7,12 @@ https://developer.apple.com/download/more/
 
 ```
 brew update && brew upgrade && brew cu -a -y 
+
+// zsh-nvm
+git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+// zsh-autosuggestions
+
+// zsh-syntax-highlighting
 ```
 
 # git

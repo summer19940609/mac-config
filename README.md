@@ -1,6 +1,8 @@
 # mac-config
 
 # Quick Look plugins
+quicklook插件
+
 https://github.com/sindresorhus/quick-look-plugins
 
 # brew

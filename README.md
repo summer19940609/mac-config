@@ -1,5 +1,8 @@
 # mac-config
 
+# Quick Look plugins
+https://github.com/sindresorhus/quick-look-plugins
+
 # brew
 安装指定版本的Command Line Tools for Xcode
 

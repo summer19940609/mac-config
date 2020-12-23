@@ -1,11 +1,11 @@
 # mac-config
 
-# Quick Look plugins
+## Quick Look plugins
 quicklook插件
 
 https://github.com/sindresorhus/quick-look-plugins
 
-# brew
+## brew
 安装指定版本的Command Line Tools for Xcode
 
 https://developer.apple.com/download/more/
@@ -20,7 +20,7 @@ git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-
 // zsh-syntax-highlighting
 ```
 
-# git
+## git
 使用vscode作为git默认编辑器
 ```
 git config --global user.name xxxxxx  
@@ -29,13 +29,13 @@ git config --global core.editor "code --wait"
 git config --global -e
 ```
 
-# npm
+## npm
 使用淘宝仓库
 ```
 npm config set registry https://registry.npm.taobao.org/
 ```
 
-# vscode
+## vscode
 vscode配置通过编辑器自带的功能同步
 
 

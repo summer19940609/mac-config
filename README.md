@@ -58,4 +58,4 @@ git remote prune origin
 
 3、使用mysql的配置脚本：```/usr/local/opt/mysql/bin/mysql_secure_installation //mysql 提供的配置向导```
 
-启动这个脚本后，即可根据如下命令提示进行初始化设置
+启动这个脚本后，即可根据如下命令提示进行初始化设置，本地数据库密码123456

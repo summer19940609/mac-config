@@ -53,6 +53,9 @@ git remote prune origin
 
 ## mysql(非docker安装方式)
 1、安装：```brew install mysql```
+
 2、开启mysql：```mysql.server start```
+
 3、使用mysql的配置脚本：```/usr/local/opt/mysql/bin/mysql_secure_installation //mysql 提供的配置向导```
+
 启动这个脚本后，即可根据如下命令提示进行初始化设置

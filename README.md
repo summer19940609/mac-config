@@ -64,7 +64,7 @@ git remote prune origin
 mirrors配置
 ```
 "registry-mirrors": [
-        "https://hub-mirror.c.163.com",
-        "https://mirror.baidubce.com"
-    ]
+    "https://hub-mirror.c.163.com",
+    "https://mirror.baidubce.com"
+]
  ```

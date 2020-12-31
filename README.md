@@ -6,6 +6,10 @@ quicklook插件
 https://github.com/sindresorhus/quick-look-plugins
 
 ## brew
+切换国内中科大源
+
+https://zhuanlan.zhihu.com/p/102760018
+
 安装指定版本的Command Line Tools for Xcode
 
 https://developer.apple.com/download/more/

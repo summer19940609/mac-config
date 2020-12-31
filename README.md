@@ -75,3 +75,5 @@ mirrors配置
 
 ## pyenv
 python版本管理
+
+## nvm安装node

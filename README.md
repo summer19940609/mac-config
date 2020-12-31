@@ -68,3 +68,6 @@ mirrors配置
     "https://mirror.baidubce.com"
 ]
  ```
+
+## pyenv
+python版本管理

@@ -76,4 +76,10 @@ mirrors配置
 ## pyenv
 python版本管理
 
+
+```
+pillow安装出错
+python -m pip install --upgrade pip
+python -m pip install --upgrade pillow
+```
 ## nvm安装node

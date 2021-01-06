@@ -76,6 +76,11 @@ mirrors配置
 ## pyenv
 python版本管理
 
+zsh中pyenv启动懒加载，使用pyenv-lazy插件
+
+`git clone https://github.com/davidparsson/zsh-pyenv-lazy.git ~/.oh-my-zsh/custom/plugins/pyenv-lazy`
+
+
 
 ```
 pillow安装出错

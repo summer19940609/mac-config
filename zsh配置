@@ -1,15 +1,22 @@
+zmodload zsh/zprof
 export ZSH="/Users/mw/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
 plugins=(
-  git
+  # git
   zsh-autosuggestions
   zsh-syntax-highlighting
   autojump
   git-open
   zsh-nvm
+  pyenv-lazy
 )
+
+# git部分命令简写
+alias gco="git checkout"
+alias glo="git log --oneline"
+alias gb="git branch"
 
 # export https_proxy=http://127.0.0.1:7890
 # export http_proxy=http://127.0.0.1:7890
@@ -33,12 +40,14 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
 # 中科大下载源
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+# export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
+# pyenv采用pyenv-lazy懒加载方式
 # pyenv配置，初始化
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
+
 # bigsur安装python
-export PATH="/usr/local/opt/bzip2/bin:$PATH"
-export CPPFLAGS="-I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include $CPPFLAGS"
-export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include"
-export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib"
+# export PATH="/usr/local/opt/bzip2/bin:$PATH"
+# export CPPFLAGS="-I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include $CPPFLAGS"
+# export CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix zlib)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include"
+# export LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib"

@@ -1,4 +1,3 @@
-zmodload zsh/zprof
 export ZSH="/Users/mw/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"

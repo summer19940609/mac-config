@@ -90,4 +90,4 @@ python -m pip install --upgrade pillow
 ## nvm安装node
 
 
-![](https://gitee.com/summer19940609/pic/raw/master/blog/20210116124802.png)
+![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116125851.png)

@@ -88,3 +88,6 @@ python -m pip install --upgrade pip
 python -m pip install --upgrade pillow
 ```
 ## nvm安装node
+
+
+![](https://gitee.com/summer19940609/pic/raw/master/blog/20210116124802.png)

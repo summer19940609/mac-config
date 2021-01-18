@@ -89,7 +89,7 @@ python -m pip install --upgrade pillow
 ```
 ## nvm安装node
 
-
+### 当前安装的软件记录
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116125851.png)
 
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116130023.png)

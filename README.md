@@ -1,11 +1,11 @@
 # mac-config
 
-## Quick Look plugins
+### Quick Look plugins
 quicklook插件
 
 https://github.com/sindresorhus/quick-look-plugins
 
-## brew
+### brew
 切换国内中科大源
 
 https://zhuanlan.zhihu.com/p/102760018
@@ -24,7 +24,7 @@ git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-
 // zsh-syntax-highlighting
 ```
 
-## git
+### git
 使用vscode作为git默认编辑器
 ```
 git config --global user.name xxxxxx  
@@ -33,13 +33,13 @@ git config --global core.editor "code --wait"
 git config --global -e
 ```
 
-## npm
+### npm
 使用淘宝仓库
 ```
 npm config set registry https://registry.npm.taobao.org/
 ```
 
-## vscode
+### vscode
 vscode配置通过编辑器自带的功能同步
 
 
@@ -55,7 +55,7 @@ sudo nvram StartupMute=%01
 git remote prune origin
 ```
 
-## mysql(非docker安装方式)
+### mysql(非docker安装方式)
 1、安装：```brew install mysql```
 
 2、开启mysql：```mysql.server start```
@@ -64,7 +64,7 @@ git remote prune origin
 
 启动这个脚本后，即可根据如下命令提示进行初始化设置，本地数据库密码123456
 
-## docker
+### docker
 mirrors配置
 ```
 "registry-mirrors": [
@@ -73,7 +73,7 @@ mirrors配置
 ]
  ```
 
-## pyenv
+### pyenv
 python版本管理
 
 zsh中pyenv启动懒加载，使用pyenv-lazy插件
@@ -87,7 +87,8 @@ pillow安装出错
 python -m pip install --upgrade pip
 python -m pip install --upgrade pillow
 ```
-## nvm安装node
+### nvm安装node
+
 
 ### 当前安装的软件记录
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116125851.png)

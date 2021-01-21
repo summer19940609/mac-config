@@ -56,11 +56,9 @@ git remote prune origin
 ```
 
 ### mysql(非docker安装方式)
-1、安装：```brew install mysql```
-
-2、开启mysql：```mysql.server start```
-
-3、使用mysql的配置脚本：```/usr/local/opt/mysql/bin/mysql_secure_installation //mysql 提供的配置向导```
+1. 安装：```brew install mysql```
+2. 开启mysql：```mysql.server start```
+3. 使用mysql的配置脚本：```/usr/local/opt/mysql/bin/mysql_secure_installation //mysql 提供的配置向导```
 
 启动这个脚本后，即可根据如下命令提示进行初始化设置，本地数据库密码123456
 
@@ -88,7 +86,6 @@ python -m pip install --upgrade pip
 python -m pip install --upgrade pillow
 ```
 ### nvm安装node
-
 
 ### 当前安装的软件记录
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116125851.png)

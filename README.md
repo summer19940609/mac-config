@@ -94,3 +94,6 @@ python -m pip install --upgrade pillow
 
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210121171508.png)
 
+### 图床设置
+![nTEkt4](https://gitee.com/summer19940609/pic/raw/master/uPic/nTEkt4.png)
+![ScXndl](https://gitee.com/summer19940609/pic/raw/master/uPic/ScXndl.png)

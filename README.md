@@ -94,4 +94,3 @@ python -m pip install --upgrade pillow
 
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210121171508.png)
 
-![y5Cir3](https://gitee.com/summer19940609/pic/raw/master/uPic/y5Cir3.png)

@@ -1,4 +1,5 @@
 # mac-config
+sudo spctl --master-disable
 
 ### Quick Look plugins
 quicklook插件

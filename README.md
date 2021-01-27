@@ -14,8 +14,6 @@
     + [输入法自动切换](#-------)
     + [油猴脚本安装列表](#--------)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 # mac-config
 ### mac安装任何来源

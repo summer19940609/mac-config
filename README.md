@@ -21,6 +21,10 @@
 
 ![2K35Ul](https://gitee.com/summer19940609/pic/raw/master/uPic/2K35Ul.png)
 
+取消开机声音
+```
+sudo nvram StartupMute=%01
+```
 ### Quick Look plugins
 quicklook插件
 
@@ -63,19 +67,10 @@ npm config set registry https://registry.npm.taobao.org/
 ### vscode
 vscode配置通过编辑器自带的功能同步
 
-
-
-
-取消开机声音
-```
-sudo nvram StartupMute=%01
-```
-
 同步远程分支
 ```
 git remote prune origin
 ```
-
 ### mysql(非docker安装方式)
 1. 安装：```brew install mysql```
 2. 开启mysql：```mysql.server start```
@@ -98,8 +93,6 @@ python版本管理
 zsh中pyenv启动懒加载，使用pyenv-lazy插件
 
 `git clone https://github.com/davidparsson/zsh-pyenv-lazy.git ~/.oh-my-zsh/custom/plugins/pyenv-lazy`
-
-
 
 ```
 pillow安装出错

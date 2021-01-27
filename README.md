@@ -108,3 +108,6 @@ python -m pip install --upgrade pillow
 输入法自动切换
 
 ![LFbbHL](https://gitee.com/summer19940609/pic/raw/master/uPic/LFbbHL.png)
+
+### 油猴脚本安装列表
+![BJ6i9B](https://gitee.com/summer19940609/pic/raw/master/uPic/BJ6i9B.png)

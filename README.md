@@ -1,5 +1,9 @@
 # mac-config
-sudo spctl --master-disable
+mac安装任何来源
+
+`sudo spctl --master-disable`
+
+![2K35Ul](https://gitee.com/summer19940609/pic/raw/master/uPic/2K35Ul.png)
 
 ### Quick Look plugins
 quicklook插件

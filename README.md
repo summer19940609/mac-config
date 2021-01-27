@@ -113,7 +113,7 @@ python -m pip install --upgrade pillow
 
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116130023.png)
 
-![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210121171508.png)
+![82gpGw](https://gitee.com/summer19940609/pic/raw/master/uPic/82gpGw.png)
 
 ### 图床设置
 `uPic_hosts.json`    uPic导出的配置

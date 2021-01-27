@@ -98,3 +98,6 @@ python -m pip install --upgrade pillow
 ### 图床设置
 ![nTEkt4](https://gitee.com/summer19940609/pic/raw/master/uPic/nTEkt4.png)
 ![ScXndl](https://gitee.com/summer19940609/pic/raw/master/uPic/ScXndl.png)
+
+输入法自动切换
+![LFbbHL](https://gitee.com/summer19940609/pic/raw/master/uPic/LFbbHL.png)

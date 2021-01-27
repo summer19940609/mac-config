@@ -1,5 +1,24 @@
+- [mac-config](#mac-config)
+    + [mac安装任何来源](#mac------)
+    + [Quick Look plugins](#quick-look-plugins)
+    + [brew](#brew)
+    + [git](#git)
+    + [npm](#npm)
+    + [vscode](#vscode)
+    + [mysql(非docker安装方式)](#mysql--docker-----)
+    + [docker](#docker)
+    + [pyenv](#pyenv)
+    + [nvm安装node](#nvm--node)
+    + [当前安装的软件记录](#---------)
+    + [图床设置](#----)
+    + [输入法自动切换](#-------)
+    + [油猴脚本安装列表](#--------)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 # mac-config
-mac安装任何来源
+### mac安装任何来源
 
 `sudo spctl --master-disable`
 
@@ -105,7 +124,7 @@ python -m pip install --upgrade pillow
 ![nTEkt4](https://gitee.com/summer19940609/pic/raw/master/uPic/nTEkt4.png)
 ![ScXndl](https://gitee.com/summer19940609/pic/raw/master/uPic/ScXndl.png)
 
-输入法自动切换
+### 输入法自动切换
 
 ![LFbbHL](https://gitee.com/summer19940609/pic/raw/master/uPic/LFbbHL.png)
 

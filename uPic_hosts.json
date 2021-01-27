@@ -1,0 +1,4 @@
+[
+  "{\n  \"name\" : \"GitHub\",\n  \"id\" : \"1611281416\",\n  \"type\" : \"github\",\n  \"data\" : \"{\\n  \\\"useCdn\\\" : true,\\n  \\\"branch\\\" : \\\"master\\\",\\n  \\\"token\\\" : \\\"5088ee592fb3841192550f970fdfcbc3be2a3b78\\\",\\n  \\\"saveKeyPath\\\" : \\\"\\\",\\n  \\\"owner\\\" : \\\"summer19940609\\\",\\n  \\\"domain\\\" : \\\"https:\\\\\\\/\\\\\\\/cdn.jsdelivr.net\\\\\\\/gh\\\\\\\/summer19940609\\\\\\\/picture-repo@master\\\",\\n  \\\"repo\\\" : \\\"picture-repo\\\"\\n}\"\n}",
+  "{\n  \"name\" : \"码云 Gitee\",\n  \"id\" : \"1611542471\",\n  \"type\" : \"gitee\",\n  \"data\" : \"{\\n  \\\"owner\\\" : \\\"summer19940609\\\",\\n  \\\"saveKeyPath\\\" : \\\"\\\",\\n  \\\"branch\\\" : \\\"master\\\",\\n  \\\"domain\\\" : \\\"\\\",\\n  \\\"token\\\" : \\\"6e126ae4b0ba715903ba58c3db0c8cdf\\\",\\n  \\\"repo\\\" : \\\"pic\\\"\\n}\"\n}"
+]

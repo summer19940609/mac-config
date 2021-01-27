@@ -100,4 +100,5 @@ python -m pip install --upgrade pillow
 ![ScXndl](https://gitee.com/summer19940609/pic/raw/master/uPic/ScXndl.png)
 
 输入法自动切换
+
 ![LFbbHL](https://gitee.com/summer19940609/pic/raw/master/uPic/LFbbHL.png)

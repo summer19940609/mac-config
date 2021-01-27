@@ -1,20 +1,19 @@
 - [mac-config](#mac-config)
-    + [mac安装任何来源](#mac------)
-    + [Quick Look plugins](#quick-look-plugins)
-    + [brew](#brew)
-    + [git](#git)
-    + [npm](#npm)
-    + [vscode](#vscode)
-    + [mysql(非docker安装方式)](#mysql--docker-----)
-    + [docker](#docker)
-    + [pyenv](#pyenv)
-    + [nvm安装node](#nvm--node)
-    + [当前安装的软件记录](#---------)
-    + [图床设置](#----)
-    + [输入法自动切换](#-------)
-    + [油猴脚本安装列表](#--------)
-
-
+    - [mac安装任何来源](#mac安装任何来源)
+    - [Quick Look plugins](#quick-look-plugins)
+    - [brew](#brew)
+    - [git](#git)
+    - [npm](#npm)
+    - [vscode](#vscode)
+    - [mysql(非docker安装方式)](#mysql非docker安装方式)
+    - [docker](#docker)
+    - [pyenv](#pyenv)
+    - [nvm安装node](#nvm安装node)
+    - [当前安装的软件记录](#当前安装的软件记录)
+    - [图床设置](#图床设置)
+    - [输入法自动切换](#输入法自动切换)
+    - [油猴脚本安装列表](#油猴脚本安装列表)
+  
 # mac-config
 ### mac安装任何来源
 

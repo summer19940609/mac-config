@@ -24,6 +24,11 @@
 取消开机声音
 
 `sudo nvram StartupMute=%01`
+
+dock栏显示/隐藏无延迟
+
+`defaults write com.apple.Dock autohide-delay -float 0 && killall Dock`
+
 ### Quick Look plugins
 quicklook插件
 

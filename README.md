@@ -115,6 +115,18 @@ python -m pip install --upgrade pip
 python -m pip install --upgrade pillow
 ```
 ### nvm安装node
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash 或者
+
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+
+安装了 `nvm-lazy` 后不需要下面的命令
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+```
 
 ### 当前安装的软件记录
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116125851.png)

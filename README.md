@@ -22,9 +22,8 @@
 ![2K35Ul](https://gitee.com/summer19940609/pic/raw/master/uPic/2K35Ul.png)
 
 取消开机声音
-```
-sudo nvram StartupMute=%01
-```
+
+`sudo nvram StartupMute=%01`
 ### Quick Look plugins
 quicklook插件
 
@@ -40,13 +39,29 @@ https://zhuanlan.zhihu.com/p/102760018
 https://developer.apple.com/download/more/
 
 ```
+// 更新
 brew update && brew upgrade && brew cu -a -y 
+
+// 安装oh-my-zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 
 // zsh-nvm
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+
 // zsh-autosuggestions
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
 // zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+// autojump
+brew install autojump 
+
+// git-open
+git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
+
+// bat
+brew install bat
 ```
 
 ### git

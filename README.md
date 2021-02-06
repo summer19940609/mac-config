@@ -1,21 +1,22 @@
 - [mac-config](#mac-config)
-    - [mac安装任何来源](#mac安装任何来源)
-    - [Quick Look plugins](#quick-look-plugins)
-    - [brew](#brew)
-    - [git](#git)
-    - [npm](#npm)
-    - [vscode](#vscode)
-    - [mysql(非docker安装方式)](#mysql非docker安装方式)
-    - [docker](#docker)
-    - [pyenv](#pyenv)
-    - [nvm安装node](#nvm安装node)
-    - [当前安装的软件记录](#当前安装的软件记录)
-    - [图床设置](#图床设置)
-    - [输入法自动切换](#输入法自动切换)
-    - [油猴脚本安装列表](#油猴脚本安装列表)
-  
+  - [mac 安装任何来源](#mac 安装任何来源)
+  - [Quick Look plugins](#quick-look-plugins)
+  - [brew](#brew)
+  - [git](#git)
+  - [npm](#npm)
+  - [vscode](#vscode)
+  - [mysql（非 docker 安装方式）](#mysql 非 docker 安装方式)
+  - [docker](#docker)
+  - [pyenv](#pyenv)
+  - [nvm 安装 node](#nvm 安装 node)
+  - [当前安装的软件记录](#当前安装的软件记录)
+  - [图床设置](#图床设置)
+  - [输入法自动切换](#输入法自动切换)
+  - [油猴脚本安装列表](#油猴脚本安装列表)
+
 # mac-config
-### mac安装任何来源
+
+### mac 安装任何来源
 
 `sudo spctl --master-disable`
 
@@ -25,29 +26,31 @@
 
 `sudo nvram StartupMute=%01`
 
-dock栏显示/隐藏无延迟
+dock 栏显示/隐藏无延迟
 
 `defaults write com.apple.Dock autohide-delay -float 0 && killall Dock`
 
 ### Quick Look plugins
-quicklook插件
+
+quicklook 插件
 
 https://github.com/sindresorhus/quick-look-plugins
 
 ### brew
+
 切换国内中科大源
 
 https://zhuanlan.zhihu.com/p/102760018
 
-安装指定版本的Command Line Tools for Xcode
+安装指定版本的 Command Line Tools for Xcode
 
 https://developer.apple.com/download/more/
 
 ```
 // 更新
-brew update && brew upgrade && brew cu -a -y 
+brew update && brew upgrade && brew cu -a -y
 
-// 安装oh-my-zsh
+// 安装 oh-my-zsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 
 // zsh-nvm
@@ -60,7 +63,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 // autojump
-brew install autojump 
+brew install autojump
 
 // git-open
 git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
@@ -70,56 +73,69 @@ brew install bat
 ```
 
 ### git
-使用vscode作为git默认编辑器
+
+使用 vscode 作为 git 默认编辑器
+
 ```
-git config --global user.name xxxxxx  
-git config --global user.email xxxxxx 
+git config --global user.name xxxxxx
+git config --global user.email xxxxxx
 git config --global core.editor "code --wait"
 git config --global -e
 ```
 
 ### npm
+
 使用淘宝仓库
+
 ```
 npm config set registry https://registry.npm.taobao.org/
 ```
 
 ### vscode
-vscode配置通过编辑器自带的功能同步
+
+vscode 配置通过编辑器自带的功能同步
 
 同步远程分支
+
 ```
 git remote prune origin
 ```
-### mysql(非docker安装方式)
-1. 安装：```brew install mysql```
-2. 开启mysql：```mysql.server start```
-3. 使用mysql的配置脚本：```/usr/local/opt/mysql/bin/mysql_secure_installation //mysql 提供的配置向导```
 
-启动这个脚本后，即可根据如下命令提示进行初始化设置，本地数据库密码123456
+### mysql（非 docker 安装方式）
+
+1. 安装：`brew install mysql`
+2. 开启 mysql：`mysql.server start`
+3. 使用 mysql 的配置脚本：`/usr/local/opt/mysql/bin/mysql_secure_installation //mysql 提供的配置向导`
+
+启动这个脚本后，即可根据如下命令提示进行初始化设置，本地数据库密码 123456
 
 ### docker
-mirrors配置
+
+mirrors 配置
+
 ```
 "registry-mirrors": [
     "https://hub-mirror.c.163.com",
     "https://mirror.baidubce.com"
 ]
- ```
+```
 
 ### pyenv
-python版本管理
 
-zsh中pyenv启动懒加载，使用pyenv-lazy插件
+python 版本管理
+
+zsh 中 pyenv 启动懒加载，使用 pyenv-lazy 插件
 
 `git clone https://github.com/davidparsson/zsh-pyenv-lazy.git ~/.oh-my-zsh/custom/plugins/pyenv-lazy`
 
 ```
-pillow安装出错
+pillow 安装出错
 python -m pip install --upgrade pip
 python -m pip install --upgrade pillow
 ```
-### nvm安装node
+
+### nvm 安装 node
+
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash 或者
 
@@ -134,6 +150,7 @@ export NVM_DIR="$HOME/.nvm"
 ```
 
 ### 当前安装的软件记录
+
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116125851.png)
 
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116130023.png)
@@ -141,7 +158,8 @@ export NVM_DIR="$HOME/.nvm"
 ![82gpGw](https://gitee.com/summer19940609/pic/raw/master/uPic/82gpGw.png)
 
 ### 图床设置
-`uPic_hosts.json`    uPic导出的配置
+
+`uPic_hosts.json` uPic 导出的配置
 
 ![nTEkt4](https://gitee.com/summer19940609/pic/raw/master/uPic/nTEkt4.png)
 ![ScXndl](https://gitee.com/summer19940609/pic/raw/master/uPic/ScXndl.png)
@@ -151,4 +169,5 @@ export NVM_DIR="$HOME/.nvm"
 ![LFbbHL](https://gitee.com/summer19940609/pic/raw/master/uPic/LFbbHL.png)
 
 ### 油猴脚本安装列表
+
 ![BJ6i9B](https://gitee.com/summer19940609/pic/raw/master/uPic/BJ6i9B.png)

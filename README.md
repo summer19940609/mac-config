@@ -20,7 +20,7 @@
 
 `sudo spctl --master-disable`
 
-![2K35Ul](https://gitee.com/summer19940609/pic/raw/master/uPic/2K35Ul.png)
+![PNlHBc](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@master/uPic/PNlHBc.png)
 
 取消开机声音
 
@@ -161,13 +161,10 @@ export NVM_DIR="$HOME/.nvm"
 
 `uPic_hosts.json` uPic 导出的配置
 
-![nTEkt4](https://gitee.com/summer19940609/pic/raw/master/uPic/nTEkt4.png)
-![ScXndl](https://gitee.com/summer19940609/pic/raw/master/uPic/ScXndl.png)
-
 ### 输入法自动切换
 
-![LFbbHL](https://gitee.com/summer19940609/pic/raw/master/uPic/LFbbHL.png)
+![VGc0oc](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@master/uPic/VGc0oc.png)
 
 ### 油猴脚本安装列表
 
-![BJ6i9B](https://gitee.com/summer19940609/pic/raw/master/uPic/BJ6i9B.png)
+![FDruzl](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@master/uPic/FDruzl.png)

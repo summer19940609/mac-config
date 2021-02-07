@@ -155,7 +155,7 @@ export NVM_DIR="$HOME/.nvm"
 
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116130023.png)
 
-![82gpGw](https://gitee.com/summer19940609/pic/raw/master/uPic/82gpGw.png)
+![uFrFnb](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@master/uPic/uFrFnb.png)
 
 ### 图床设置
 

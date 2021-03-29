@@ -1,0 +1,91 @@
+{
+    "editor.tabSize": 4,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.minimap.enabled": true,
+    "editor.fontSize": 18,
+    "editor.fontLigatures": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.minimap.renderCharacters": false,
+    "editor.tabCompletion": "on",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "none",
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.showSlider": "always",
+    "editor.smoothScrolling": true,
+    "editor.scrollBeyondLastLine": false,
+    "editor.overviewRulerBorder": false,
+    "editor.tokenColorCustomizations": null,
+    "explorer.confirmDelete": false,
+    "explorer.openEditors.visible": 0,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "workbench.editor.openPositioning": "left",
+    "workbench.startupEditor": "newUntitledFile",
+    "emmet.includeLanguages": {
+        "wxml": "html"
+    },
+    "breadcrumbs.enabled": true,
+    "window.title": "${activeEditorShort}",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.shellArgs.windows": "-nologo",
+    "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.inheritEnv": false,
+    "search.followSymlinks": false,
+    "files.autoSave": "onFocusChange",
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript"
+    },
+    "files.exclude": {
+        ".DS_Store": true,
+        "**/bower_components": true,
+        "**/build": true,
+        "**/node_modules": true,
+        "**/tmp": true
+    },
+    "files.watcherExclude": {
+        "**/bower_components/**": true,
+        "**/dist/**": true,
+        "**/tmp/**": true
+    },
+    "workbench.activityBar.visible": true,
+    "code-runner.clearPreviousOutput": true,
+    "terminal.integrated.rendererType": "dom",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "timeline.excludeSources": [
+        "git-history"
+    ],
+    "workbench.sideBar.location": "left",
+    "workbench.editor.enablePreview": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-great-icons",
+    "window.titleBarStyle": "native",
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "files.defaultLanguage": "${activeEditorLanguage}",
+    "code-runner.runInTerminal": true,
+    "workbench.statusBar.visible": true,
+    "workbench.editor.showTabs": true,
+    "workbench.editor.untitled.labelFormat": "name",
+    "window.zoomLevel": 0,
+    "vetur.completion.autoImport": true,
+    "vetur.completion.tagCasing": "kebab",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatter.scss": "prettier",
+    "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+    "vetur.experimental.templateInterpolationService": false,
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "auto"
+        }
+    }
+}

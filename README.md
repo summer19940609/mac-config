@@ -30,6 +30,20 @@ dock 栏显示/隐藏无延迟
 
 `defaults write com.apple.Dock autohide-delay -float 0 && killall Dock`
 
+
+延迟
+
+defaults write com.apple.dock autohide-delay -int 0（时间设为最短）
+
+defaults write com.apple.dock autohide-delay -int 0.5（时间设为 0.5s）
+
+延迟动画
+
+defaults write com.apple.dock autohide-time-modifier -int 0.5;killall Dock
+
+恢复：defaults delete com.apple.dock autohide-time-modifier;killall Dock
+
+
 ### Quick Look plugins
 
 quicklook 插件

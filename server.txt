@@ -1,3 +1,6 @@
 宝塔禁用套件推荐
 sed -i "s/self.CheckInstalled()/True/g" /www/server/panel/class/system.py
 
+内存/cpu占用前10
+ps aux --sort -rss | head -n 10
+ps aux --sort -pcpu | head -n 10

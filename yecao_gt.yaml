@@ -74,7 +74,7 @@ proxies:
   - { name: '阿根廷', type: ss, server: 'ar.91js.pw', port: 30128, cipher: 'rc4-md5', password: 'xnj19940609' }
 
 proxy-groups:
-  - { name: auto, type: url-test, proxies: ['日常推荐1-台湾', '日常推荐2-香港', '日常推荐3-香港', '日常推荐4-台湾'], url: 'http://www.gstatic.com/generate_204', interval: 5000, tolerance: 50 }
+  - { name: Proxy, type: url-test, proxies: ['日常推荐1-台湾', '日常推荐2-香港', '日常推荐3-香港', '日常推荐4-台湾'], url: 'http://www.gstatic.com/generate_204', interval: 5000, tolerance: 50 }
 rules:
   # > 抗 DNS 污染
   - DOMAIN-KEYWORD,amazon,Proxy

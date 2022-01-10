@@ -444,7 +444,7 @@ rule-providers:
 
 rules:
   # 自定义
-  - DOMAIN-KEYWORD,github,PROXY
+  - DOMAIN-SUFFIX,githubusercontent.com,PROXY
   # > steam
   - DOMAIN-SUFFIX,steamcontent.com,DIRECT
   - DOMAIN,store.steampowered.com,PROXY

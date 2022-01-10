@@ -1,0 +1,484 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:5450
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.localdomain'
+    - '*.example'
+    - '*.invalid'
+    - '*.localhost'
+    - '*.test'
+    - '*.local'
+    - '*.home.arpa'
+    - 'time.*.com'
+    - 'time.*.gov'
+    - 'time.*.edu.cn'
+    - 'time.*.apple.com'
+    - 'time1.*.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'ntp2.*.com'
+    - 'ntp3.*.com'
+    - 'ntp4.*.com'
+    - 'ntp5.*.com'
+    - 'ntp6.*.com'
+    - 'ntp7.*.com'
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - '+.pool.ntp.org'
+    - 'time1.cloud.tencent.com'
+    - 'music.163.com'
+    - '*.music.163.com'
+    - '*.126.net'
+    - 'musicapi.taihe.com'
+    - 'music.taihe.com'
+    - 'songsearch.kugou.com'
+    - 'trackercdn.kugou.com'
+    - '*.kuwo.cn'
+    - 'api-jooxtt.sanook.com'
+    - 'api.joox.com'
+    - 'joox.com'
+    - 'y.qq.com'
+    - '*.y.qq.com'
+    - 'streamoc.music.tc.qq.com'
+    - 'mobileoc.music.tc.qq.com'
+    - 'isure.stream.qqmusic.qq.com'
+    - 'dl.stream.qqmusic.qq.com'
+    - 'aqqmusic.tc.qq.com'
+    - 'amobile.music.tc.qq.com'
+    - '*.xiami.com'
+    - '*.music.migu.cn'
+    - 'music.migu.cn'
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - 'msftconnecttest.com'
+    - 'msftncsi.com'
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.sec.qq.com'
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - 'xbox.*.microsoft.com'
+    - 'xnotify.xboxlive.com'
+    - '+.battlenet.com.cn'
+    - '+.wotgame.cn'
+    - '+.wggames.cn'
+    - '+.wowsgame.cn'
+    - '+.wargaming.net'
+    - 'proxy.golang.org'
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
+    - 'heartbeat.belkin.com'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - '*.router.asus.com'
+    - 'mesu.apple.com'
+    - 'swscan.apple.com'
+    - 'swquery.apple.com'
+    - 'swdownload.apple.com'
+    - 'swcdn.apple.com'
+    - 'swdist.apple.com'
+    - 'lens.l.google.com'
+    - 'stun.l.google.com'
+    - '+.nflxvideo.net'
+    - '*.square-enix.com'
+    - '*.finalfantasyxiv.com'
+    - '*.ffxiv.com'
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 100.100.2.136
+    - 100.100.2.138
+    - 1.2.4.8
+  fallback:
+    - tls://dns.rubyfish.cn:853
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
+
+cfw-bypass:
+  - qq.com
+  - music.163.com
+  - '*.music.126.net'
+  - localhost
+  - 127.*
+  - 10.*
+  - 172.16.*
+  - 172.17.*
+  - 172.18.*
+  - 172.19.*
+  - 172.20.*
+  - 172.21.*
+  - 172.22.*
+  - 172.23.*
+  - 172.24.*
+  - 172.25.*
+  - 172.26.*
+  - 172.27.*
+  - 172.28.*
+  - 172.29.*
+  - 172.30.*
+  - 172.31.*
+  - 192.168.*
+  - <local>
+
+proxies:
+  - name: '日常推荐1-台湾'
+    type: trojan
+    server: cm.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '日常推荐2-香港'
+    type: trojan
+    server: ct.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '日常推荐3-香港'
+    type: trojan
+    server: cu.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '日常推荐4-台湾'
+    type: trojan
+    server: zz6.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '香港'
+    type: trojan
+    server: zz5.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '台湾'
+    type: trojan
+    server: hinet.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '新加坡'
+    type: trojan
+    server: sgp.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '新加坡2'
+    type: trojan
+    server: sgp2.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '日本'
+    type: trojan
+    server: softbank.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '日本2'
+    type: trojan
+    server: jp2.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '日本3'
+    type: trojan
+    server: zz4.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '美国'
+    type: trojan
+    server: usa1.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '美国2'
+    type: trojan
+    server: usa2.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '美国3'
+    type: trojan
+    server: usa3.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '欧洲-英国'
+    type: trojan
+    server: vnt.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '韩国'
+    type: trojan
+    server: sk.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '韩国2'
+    type: trojan
+    server: kr2.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '加拿大'
+    type: trojan
+    server: ca.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '俄罗斯'
+    type: trojan
+    server: ru.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '土耳其'
+    type: trojan
+    server: tr.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '印度'
+    type: trojan
+    server: yd.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+  - name: '阿根廷'
+    type: trojan
+    server: ar.91js.pw
+    port: 10051
+    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
+    udp: true
+    skip-cert-verify: false
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - 日常推荐1-台湾
+      - 日常推荐2-香港
+      - 日常推荐3-香港
+      - 日常推荐4-台湾
+      - 香港
+      - 台湾
+      - 新加坡
+      - 新加坡2
+      - 日本
+      - 日本2
+      - 日本3
+      - 美国
+      - 美国2
+      - 美国3
+      - 欧洲-英国
+      - 韩国
+      - 韩国2
+      - 加拿大
+      - 俄罗斯
+      - 土耳其
+      - 印度
+      - 阿根廷
+
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt'
+    path: ./ruleset/reject.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt'
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt'
+    path: ./ruleset/apple.yaml
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt'
+    path: ./ruleset/google.yaml
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt'
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt'
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  private:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt'
+    path: ./ruleset/private.yaml
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt'
+    path: ./ruleset/gfw.yaml
+    interval: 86400
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt'
+    path: ./ruleset/greatfire.yaml
+    interval: 86400
+
+  tld-not-cn:
+    type: http
+    behavior: domain
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt'
+    path: ./ruleset/tld-not-cn.yaml
+    interval: 86400
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt'
+    path: ./ruleset/telegramcidr.yaml
+    interval: 86400
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt'
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt'
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+
+  applications:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt'
+    path: ./ruleset/applications.yaml
+    interval: 86400
+
+rules:
+  # 自定义
+  # > steam
+  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
+  - DOMAIN,store.steampowered.com,PROXY
+  - DOMAIN-SUFFIX,wmsj.cn,DIRECT
+  - DOMAIN-SUFFIX,wmsjsteam.com,DIRECT
+  - DOMAIN-SUFFIX,steamchina.com,DIRECT
+  # 金山云
+  - DOMAIN,dl.steam.clngaa.com,DIRECT
+  - DOMAIN,dl.steam.ksyna.com,DIRECT
+  # 白山云
+  - DOMAIN,st.dl.bscstorage.net,DIRECT
+  - DOMAIN,st.dl.eccdnx.com,DIRECT
+  - DOMAIN,st.dl.pinyuncloud.com,DIRECT
+  # 华为云
+  - DOMAIN,steampipe.steamcontent.tnkjmec.com,DIRECT
+  # 网宿
+  - DOMAIN,steampowered.com.8686c.com,DIRECT
+  - DOMAIN,steamstatic.com.8686c.com,DIRECT
+
+  - DOMAIN-SUFFIX,mxhichina.com,DIRECT
+  - DOMAIN,sg-cs.alibaba.com,REJECT
+  - DOMAIN,ocs-oneagent-server.alibaba.com,REJECT
+  - DOMAIN,pcs-sdk-server-inner.alibaba.com,REJECT
+  - DOMAIN,alimei-sub.alibaba.com,REJECT
+
+  - DOMAIN-SUFFIX,sttlink.com,PROXY
+
+  # 订阅
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,tld-not-cn,PROXY
+  - RULE-SET,gfw,PROXY
+  - RULE-SET,greatfire,PROXY
+  - RULE-SET,telegramcidr,PROXY
+  - MATCH,DIRECT

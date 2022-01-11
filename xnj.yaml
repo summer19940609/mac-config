@@ -444,6 +444,7 @@ rule-providers:
 
 rules:
   # 自定义
+  - DOMAIN-SUFFIX,githubusercontent.com,PROXY
   # > steam
   - DOMAIN-SUFFIX,steamcontent.com,DIRECT
   - DOMAIN,store.steampowered.com,PROXY
@@ -477,14 +478,8 @@ rules:
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,DIRECT
-  - RULE-SET,proxy,PROXY
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,lancidr,DIRECT
-  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,tld-not-cn,PROXY
+  - RULE-SET,gfw,PROXY
+  - RULE-SET,greatfire,PROXY
   - RULE-SET,telegramcidr,PROXY
-  - GEOIP,,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - MATCH,DIRECT

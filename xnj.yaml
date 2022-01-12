@@ -442,11 +442,11 @@ rule-providers:
     path: ./ruleset/applications.yaml
     interval: 86400
 
-  cygame:
+  cyGame:
     type: http
     behavior: domain
     url: 'https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/cyGame.txt'
-    path: ./ruleset/cygame.yaml
+    path: ./ruleset/cyGame.yaml
     interval: 86400
 
 rules:
@@ -491,5 +491,5 @@ rules:
   - RULE-SET,gfw,PROXY
   - RULE-SET,greatfire,PROXY
   - RULE-SET,telegramcidr,PROXY
-  - RULE-SET,cygame,PROXY
+  - RULE-SET,cyGame,PROXY
   - MATCH,DIRECT

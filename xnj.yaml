@@ -451,8 +451,9 @@ rule-providers:
 
 rules:
   # 自定义
+  # github raw
   - DOMAIN-SUFFIX,githubusercontent.com,PROXY
-  # > steam
+  # steam
   - DOMAIN-SUFFIX,steamcontent.com,DIRECT
   - DOMAIN,store.steampowered.com,PROXY
   - DOMAIN-SUFFIX,wmsj.cn,DIRECT
@@ -470,13 +471,14 @@ rules:
   # 网宿
   - DOMAIN,steampowered.com.8686c.com,DIRECT
   - DOMAIN,steamstatic.com.8686c.com,DIRECT
-
+  # 阿里邮箱
   - DOMAIN-SUFFIX,mxhichina.com,DIRECT
+  # 公司
   - DOMAIN,sg-cs.alibaba.com,REJECT
   - DOMAIN,ocs-oneagent-server.alibaba.com,REJECT
   - DOMAIN,pcs-sdk-server-inner.alibaba.com,REJECT
   - DOMAIN,alimei-sub.alibaba.com,REJECT
-
+  # stt
   - DOMAIN-SUFFIX,sttlink.com,PROXY
 
   # 订阅

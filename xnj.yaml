@@ -444,7 +444,7 @@ rule-providers:
 
   cygame:
     type: http
-    behavior: domain
+    behavior: classical
     url: 'https://github.com/summer19940609/mac-config/raw/main/rule/cyGame.yaml'
     path: ./ruleset/cygame.yaml
     interval: 86400

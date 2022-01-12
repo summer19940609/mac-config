@@ -487,6 +487,8 @@ rules:
   - DOMAIN-SUFFIX,sttlink.com,PROXY
 
   # 订阅
+  - RULE-SET,steam,PROXY
+  - RULE-SET,cyGame,PROXY
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
@@ -496,6 +498,4 @@ rules:
   - RULE-SET,gfw,PROXY
   - RULE-SET,greatfire,PROXY
   - RULE-SET,telegramcidr,PROXY
-  - RULE-SET,cyGame,PROXY
-  - RULE-SET,steam,PROXY
   - MATCH,DIRECT

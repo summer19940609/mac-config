@@ -448,14 +448,19 @@ rule-providers:
     url: 'https://cdn.jsdelivr.net/gh/summer19940609/mac-config@main/rule/cyGame.txt'
     path: ./ruleset/cyGame.yaml
     interval: 86400
+    
+  steam:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Steam.yaml'
+    path: ./ruleset/steam.yaml
+    interval: 86400
 
 rules:
   # 自定义
   # github raw
   - DOMAIN-SUFFIX,githubusercontent.com,PROXY
   # steam
-  - DOMAIN-SUFFIX,steamcontent.com,DIRECT
-  - DOMAIN,store.steampowered.com,PROXY
   - DOMAIN-SUFFIX,wmsj.cn,DIRECT
   - DOMAIN-SUFFIX,wmsjsteam.com,DIRECT
   - DOMAIN-SUFFIX,steamchina.com,DIRECT
@@ -492,4 +497,5 @@ rules:
   - RULE-SET,greatfire,PROXY
   - RULE-SET,telegramcidr,PROXY
   - RULE-SET,cyGame,PROXY
+  - RULE-SET,steam,PROXY
   - MATCH,DIRECT

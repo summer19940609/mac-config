@@ -442,6 +442,13 @@ rule-providers:
     path: ./ruleset/applications.yaml
     interval: 86400
 
+  cygame:
+    type: http
+    behavior: domain
+    url: 'https://github.com/summer19940609/mac-config/raw/main/rule/cyGame.yaml'
+    path: ./ruleset/cygame.yaml
+    interval: 86400
+
 rules:
   # 自定义
   - DOMAIN-SUFFIX,githubusercontent.com,PROXY
@@ -482,4 +489,5 @@ rules:
   - RULE-SET,gfw,PROXY
   - RULE-SET,greatfire,PROXY
   - RULE-SET,telegramcidr,PROXY
+  - RULE-SET,cygame,PROXY
   - MATCH,DIRECT

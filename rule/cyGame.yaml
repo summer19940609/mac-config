@@ -1,1 +1,11 @@
-
+payload:
+  - DOMAIN-KEYWORD,cygames
+  - DOMAIN-KEYWORD,starlight-stage
+  - DOMAIN-KEYWORD,umamusume
+  - DOMAIN-SUFFIX,mbga.jp
+  - DOMAIN-SUFFIX,granbluefantasy.jp
+  - DOMAIN-SUFFIX,worldflipper.jp
+  - DOMAIN-SUFFIX,mbga-platform.jp
+  - DOMAIN-SUFFIX,blhx.danmu9.com
+  - DOMAIN-SUFFIX,priconne-redive.jp
+  - DOMAIN-SUFFIX,worldflipper.akamaized.net

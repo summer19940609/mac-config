@@ -452,7 +452,7 @@ rule-providers:
   steam:
     type: http
     behavior: domain
-    url: 'https://ghproxy.com/https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Steam.yaml'
+    url: 'https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Steam.yaml'
     path: ./ruleset/steam.yaml
     interval: 86400
 

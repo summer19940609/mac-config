@@ -458,6 +458,10 @@ rule-providers:
 
 rules:
   # 自定义
+  - DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+  - DOMAIN,dl.google.com,DIRECT
+  - DOMAIN,mtalk.google.com,DIRECT
+  - DOMAIN,safebrowsing.googleapis.com,DIRECT
   # github raw
   - DOMAIN-SUFFIX,githubusercontent.com,PROXY
   # steam

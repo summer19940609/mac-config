@@ -326,7 +326,8 @@ proxy-groups:
       - 日常推荐3-香港
       - 日常推荐4-台湾
     url: 'http://www.gstatic.com/generate_204'
-    interval: 3000
+    tolerance: 100
+    interval: 300
     
   - name: "PROXY"
     type: select

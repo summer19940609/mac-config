@@ -327,6 +327,11 @@ proxy-groups:
       - 日常推荐4-台湾
     url: 'http://www.gstatic.com/generate_204'
     interval: 3000
+    
+  - name: "PROXY"
+    type: select
+    proxies:
+      - AUTO
 
 rule-providers:
   reject:

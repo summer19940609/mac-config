@@ -1,0 +1,7 @@
+# reject
+DOMAIN,sg-cs.alibaba.com,REJECT
+DOMAIN,ocs-oneagent-server.alibaba.com,REJECT
+DOMAIN,pcs-sdk-server-inner.alibaba.com,REJECT
+DOMAIN,alimei-sub.alibaba.com,REJECT
+DOMAIN-SUFFIX,launchdarkly.com,REJECT
+DOMAIN,drive.wps.cn,REJECT

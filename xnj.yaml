@@ -1,494 +1,396 @@
 port: 7890
 socks-port: 7891
-allow-lan: true
-mode: Rule
+redir-port: 7892
+allow-lan: false
+mode: rule
 log-level: silent
-external-controller: 127.0.0.1:9090
-dns:
-  enable: true
-  ipv6: false
-  listen: 127.0.0.1:5450
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - '*.localdomain'
-    - '*.example'
-    - '*.invalid'
-    - '*.localhost'
-    - '*.test'
-    - '*.local'
-    - '*.home.arpa'
-    - 'time.*.com'
-    - 'time.*.gov'
-    - 'time.*.edu.cn'
-    - 'time.*.apple.com'
-    - 'time1.*.com'
-    - 'time2.*.com'
-    - 'time3.*.com'
-    - 'time4.*.com'
-    - 'time5.*.com'
-    - 'time6.*.com'
-    - 'time7.*.com'
-    - 'ntp.*.com'
-    - 'ntp1.*.com'
-    - 'ntp2.*.com'
-    - 'ntp3.*.com'
-    - 'ntp4.*.com'
-    - 'ntp5.*.com'
-    - 'ntp6.*.com'
-    - 'ntp7.*.com'
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - '+.pool.ntp.org'
-    - 'time1.cloud.tencent.com'
-    - 'music.163.com'
-    - '*.music.163.com'
-    - '*.126.net'
-    - 'musicapi.taihe.com'
-    - 'music.taihe.com'
-    - 'songsearch.kugou.com'
-    - 'trackercdn.kugou.com'
-    - '*.kuwo.cn'
-    - 'api-jooxtt.sanook.com'
-    - 'api.joox.com'
-    - 'joox.com'
-    - 'y.qq.com'
-    - '*.y.qq.com'
-    - 'streamoc.music.tc.qq.com'
-    - 'mobileoc.music.tc.qq.com'
-    - 'isure.stream.qqmusic.qq.com'
-    - 'dl.stream.qqmusic.qq.com'
-    - 'aqqmusic.tc.qq.com'
-    - 'amobile.music.tc.qq.com'
-    - '*.xiami.com'
-    - '*.music.migu.cn'
-    - 'music.migu.cn'
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - 'msftconnecttest.com'
-    - 'msftncsi.com'
-    - 'localhost.ptlogin2.qq.com'
-    - 'localhost.sec.qq.com'
-    - '+.srv.nintendo.net'
-    - '+.stun.playstation.net'
-    - 'xbox.*.microsoft.com'
-    - 'xnotify.xboxlive.com'
-    - '+.battlenet.com.cn'
-    - '+.wotgame.cn'
-    - '+.wggames.cn'
-    - '+.wowsgame.cn'
-    - '+.wargaming.net'
-    - 'proxy.golang.org'
-    - 'stun.*.*'
-    - 'stun.*.*.*'
-    - '+.stun.*.*'
-    - '+.stun.*.*.*'
-    - '+.stun.*.*.*.*'
-    - 'heartbeat.belkin.com'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - '*.router.asus.com'
-    - 'mesu.apple.com'
-    - 'swscan.apple.com'
-    - 'swquery.apple.com'
-    - 'swdownload.apple.com'
-    - 'swcdn.apple.com'
-    - 'swdist.apple.com'
-    - 'lens.l.google.com'
-    - 'stun.l.google.com'
-    - '+.nflxvideo.net'
-    - '*.square-enix.com'
-    - '*.finalfantasyxiv.com'
-    - '*.ffxiv.com'
-    - '*.mcdn.bilivideo.cn'
-  nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-    - 100.100.2.136
-    - 100.100.2.138
-    - 1.2.4.8
-  fallback:
-    - tls://dns.rubyfish.cn:853
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+external-controller: '0.0.0.0:9090'
 
-cfw-bypass:
-  - qq.com
-  - music.163.com
-  - '*.music.126.net'
-  - localhost
-  - 127.*
-  - 10.*
-  - 172.16.*
-  - 172.17.*
-  - 172.18.*
-  - 172.19.*
-  - 172.20.*
-  - 172.21.*
-  - 172.22.*
-  - 172.23.*
-  - 172.24.*
-  - 172.25.*
-  - 172.26.*
-  - 172.27.*
-  - 172.28.*
-  - 172.29.*
-  - 172.30.*
-  - 172.31.*
-  - 192.168.*
-  - <local>
-
-proxies:
-  - name: '日常推荐1-台湾'
-    type: trojan
-    server: cm.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '日常推荐2-香港'
-    type: trojan
-    server: ct.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '日常推荐3-香港'
-    type: trojan
-    server: cu.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '日常推荐4-台湾'
-    type: trojan
-    server: zz6.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '香港'
-    type: trojan
-    server: zz5.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '台湾'
-    type: trojan
-    server: hinet.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '新加坡'
-    type: trojan
-    server: sgp.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '新加坡2'
-    type: trojan
-    server: sgp2.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '日本'
-    type: trojan
-    server: softbank.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '日本2'
-    type: trojan
-    server: jp2.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '日本3'
-    type: trojan
-    server: zz4.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '美国'
-    type: trojan
-    server: usa1.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '美国2'
-    type: trojan
-    server: usa2.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '美国3'
-    type: trojan
-    server: usa3.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '欧洲-英国'
-    type: trojan
-    server: vnt.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '韩国'
-    type: trojan
-    server: sk.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '韩国2'
-    type: trojan
-    server: kr2.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '加拿大'
-    type: trojan
-    server: ca.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '俄罗斯'
-    type: trojan
-    server: ru.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '土耳其'
-    type: trojan
-    server: tr.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '印度'
-    type: trojan
-    server: yd.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
-
-  - name: '阿根廷'
-    type: trojan
-    server: ar.91js.pw
-    port: 10051
-    password: 'bdb30bba033ecec51e95f1d61ad72ef6'
-    udp: true
-    skip-cert-verify: false
+proxy-providers:
+  机场1:
+    type: http
+    path: ./yecao.yaml
+    url: https://yc.wenjiushuobuzhidao.top/32160/c?auth=3b25f1c0f3881c0a0069b386dfd7de00&v=v
+    interval: 172800
+    health-check:
+      enable: true
+      interval: 3600
+      lazy: true
+      url: http://www.gstatic.com/generate_204
 
 proxy-groups:
-
-  - name: "AUTO"
-    type: url-test
-    proxies:
-      - 日常推荐1-台湾
-      - 日常推荐2-香港
-      - 日常推荐3-香港
-      - 日常推荐4-台湾
-    url: 'http://www.gstatic.com/generate_204'
-    tolerance: 100
-    interval: 300
-    
-  - name: "PROXY"
+  - name: PROXY
     type: select
+    use:
+      - 机场1
     proxies:
-      - AUTO
+      - DIRECT
 
 rule-providers:
-  reject:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt'
-    path: ./ruleset/reject.yaml
-    interval: 86400
-
-  icloud:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt'
-    path: ./ruleset/icloud.yaml
-    interval: 86400
-
-  apple:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt'
-    path: ./ruleset/apple.yaml
-    interval: 86400
-
-  google:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt'
-    path: ./ruleset/google.yaml
-    interval: 86400
-
-  proxy:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt'
-    path: ./ruleset/proxy.yaml
-    interval: 86400
-
-  direct:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt'
-    path: ./ruleset/direct.yaml
-    interval: 86400
-
-  private:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt'
-    path: ./ruleset/private.yaml
-    interval: 86400
-
-  gfw:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt'
-    path: ./ruleset/gfw.yaml
-    interval: 86400
-
-  greatfire:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt'
-    path: ./ruleset/greatfire.yaml
-    interval: 86400
-
-  tld-not-cn:
-    type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt'
-    path: ./ruleset/tld-not-cn.yaml
-    interval: 86400
-
-  telegramcidr:
-    type: http
-    behavior: ipcidr
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt'
-    path: ./ruleset/telegramcidr.yaml
-    interval: 86400
-
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt'
-    path: ./ruleset/cncidr.yaml
-    interval: 86400
-
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt'
-    path: ./ruleset/lancidr.yaml
-    interval: 86400
-
-  applications:
+  AbemaTV:
     type: http
     behavior: classical
-    url: 'https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt'
-    path: ./ruleset/applications.yaml
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/AbemaTV.yaml'
+    path: ./ACL4SSR/AbemaTV.yaml
     interval: 86400
 
-  cyGame:
+  Adobe:
     type: http
-    behavior: domain
-    url: 'https://cdn.jsdelivr.net/gh/summer19940609/mac-config@main/rule/cyGame.txt'
-    path: ./ruleset/cyGame.yaml
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Adobe.yaml'
+    path: ./ACL4SSR/Adobe.yaml
     interval: 86400
-    
-  steam:
+
+  Amazon:
     type: http
-    behavior: domain
-    url: 'https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Steam.yaml'
-    path: ./ruleset/steam.yaml
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Amazon.yaml'
+    path: ./ACL4SSR/Amazon.yaml
+    interval: 86400
+
+  AmazonIp:
+    type: http
+    behavior: ipcidr
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/AmazonIp.yaml'
+    path: ./ACL4SSR/AmazonIp.yaml
+    interval: 86400
+
+  Apple:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Apple.yaml'
+    path: ./ACL4SSR/Apple.yaml
+    interval: 86400
+
+  Bahamut:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Bahamut.yaml'
+    path: ./ACL4SSR/Bahamut.yaml
+    interval: 86400
+
+  Bilibili:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Bilibili.yaml'
+    path: ./ACL4SSR/Bilibili.yaml
+    interval: 86400
+
+  BilibiliHMT:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/BilibiliHMT.yaml'
+    path: ./ACL4SSR/BilibiliHMT.yaml
+    interval: 86400
+
+  Blizzard:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Blizzard.yaml'
+    path: ./ACL4SSR/Blizzard.yaml
+    interval: 86400
+
+  Developer:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Developer.yaml'
+    path: ./ACL4SSR/Developer.yaml
+    interval: 86400
+
+  DisneyPlus:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/DisneyPlus.yaml'
+    path: ./ACL4SSR/DisneyPlus.yaml
+    interval: 86400
+
+  EHGallery:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/EHGallery.yaml'
+    path: ./ACL4SSR/EHGallery.yaml
+    interval: 86400
+
+  Epic:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Epic.yaml'
+    path: ./ACL4SSR/Epic.yaml
+    interval: 86400
+
+  Google:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Google.yaml'
+    path: ./ACL4SSR/Google.yaml
+    interval: 86400
+
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/GoogleCN.yaml'
+    path: ./ACL4SSR/GoogleCN.yaml
+    interval: 86400
+
+  GoogleFCM:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/GoogleFCM.yaml'
+    path: ./ACL4SSR/GoogleFCM.yaml
+    interval: 86400
+
+  HBO:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/HBO.yaml'
+    path: ./ACL4SSR/HBO.yaml
+    interval: 86400
+
+  Microsoft:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Microsoft.yaml'
+    path: ./ACL4SSR/Microsoft.yaml
+    interval: 86400
+
+  NetEaseMusic:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/NetEaseMusic.yaml'
+    path: ./ACL4SSR/NetEaseMusic.yaml
+    interval: 86400
+
+  Netflix:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Netflix.yaml'
+    path: ./ACL4SSR/Netflix.yaml
+    interval: 86400
+
+  OneDrive:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/OneDrive.yaml'
+    path: ./ACL4SSR/OneDrive.yaml
+    interval: 86400
+
+  Porn:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Porn.yaml'
+    path: ./ACL4SSR/Porn.yaml
+    interval: 86400
+
+  Scholar:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Scholar.yaml'
+    path: ./ACL4SSR/Scholar.yaml
+    interval: 86400
+
+  Sony:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Sony.yaml'
+    path: ./ACL4SSR/Sony.yaml
+    interval: 86400
+
+  Spotify:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Spotify.yaml'
+    path: ./ACL4SSR/Spotify.yaml
+    interval: 86400
+
+  Steam:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Steam.yaml'
+    path: ./ACL4SSR/Steam.yaml
+    interval: 86400
+
+  SteamCN:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/SteamCN.yaml'
+    path: ./ACL4SSR/SteamCN.yaml
+    interval: 86400
+
+  Telegram:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Telegram.yaml'
+    path: ./ACL4SSR/Telegram.yaml
+    interval: 86400
+
+  Xbox:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/Xbox.yaml'
+    path: ./ACL4SSR/Xbox.yaml
+    interval: 86400
+
+  YouTube:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Ruleset/YouTube.yaml'
+    path: ./ACL4SSR/YouTube.yaml
+    interval: 86400
+
+  BanAD:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanAD.yaml'
+    path: ./ACL4SSR/BanAD.yaml
+    interval: 86400
+
+  BanEasyList:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanEasyList.yaml'
+    path: ./ACL4SSR/BanEasyList.yaml
+    interval: 86400
+
+  BanEasyListChina:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanEasyListChina.yaml'
+    path: ./ACL4SSR/BanEasyListChina.yaml
+    interval: 86400
+
+  BanEasyPrivacy:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanEasyPrivacy.yaml'
+    path: ./ACL4SSR/BanEasyPrivacy.yaml
+    interval: 86400
+
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/BanProgramAD.yaml'
+    path: ./ACL4SSR/BanProgramAD.yaml
+    interval: 86400
+
+  ChinaCompanyIp:
+    type: http
+    behavior: ipcidr
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaCompanyIp.yaml'
+    path: ./ACL4SSR/ChinaCompanyIp.yaml
+    interval: 86400
+
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaDomain.yaml'
+    path: ./ACL4SSR/ChinaDomain.yaml
+    interval: 86400
+
+  ChinaIp:
+    type: http
+    behavior: ipcidr
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaIp.yaml'
+    path: ./ACL4SSR/ChinaIp.yaml
+    interval: 86400
+
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ChinaMedia.yaml'
+    path: ./ACL4SSR/ChinaMedia.yaml
+    interval: 86400
+
+  Download:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/Download.yaml'
+    path: ./ACL4SSR/Download.yaml
+    interval: 86400
+
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/LocalAreaNetwork.yaml'
+    path: ./ACL4SSR/LocalAreaNetwork.yaml
+    interval: 86400
+
+  ProxyGFWlist:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ProxyGFWlist.yaml'
+    path: ./ACL4SSR/ProxyGFWlist.yaml
+    interval: 86400
+
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/ProxyMedia.yaml'
+    path: ./ACL4SSR/ProxyMedia.yaml
+    interval: 86400
+
+  UnBan:
+    type: http
+    behavior: classical
+    url: 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Providers/UnBan.yaml'
+    path: ./ACL4SSR/UnBan.yaml
     interval: 86400
 
 rules:
-  # 自定义
-  - DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
-  - DOMAIN,dl.google.com,DIRECT
-  - DOMAIN,mtalk.google.com,DIRECT
-  - DOMAIN,safebrowsing.googleapis.com,DIRECT
-  # github raw
-  - DOMAIN-SUFFIX,githubusercontent.com,PROXY
-  # steam
-  - DOMAIN-SUFFIX,wmsj.cn,DIRECT
-  - DOMAIN-SUFFIX,wmsjsteam.com,DIRECT
-  - DOMAIN-SUFFIX,steamchina.com,DIRECT
-  # 金山云
-  - DOMAIN,dl.steam.clngaa.com,DIRECT
-  - DOMAIN,dl.steam.ksyna.com,DIRECT
-  # 白山云
-  - DOMAIN,st.dl.bscstorage.net,DIRECT
-  - DOMAIN,st.dl.eccdnx.com,DIRECT
-  - DOMAIN,st.dl.pinyuncloud.com,DIRECT
-  # 华为云
-  - DOMAIN,steampipe.steamcontent.tnkjmec.com,DIRECT
-  # 网宿
-  - DOMAIN,steampowered.com.8686c.com,DIRECT
-  - DOMAIN,steamstatic.com.8686c.com,DIRECT
-  # 阿里邮箱
-  - DOMAIN-SUFFIX,mxhichina.com,DIRECT
-  # 公司
-  - DOMAIN,sg-cs.alibaba.com,REJECT
-  - DOMAIN,ocs-oneagent-server.alibaba.com,REJECT
-  - DOMAIN,pcs-sdk-server-inner.alibaba.com,REJECT
-  - DOMAIN,alimei-sub.alibaba.com,REJECT
-  # stt
-  - DOMAIN-SUFFIX,sttlink.com,PROXY
-
-  # 订阅
-  - RULE-SET,applications,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,tld-not-cn,PROXY
-  - RULE-SET,gfw,PROXY
-  - RULE-SET,greatfire,PROXY
-  - RULE-SET,telegramcidr,PROXY
-  - MATCH,DIRECT
+  # 广告
+  - RULE-SET,BanAD,REJECT
+  - RULE-SET,BanEasyList,REJECT
+  - RULE-SET,BanEasyListChina,REJECT
+  - RULE-SET,BanEasyPrivacy,REJECT
+  - RULE-SET,BanProgramAD,REJECT
+  # 国内
+  - RULE-SET,ChinaCompanyIp,DIRECT
+  - RULE-SET,ChinaDomain,DIRECT
+  - RULE-SET,ChinaIp,DIRECT
+  # 本地
+  - RULE-SET,Download,DIRECT
+  - RULE-SET,LocalAreaNetwork,DIRECT
+  # GFW
+  - RULE-SET,ProxyGFWlist,[PROXY]
+  # 白名单
+  - RULE-SET,UnBan,DIRECT
+  # 媒体
+  - RULE-SET,ChinaMedia,DIRECT
+  - RULE-SET,ProxyMedia,[PROXY]
+  - RULE-SET,AbemaTV,[PROXY]
+  - RULE-SET,Bilibili,DIRECT
+  - RULE-SET,BilibiliHMT,[PROXY]
+  - RULE-SET,DisneyPlus,[PROXY]
+  - RULE-SET,HBO,[PROXY]
+  - RULE-SET,NetEaseMusic,DIRECT
+  - RULE-SET,Netflix,[PROXY]
+  - RULE-SET,Sony,[PROXY]
+  - RULE-SET,Spotify,[PROXY]
+  - RULE-SET,YouTube,[PROXY]
+  # 购物
+  - RULE-SET,Amazon,[PROXY]
+  - RULE-SET,AmazonIp,[PROXY]
+  - RULE-SET,Apple,[PROXY]
+  # 游戏
+  - RULE-SET,Bahamut,[PROXY]
+  - RULE-SET,Blizzard,DIRECT
+  - RULE-SET,Epic,[PROXY]
+  - RULE-SET,Steam,[PROXY]
+  - RULE-SET,SteamCN,DIRECT
+  - RULE-SET,Xbox,[PROXY]
+  # 开发
+  - RULE-SET,Developer,[PROXY]
+  # 18
+  - RULE-SET,EHGallery,[PROXY]
+  - RULE-SET,Porn,[PROXY]
+  # 学术
+  - RULE-SET,Scholar,[PROXY]
+  # 其他
+  - RULE-SET,Adobe,[PROXY]
+  - RULE-SET,Google,[PROXY]
+  - RULE-SET,GoogleCN,DIRECT
+  - RULE-SET,GoogleFCM,[PROXY]
+  - RULE-SET,Microsoft,[PROXY]
+  - RULE-SET,OneDrive,[PROXY]
+  - RULE-SET,Telegram,[PROXY]
+  # 必须
+  - MATCH,[PROXY]

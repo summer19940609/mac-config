@@ -350,47 +350,47 @@ rules:
   - RULE-SET,Download,DIRECT
   - RULE-SET,LocalAreaNetwork,DIRECT
   # GFW
-  - RULE-SET,ProxyGFWlist,[PROXY]
+  - RULE-SET,ProxyGFWlist,PROXY
   # 白名单
   - RULE-SET,UnBan,DIRECT
   # 媒体
   - RULE-SET,ChinaMedia,DIRECT
-  - RULE-SET,ProxyMedia,[PROXY]
-  - RULE-SET,AbemaTV,[PROXY]
+  - RULE-SET,ProxyMedia,PROXY
+  - RULE-SET,AbemaTV,PROXY
   - RULE-SET,Bilibili,DIRECT
-  - RULE-SET,BilibiliHMT,[PROXY]
-  - RULE-SET,DisneyPlus,[PROXY]
-  - RULE-SET,HBO,[PROXY]
+  - RULE-SET,BilibiliHMT,PROXY
+  - RULE-SET,DisneyPlus,PROXY
+  - RULE-SET,HBO,PROXY
   - RULE-SET,NetEaseMusic,DIRECT
-  - RULE-SET,Netflix,[PROXY]
-  - RULE-SET,Sony,[PROXY]
-  - RULE-SET,Spotify,[PROXY]
-  - RULE-SET,YouTube,[PROXY]
+  - RULE-SET,Netflix,PROXY
+  - RULE-SET,Sony,PROXY
+  - RULE-SET,Spotify,PROXY
+  - RULE-SET,YouTube,PROXY
   # 购物
-  - RULE-SET,Amazon,[PROXY]
-  - RULE-SET,AmazonIp,[PROXY]
-  - RULE-SET,Apple,[PROXY]
+  - RULE-SET,Amazon,PROXY
+  - RULE-SET,AmazonIp,PROXY
+  - RULE-SET,Apple,PROXY
   # 游戏
-  - RULE-SET,Bahamut,[PROXY]
+  - RULE-SET,Bahamut,PROXY
   - RULE-SET,Blizzard,DIRECT
-  - RULE-SET,Epic,[PROXY]
-  - RULE-SET,Steam,[PROXY]
+  - RULE-SET,Epic,PROXY
+  - RULE-SET,Steam,PROXY
   - RULE-SET,SteamCN,DIRECT
-  - RULE-SET,Xbox,[PROXY]
+  - RULE-SET,Xbox,PROXY
   # 开发
-  - RULE-SET,Developer,[PROXY]
+  - RULE-SET,Developer,PROXY
   # 18
-  - RULE-SET,EHGallery,[PROXY]
-  - RULE-SET,Porn,[PROXY]
+  - RULE-SET,EHGallery,PROXY
+  - RULE-SET,Porn,PROXY
   # 学术
-  - RULE-SET,Scholar,[PROXY]
+  - RULE-SET,Scholar,PROXY
   # 其他
-  - RULE-SET,Adobe,[PROXY]
-  - RULE-SET,Google,[PROXY]
+  - RULE-SET,Adobe,PROXY
+  - RULE-SET,Google,PROXY
   - RULE-SET,GoogleCN,DIRECT
-  - RULE-SET,GoogleFCM,[PROXY]
-  - RULE-SET,Microsoft,[PROXY]
-  - RULE-SET,OneDrive,[PROXY]
-  - RULE-SET,Telegram,[PROXY]
+  - RULE-SET,GoogleFCM,PROXY
+  - RULE-SET,Microsoft,PROXY
+  - RULE-SET,OneDrive,PROXY
+  - RULE-SET,Telegram,PROXY
   # 必须
-  - MATCH,[PROXY]
+  - MATCH,PROXY

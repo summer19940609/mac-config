@@ -24,7 +24,6 @@ proxy-groups:
     use:
       - JiChang
     proxies:
-      - PROXY
       - DIRECT
 
 rule-providers:

@@ -12,3 +12,6 @@ DOMAIN-SUFFIX,qpic.cn
 DOMAIN-SUFFIX,i1069.net
 DOMAIN-SUFFIX,myapi.us
 DOMAIN-SUFFIX,wenjiushuobuzhidao.top
+
+DOMAIN,steamcdn-a.akamaihd.net
+DOMAIN-SUFFIX,steamserver.net

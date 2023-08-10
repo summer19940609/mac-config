@@ -5,3 +5,6 @@ DOMAIN,alimei-sub.alibaba.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN,ocsp.apple.com
 DOMAIN,ocsp2.apple.com
+
+IP-CIDR,32.64.63.4/32
+IP-CIDR,3.4.0.0/32

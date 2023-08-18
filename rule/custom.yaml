@@ -1,0 +1,20 @@
+[custom]
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/direct.list
+ruleset=🛑 全球拦截,https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/reject.list
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/proxy.list
+
+ruleset=💬 OpenAi,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ruleset/SteamCN.list
+ruleset=🎯 全球直连,rules/ACL4SSR/Clash/Ruleset/GoogleCN.list
+
+ruleset=🚀 节点选择,rules/ACL4SSR/Clash/ProxyGFWlist.list
+ruleset=🐟 漏网之鱼,[]FINAL
+
+custom_proxy_group=🚀 节点选择`select`[]DIRECT`.*
+custom_proxy_group=💬 OpenAi`select`[]🚀 节点选择`[]🎯 全球直连`.*
+custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🚀 节点选择`
+custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
+custom_proxy_group=🐟 漏网之鱼`select`[]🚀 节点选择`[]🎯 全球直连`.*
+
+enable_rule_generator=true
+overwrite_original_rules=true

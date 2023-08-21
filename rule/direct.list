@@ -17,3 +17,6 @@ DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamserver.net
 
 DOMAIN-SUFFIX,atlassian.com
+
+DOMAIN,gs2.ww.prod.dl.playstation.net.com
+DOMAIN,gst.prod.dl.playstation.net

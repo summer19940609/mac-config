@@ -5,3 +5,5 @@ DOMAIN,alimei-sub.alibaba.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN,ocsp.apple.com
 DOMAIN,ocsp2.apple.com
+
+DOMAIN,api.open.oppomobile.com

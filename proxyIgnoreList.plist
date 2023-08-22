@@ -9,7 +9,7 @@
 	<string>localhost</string>
 	<string>*.local</string>
 	<string>*.mweer.com</string>
-    	<string>*.mwbyd.cn</string>
-    	<string>*.mwee.cn</string>
+  <string>*.mwbyd.cn</string>
+  <string>*.mwee.cn</string>
 </array>
 </plist>

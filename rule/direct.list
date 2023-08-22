@@ -23,3 +23,5 @@ DOMAIN,gst.prod.dl.playstation.net
 
 PROCESS-NAME,QQ
 PROCESS-NAME,WeChat
+PROCESS-NAME,Charles
+PROCESS-NAME,EasyConnect

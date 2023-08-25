@@ -12,6 +12,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Delay Execution
+      run: sleep 360 # 等待360秒（6分钟）
+
     - name: Run clear_jsdelivr_cache.sh
       run: |
         chmod +x rule/clear_jsdelivr_cache.sh

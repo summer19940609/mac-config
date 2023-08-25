@@ -14,5 +14,5 @@ jobs:
 
     - name: Run clear_jsdelivr_cache.sh
       run: |
-        chmod +x mac-config/rule/clear_jsdelivr_cache.sh
-        ./mac-config/rule/clear_jsdelivr_cache.sh
+        chmod +x rule/clear_jsdelivr_cache.sh
+        ./rule/clear_jsdelivr_cache.sh

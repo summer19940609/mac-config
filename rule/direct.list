@@ -21,4 +21,4 @@ PROCESS-NAME,EasyConnect
 
 DOMAIN,time-macos.apple.com
 
-IP-CIDR,100.100.2.136/32
+IP-CIDR,100.100.0.0/16

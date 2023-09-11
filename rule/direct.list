@@ -20,3 +20,5 @@ DOMAIN,gst.prod.dl.playstation.net
 PROCESS-NAME,EasyConnect
 
 DOMAIN,time-macos.apple.com
+
+IP-CIDR,100.100.2.136/32

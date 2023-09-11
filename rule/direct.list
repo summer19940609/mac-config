@@ -1,3 +1,5 @@
+IP-CIDR,100.100.0.0/16
+
 DOMAIN-KEYWORD,mwee
 DOMAIN-KEYWORD,mwbyd
 DOMAIN-SUFFIX,9now.net
@@ -20,5 +22,3 @@ DOMAIN,gst.prod.dl.playstation.net
 PROCESS-NAME,EasyConnect
 
 DOMAIN,time-macos.apple.com
-
-IP-CIDR,100.100.0.0/16

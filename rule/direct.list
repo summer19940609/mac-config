@@ -20,3 +20,6 @@ DOMAIN,gst.prod.dl.playstation.net
 PROCESS-NAME,EasyConnect
 
 DOMAIN,time-macos.apple.com
+
+DOMAIN,ad.12306.cn
+DOMAIN,sdkapp.uve.weibo.com

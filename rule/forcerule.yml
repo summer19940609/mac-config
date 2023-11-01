@@ -1,9 +1,9 @@
-port: 7890
-socks-port: 7891
-allow-lan: false
-mode: Rule
-log-level: info
-external-controller: :9090
+# port: 7890
+# socks-port: 7891
+# allow-lan: false
+# mode: Rule
+# log-level: info
+# external-controller: :9090
 dns:
   enabled: true
   nameserver:
@@ -16,6 +16,3 @@ dns:
     - tls://dns.google:853
   nameserver-policy:
     "+.mwbyd.cn": "100.100.2.136"
-Proxy: ~
-Proxy Group: ~
-Rule: ~

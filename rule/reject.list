@@ -5,9 +5,6 @@
 
 DOMAIN-SUFFIX,launchdarkly.com
 
-DOMAIN,ocsp.apple.com
-DOMAIN,ocsp2.apple.com
-
 DOMAIN,api.open.oppomobile.com
 # macOS 上的 photoshop 在开启 clash 的情况下如何避免盗版检测
 DOMAIN,ic.adobe.io

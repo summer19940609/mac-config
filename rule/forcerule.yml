@@ -12,7 +12,5 @@ dns:
   fallback:
     - 8.8.8.8
     - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
   nameserver-policy:
     "+.mwbyd.cn": "100.100.2.136"

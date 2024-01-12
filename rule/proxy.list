@@ -8,8 +8,10 @@ DOMAIN-SUFFIX,sprig.com
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,imgc.cc
 
+# clash 配置更新常用订阅网址
 DOMAIN-SUFFIX,v1.mk
 DOMAIN,sub.xeton.dev
+DOMAIN,sub.id9.cc
 
 DOMAIN,download.dbeaver.com
 

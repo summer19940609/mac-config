@@ -1,11 +1,3 @@
-# DOMAIN,sg-cs.alibaba.com
-# DOMAIN,ocs-oneagent-server.alibaba.com
-# DOMAIN,pcs-sdk-server-inner.alibaba.com
-# DOMAIN,alimei-sub.alibaba.com
-# DOMAIN,oneagent-msg.alibaba.com
-
-DOMAIN-SUFFIX,launchdarkly.com
-
 DOMAIN,api.open.oppomobile.com
 # macOS 上的 photoshop 在开启 clash 的情况下如何避免盗版检测
 DOMAIN,ic.adobe.io

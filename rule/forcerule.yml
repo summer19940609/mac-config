@@ -13,10 +13,16 @@ dns:
     - localhost.ptlogin2.qq.com
   nameserver:
     - 223.5.5.5
+    - https://dns.alidns.com/dns-query
   fallback:
     - 8.8.8.8
     - 1.1.1.1
     - tls://dns.rubyfish.cn:853
+    - https://cloudflare-dns.com/dns-query
+  fallback-filter:
+     geoip: true # 默认
+     ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
+       - 240.0.0.0/4
   nameserver-policy:
     "+.mwbyd.cn": "100.100.2.136"
     "+.test.cn": "100.100.2.136"

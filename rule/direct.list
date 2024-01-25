@@ -27,3 +27,6 @@ DOMAIN,sdkapp.uve.weibo.com
 # 谷歌下载
 DOMAIN,xn--ngstr-lra8j.com
 DOMAIN,services.googleapis.cn
+
+PROCESS-NAME,CloudShell
+PROCESS-NAME,AliLangClient

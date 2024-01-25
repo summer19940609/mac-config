@@ -30,3 +30,4 @@ DOMAIN,services.googleapis.cn
 
 PROCESS-NAME,CloudShell
 PROCESS-NAME,AliLangClient
+PROCESS-NAME,EasyConnect

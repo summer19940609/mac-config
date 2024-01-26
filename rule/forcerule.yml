@@ -12,14 +12,14 @@ dns:
     - '*.lan'
     - localhost.ptlogin2.qq.com
   nameserver:
-    - 223.5.5.5 # 阿里DNS
-    - 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
-    - 114.114.114.114 # 114DNS
-    - https://dns.alidns.com/dns-query # 阿里 DoH DNS
+    - 223.5.5.5
+    - 119.29.29.29
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fallback:
     - 8.8.8.8
-    - 1.1.1.1
-    - https://dns.rubyfish.cn/dns-query
+    - 8.8.4.4
+    - tls://1.0.0.1:853
     - tls://dns.google:853
   fallback-filter:
      geoip: true # 默认

@@ -1,0 +1,51 @@
+payload:
+  - DOMAIN-SUFFIX,x.com
+
+  - DOMAIN-SUFFIX,v2ex.com
+
+  - DOMAIN-SUFFIX,poe.com
+  - DOMAIN-SUFFIX,poecdn.net
+  - DOMAIN-SUFFIX,quoracdn.net
+  - DOMAIN-SUFFIX,recaptcha.net
+  - DOMAIN-SUFFIX,singular.net
+  - DOMAIN-SUFFIX,sprig.com
+
+  - DOMAIN-SUFFIX,imgur.com
+  - DOMAIN-SUFFIX,imgc.cc
+
+# clash 配置更新常用订阅网址
+  - DOMAIN-SUFFIX,v1.mk
+  - DOMAIN,sub.xeton.dev
+  - DOMAIN,sub.id9.cc
+
+  - DOMAIN,download.dbeaver.com
+
+  - DOMAIN,dl.pstmn.io
+  - DOMAIN,sentry-app.postmanlabs.com
+  - DOMAIN,update.getpostman.com
+  - DOMAIN,www.getpostman.com
+  - DOMAIN,in.appcenter.ms
+
+  - DOMAIN-KEYWORD,cygames
+  - DOMAIN-KEYWORD,starlight-stage
+  - DOMAIN-KEYWORD,umamusume
+  - DOMAIN-SUFFIX,mbga.jp
+  - DOMAIN-SUFFIX,granbluefantasy.jp
+  - DOMAIN-SUFFIX,worldflipper.jp
+  - DOMAIN-SUFFIX,mbga-platform.jp
+  - DOMAIN-SUFFIX,blhx.danmu9.com
+  - DOMAIN-SUFFIX,priconne-redive.jp
+  - DOMAIN-SUFFIX,worldflipper.akamaized.net
+
+  - DOMAIN-SUFFIX,vercel.app
+
+  - DOMAIN,edgeservices.bing.com
+  - DOMAIN,sydney.bing.com
+
+  - DOMAIN-KEYWORD,missav
+
+  - DOMAIN-SUFFIX,wsav.me
+
+  - DOMAIN-SUFFIX,jable.tv
+  - DOMAIN-SUFFIX,netflav.com
+  - DOMAIN-SUFFIX,javdb.com

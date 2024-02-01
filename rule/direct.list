@@ -35,3 +35,6 @@ PROCESS-NAME,EasyConnect
 PROCESS-NAME,ECAgent
 PROCESS-NAME,ECAgentProxy
 PROCESS-NAME,EasyMonitor
+
+# Amy 机场域名
+DOMAIN-SUFFIX,hknoyk.xyz

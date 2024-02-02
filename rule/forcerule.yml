@@ -11,6 +11,10 @@ dns:
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
+    - '*.mwbyd.cn'
+    - '*.9now.net'
+    - '*.mwee.cn'
+    - '*.mweer.cn'
     - '*.localdomain'
     - '*.example'
     - '*.invalid'

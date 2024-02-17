@@ -16,6 +16,9 @@ dns:
     - '*.localhost'
     - '*.test'
     - '*.local'
+    - '*.mwbyd.cn'
+    - '*.9now.net'
+    - 'localhost'
   nameserver:
     - 223.5.5.5
     - 119.29.29.29

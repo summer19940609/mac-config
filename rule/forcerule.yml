@@ -18,21 +18,18 @@ dns:
     - '*.local'
     - '*.mwbyd.cn'
     - '*.9now.net'
+    - '*.test.cn'
     - 'localhost'
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    # - https://doh.pub/dns-query
+    # - https://dns.alidns.com/dns-query
   fallback:
     - 8.8.8.8
     - 8.8.4.4
     - tls://1.0.0.1:853
     - tls://dns.google:853
-  fallback-filter:
-     geoip: true
-     ipcidr:    # 在这个网段内的 IP 地址会被考虑为被污染的 IP
-       - 240.0.0.0/4
-  nameserver-policy:
-    "+.mwbyd.cn": "100.100.2.136"
-    "+.test.cn": "100.100.2.136"
+  # nameserver-policy:
+  #   "+.mwbyd.cn": "100.100.2.136"
+  #   "+.test.cn": "100.100.2.136"

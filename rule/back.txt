@@ -1,0 +1,138 @@
+// ==UserScript==
+// @name Github Time Replace
+// @namespace http://tampermonkey.net/
+// @version 0.1
+// @description try to take over the world!
+// @author You
+// @match https://github.com/*
+// @icon https://www.google.com/s2/favicons?domain=github.com
+// @grant none
+// ==/UserScript==
+
+(function () {
+    'use strict';
+    function replaceTime() {
+        const items = document.getElementsByTagName("relative-time")
+        for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            item.innerHTML = item.title
+        }
+    }
+    replaceTime();
+    var observer = new MutationObserver(function (mutations, observer) {
+        replaceTime();
+    });
+    var body = document.querySelector('body');
+    var options = { 'childList': true };
+    observer.observe(body, options);
+
+})();
+
+
+// ==UserScript==
+// @name         自动点击登录按钮
+// @namespace    your-namespace
+// @version      1.0
+// @description  在页面中按下Enter键时自动点击登录按钮
+// @include      https://proto.mwee.cn/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            var loginButton = document.querySelector('button.btn.btn-primary.hidden-xs');
+
+            if (loginButton) {
+                loginButton.click();
+            }
+        }
+    });
+})();
+
+// ==UserScript==
+// @name         自动点击登录按钮
+// @namespace    http://your.namespace.com
+// @version      0.1
+// @description  在https://cas.mwee.cn/login页面上自动点击登录按钮
+// @author       You
+// @match        https://cas.mwee.cn/login
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // 等待页面加载完成
+    window.addEventListener('load', function() {
+        // 查找登录按钮的元素
+        var loginBtn = document.getElementById('loginBtn1');
+
+        // 检查是否找到按钮元素
+        if (loginBtn) {
+            // 模拟点击按钮
+            loginBtn.click();
+        } else {
+            console.log('未找到登录按钮');
+        }
+    });
+})();
+
+// ==UserScript==
+// @name         自动登录脚本
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  自动填写登录表单并点击登录按钮
+// @author       您的名字
+// @match        http://auto.mwbyd.cn/pages/login.html
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // 获取账号输入框和密码输入框
+    var usernameInput = document.getElementById('LUsername');
+    var passwordInput = document.getElementById('LPassword');
+
+    // 填写账号和密码
+    usernameInput.value = '17612156844';
+    passwordInput.value = 'Xnj19940609';
+
+    // 点击登录按钮
+    var loginButton = document.getElementById('login_btn');
+    loginButton.click();
+})();
+
+// ==UserScript==
+// @name         AUTO快捷
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        http://auto.mwbyd.cn/pages/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=mwbyd.cn
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    const arr = [
+        { href: 'http://auto.mwbyd.cn/pages/flow.html?templateId=6058&projectId=649', project: 'CPAPI_Msh'},
+        { href: 'http://auto.mwbyd.cn/pages/flow.html?templateId=5155&projectId=649', project: 'QueueBookBasic'},
+        { href: 'http://auto.mwbyd.cn/pages/flow.html?templateId=2916&projectId=649', project: 'CPAPI_AppNode'},
+        { href: 'http://auto.mwbyd.cn/pages/flow.html?templateId=5930&projectId=2104', project: 'MSHPlatform'},
+        { href: 'http://auto.mwbyd.cn/pages/flow.html?templateId=4927&projectId=788', project: 'OperateNode' },
+        { href: 'http://auto.mwbyd.cn/pages/flow.html?templateId=5674&projectId=649', project: 'OperateWorker' },
+    ]
+    let html = ''
+    arr.forEach(v => {
+        html += `<a class="navbar-brand" style="color: red;" target="_brank" href=${v.href}>${v.project}</a>`
+    })
+    $('.navbar').append(html)
+
+})();
+
+

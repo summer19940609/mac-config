@@ -51,4 +51,5 @@ DOMAIN-SUFFIX,javdb.com
 
 # amy
 DOMAIN-SUFFIX,amysecure.com
-DOMAIN-SUFFIX,amytele.com
+# amy 订阅
+DOMAIN-SUFFIX,amyconvert.com

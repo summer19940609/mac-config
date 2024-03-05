@@ -34,5 +34,5 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
   nameserver-policy:
-    "+.mwbyd.cn": "100.100.2.136"
-    "+.test.cn": "100.100.2.136"
+    "+.mwbyd.cn": "dhcp://en0"
+    "+.test.cn": "dhcp://en0"

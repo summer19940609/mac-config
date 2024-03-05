@@ -4,10 +4,12 @@ allow-lan: false
 mode: Rule
 ipv6: false
 log-level: warning
-external-controller: :9090
+external-controller: 127.0.0.1:9090
 dns:
   enabled: true
+  listen: 0.0.0.0:53
   ipv6: false
+  fake-ip-range: 198.18.0.1/16 # Fake IP 地址池 CIDR
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
@@ -23,6 +25,7 @@ dns:
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
+    - dhcp://en0 # 来自 dhcp 的 dns
     # - https://doh.pub/dns-query
     # - https://dns.alidns.com/dns-query
   fallback:
@@ -30,6 +33,6 @@ dns:
     - 8.8.4.4
     - tls://1.0.0.1:853
     - tls://dns.google:853
-  nameserver-policy:
-    "+.mwbyd.cn": "100.100.2.136"
-    "+.test.cn": "100.100.2.136"
+  # nameserver-policy:
+  #   "+.mwbyd.cn": "100.100.2.136"
+  #   "+.test.cn": "100.100.2.136"

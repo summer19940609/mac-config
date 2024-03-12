@@ -37,3 +37,5 @@ dns:
   nameserver-policy:
     "+.mwbyd.cn": "100.100.2.136"
     "+.test.cn": "100.100.2.136"
+    'www.baidu.com': '114.114.114.114'
+    '+.internal.crop.com': '10.0.0.1'

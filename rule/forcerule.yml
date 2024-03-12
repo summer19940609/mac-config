@@ -12,7 +12,7 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16   # Fake IP 地址池 CIDR
   fake-ip-filter:
-    - '*.lan'
+    - "*.lan"
     - localhost.ptlogin2.qq.com
   default-nameserver:
     - 223.5.5.5
@@ -31,11 +31,11 @@ dns:
     ipcidr:
       - 240.0.0.0/4
     domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
+      - "+.google.com"
+      - "+.facebook.com"
+      - "+.youtube.com"
   nameserver-policy:
     "+.mwbyd.cn": "100.100.2.136"
     "+.test.cn": "100.100.2.136"
-    'www.baidu.com': '114.114.114.114'
-    '+.internal.crop.com': '10.0.0.1'
+    "www.baidu.com": "114.114.114.114"
+    "+.internal.crop.com": "10.0.0.1"

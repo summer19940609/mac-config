@@ -20,6 +20,7 @@ dns:
   nameserver:
     - 223.5.5.5
     - 114.114.114.114
+    - tls://dns.rubyfish.cn:853
     - dhcp://en0
   fallback:
     - 8.8.8.8

@@ -25,6 +25,7 @@ dns:
   fallback:
     - 8.8.8.8
     - 8.8.4.4
+    - https://dns.rubyfish.cn/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN

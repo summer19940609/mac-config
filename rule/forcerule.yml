@@ -19,6 +19,7 @@ dns:
     - 8.8.8.8
   nameserver:
     - https://223.6.6.6/dns-query#h3=true
+    - tls://dns.rubyfish.cn:853
     - 223.5.5.5
     - dhcp://en0
   fallback:
@@ -30,10 +31,6 @@ dns:
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-    domain:
-      - "+.google.com"
-      - "+.facebook.com"
-      - "+.youtube.com"
   nameserver-policy:
     "+.mwbyd.cn": "100.100.2.136"
     "+.test.cn": "100.100.2.136"

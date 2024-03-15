@@ -19,3 +19,6 @@ DOMAIN-SUFFIX,exinariuminix.info
 # ali
 DOMAIN,oneagent-filter.alibaba-inc.com
 
+PROCESS-NAME,CloudShell
+PROCESS-NAME,AliLangClient
+

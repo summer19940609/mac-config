@@ -11,6 +11,7 @@ DOMAIN-SUFFIX,sprig.com
 
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,imgc.cc
+DOMAIN-SUFFIX,imgse.com
 
 # clash 配置更新常用订阅网址
 DOMAIN-SUFFIX,v1.mk

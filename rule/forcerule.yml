@@ -38,11 +38,8 @@ dns:
   nameserver-policy:
     "+.mwbyd.cn": "100.100.2.136"
     "+.test.cn": "100.100.2.136"
-
-geodata-mode: false
-geodata-loader: standard
 geo-auto-update: true
-geo-update-interval: 24
+geo-update-interval: 6
 geox-url:
   geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
   geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"

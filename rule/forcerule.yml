@@ -39,7 +39,7 @@ dns:
     "+.mwbyd.cn": "100.100.2.136"
     "+.test.cn": "100.100.2.136"
 
-geodata-mode: mmdb
+geodata-mode: false
 geodata-loader: standard
 geo-auto-update: true
 geo-update-interval: 24

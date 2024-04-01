@@ -47,3 +47,7 @@ dns:
   nameserver-policy:
     "+.mwbyd.cn": "100.100.2.136"
     "+.test.cn": "100.100.2.136"
+    "geosite:cn,private,apple":
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    "geosite:category-ads-all": rcode://success

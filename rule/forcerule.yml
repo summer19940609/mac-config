@@ -26,10 +26,9 @@ dns:
   default-nameserver:
     - 223.5.5.5
     - 8.8.8.8
-    - 1.1.1.1
   nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query#h3=true
+    - https://doh.pub/dns-query 
     # - dhcp://en0
   fallback-filter:
     geoip: true

@@ -42,17 +42,17 @@ DOMAIN-SUFFIX,vercel.app
 DOMAIN,edgeservices.bing.com
 DOMAIN,sydney.bing.com
 
-DOMAIN-KEYWORD,missav
-
 DOMAIN-SUFFIX,wsav.me
-
+DOMAIN-KEYWORD,missav
 DOMAIN-SUFFIX,jable.tv
 DOMAIN-SUFFIX,netflav.com
 DOMAIN-SUFFIX,javdb.com
+DOMAIN-SUFFIX,sex.td
+DOMAIN-SUFFIX,njav.tv
 
 # amy
 DOMAIN-SUFFIX,amysecure.com
 # amy 订阅
 DOMAIN-SUFFIX,amyconvert.com
-
+# 订阅短链
 DOMAIN-SUFFIX,suo.yt

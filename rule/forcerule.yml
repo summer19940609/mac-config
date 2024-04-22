@@ -29,7 +29,7 @@ dns:
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-    - dhcp://en0
+    # - dhcp://en0
   fallback-filter:
     geoip: true
     geoip-code: CN

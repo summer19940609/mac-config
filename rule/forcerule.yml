@@ -33,9 +33,5 @@ dns:
     - https://doh.pub/dns-query
     # - dhcp://en0
   nameserver-policy:
-    "+.mwbyd.cn": 
-      - 100.100.2.136
-      - 100.100.2.138
-    "+.test.cn": 
-      - 100.100.2.136
-      - 100.100.2.138
+    '+.mwbyd.cn': ['10.88.200.1']
+    '+.test.cn': ['10.88.200.1'] 

@@ -29,12 +29,12 @@ dns:
     - https://1.1.1.1/dns-query
     # - dhcp://en0
   nameserver-policy:
-    "geosite:cn,private":
-      - https://223.5.5.5/dns-query#h3=true
-      - https://223.6.6.6/dns-query#h3=true
     "+.mwbyd.cn": 
       - 100.100.2.136
       - 100.100.2.138
     "+.test.cn": 
       - 100.100.2.136
       - 100.100.2.138
+    "geosite:cn,private":
+      - https://223.5.5.5/dns-query#h3=true
+      - https://223.6.6.6/dns-query#h3=true

@@ -31,17 +31,6 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     # - dhcp://en0
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
-    ipcidr:
-      - 240.0.0.0/4
-    domain:
-      - '+.google.com'
-      - '+.facebook.com'
-      - '+.youtube.com'
   nameserver-policy:
     "+.mwbyd.cn": 
       - 100.100.2.136

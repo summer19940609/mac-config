@@ -21,17 +21,17 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-    - '+.lan'
-    - '+.local'
+    - "+.lan"
+    - "+.local"
     - localhost.ptlogin2.qq.com
   default-nameserver:
     - 223.5.5.5
     - 8.8.8.8
-    - dhcp://en0
+    # - dhcp://en0
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     # - dhcp://en0
   nameserver-policy:
-    '+.mwbyd.cn': ['10.88.200.1']
-    '+.test.cn': ['10.88.200.1'] 
+    "+.mwbyd.cn": ["10.88.200.1"]
+    "+.test.cn": ["10.88.200.1"]

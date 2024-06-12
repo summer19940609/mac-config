@@ -59,3 +59,8 @@ DOMAIN-SUFFIX,amysecure.com
 DOMAIN-SUFFIX,amyconvert.com
 # 订阅短链
 DOMAIN-SUFFIX,suo.yt
+
+# docker
+DOMAIN-SUFFIX,docker.io
+DOMAIN,hub.docker.com
+DOMAIN,production.cloudflare.docker.com

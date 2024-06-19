@@ -8,7 +8,7 @@ external-controller: 127.0.0.1:9090
 secret: "b441844acc7baea8ec021e7c47c7fec8"
 # unified-delay: true
 geo-auto-update: true
-geo-update-interval: 6
+geo-update-interval: 3
 geox-url:
   geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
   geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"

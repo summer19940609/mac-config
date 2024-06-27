@@ -25,7 +25,7 @@ tcp-concurrent: true
 
 profile:
   store-selected: true
-  store-fake-ip: true
+  store-fake-ip: false
   
 dns:
   enabled: true

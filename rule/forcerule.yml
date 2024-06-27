@@ -37,16 +37,16 @@ dns:
     - "+.lan"
     - "+.local"
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - 223.5.5.5
+    - 119.29.29.29
   proxy-server-nameserver:
-    - https://doh.pub/dns-query
+    - 223.5.5.5
   nameserver-policy:
     "+.mwbyd.cn": ["10.88.200.1"]
     "+.test.cn": ["10.88.200.1"]
     "geosite:cn,private":
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
+      - 223.5.5.5
+      - 119.29.29.29
     "geosite:geolocation-!cn":
       - "https://dns.cloudflare.com/dns-query#dns"
       - "https://dns.google/dns-query#dns"

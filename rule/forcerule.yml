@@ -9,7 +9,7 @@ secret: "b441844acc7baea8ec021e7c47c7fec8"
 
 geo-auto-update: true
 geo-update-interval: 3
-geodata-mode: true
+geodata-mode: false
 geodata-loader: standard
 geox-url:
   geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
@@ -26,7 +26,7 @@ tcp-concurrent: true
 profile:
   store-selected: true
   store-fake-ip: false
-  
+
 dns:
   enabled: true
   prefer-h3: true
@@ -43,8 +43,10 @@ dns:
   proxy-server-nameserver:
     - 223.5.5.5
   nameserver-policy:
-    "+.mwbyd.cn": ["10.88.200.1"]
-    "+.test.cn": ["10.88.200.1"]
+    "+.mwbyd.cn":
+      - 10.88.200.1
+    "+.test.cn":
+      - 10.88.200.1
     "geosite:cn,private":
       - 223.5.5.5
       - 119.29.29.29

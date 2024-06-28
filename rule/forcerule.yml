@@ -26,7 +26,7 @@ tcp-concurrent: true
 profile:
   store-selected: true
   store-fake-ip: false
-  
+
 tun:
   enable: true
   stack: mixed
@@ -34,7 +34,7 @@ tun:
     - "any:53"
   auto-route: true
   auto-detect-interface: true
-  
+
 dns:
   enabled: true
   prefer-h3: true
@@ -44,12 +44,12 @@ dns:
   fake-ip-filter:
     - "+.lan"
     - "+.local"
+  default-nameserver:
+    - 223.5.5.5
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
     - system
-  proxy-server-nameserver:
-    - 223.5.5.5
   nameserver-policy:
     "+.mwbyd.cn":
       - 10.88.200.1

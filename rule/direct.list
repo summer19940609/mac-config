@@ -42,3 +42,5 @@ DOMAIN-KEYWORD,mihome
 
 # 微信
 IP-CIDR,182.254.116.0/24
+
+DOMAIN,mirror.ghproxy.com

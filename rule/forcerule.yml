@@ -9,7 +9,7 @@ secret: "b441844acc7baea8ec021e7c47c7fec8"
 
 geo-auto-update: true
 geo-update-interval: 3
-geodata-mode: false
+geodata-mode: true
 geodata-loader: standard
 geox-url:
   geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"

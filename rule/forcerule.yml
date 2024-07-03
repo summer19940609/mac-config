@@ -48,7 +48,7 @@ dns:
   nameserver:
     - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
-    - system
+    # - system
   nameserver-policy:
     "+.mwbyd.cn":
       - 10.88.200.1

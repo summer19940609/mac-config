@@ -62,3 +62,5 @@ DOMAIN-SUFFIX,suo.yt
 
 # docker
 DOMAIN,production.cloudflare.docker.com
+
+DOMAIN,ark.leafxxx.win

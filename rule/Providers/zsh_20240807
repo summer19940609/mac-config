@@ -1,12 +1,24 @@
-PROMPT='~ %F{yellow}%1~ %f'
+# 显示git分支名称
+# 方法 1
+# function parse_git_branch() {
+#     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+# }
+# setopt PROMPT_SUBST
 
-# This speeds up pasting w/ autosuggest
+# PROMPT='%F{cyan}%1~%f %F{green}$(parse_git_branch)%f %F{normal}$%f '
+
+# 方法 2
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '[%F{green}%b%f]'
+setopt PROMPT_SUBST
+PROMPT=' %F{blue}%1~%f ${vcs_info_msg_0_} $ '
+
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
   zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
 }
-
 pastefinish() {
   zle -N self-insert $OLD_SELF_INSERT
 }

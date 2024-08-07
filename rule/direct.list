@@ -46,3 +46,5 @@ DOMAIN-KEYWORD,mihome
 IP-CIDR,182.254.116.0/24
 
 DOMAIN,mirror.ghproxy.com
+
+DOMAIN-SUFFIX,koyso.com

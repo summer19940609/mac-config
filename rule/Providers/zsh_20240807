@@ -1,18 +1,18 @@
-# 显示git分支名称
-# 方法 1
-# function parse_git_branch() {
-#     git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
-# }
-# setopt PROMPT_SUBST
+# 历史记录文件和大小
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
 
-# PROMPT='%F{cyan}%1~%f %F{green}$(parse_git_branch)%f %F{normal}$%f '
+# 忽略以空格开头的命令
+setopt HIST_IGNORE_SPACE
+setopt PROMPT_SUBST
+# 忽略重复记录
+setopt HIST_IGNORE_DUPS
 
-# 方法 2
 autoload -Uz vcs_info
 precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats '[%F{green}%b%f]'
-setopt PROMPT_SUBST
-PROMPT=' %F{blue}%1~%f ${vcs_info_msg_0_} $ '
+zstyle ':vcs_info:git:*' formats '[%F{cyan}%b%f]'
+PROMPT='%F{green}→%f %F{magenta}%1~%f ${vcs_info_msg_0_} %F{normal}$%f '
 
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
 pasteinit() {
@@ -32,12 +32,15 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export EDITOR='code'
+
 alias gco="git checkout"
 alias glo="git log --oneline"
 alias gb="git branch"
 alias gst="git status"
 alias ll="ls -lAh"
 alias src="source ~/.zshrc"
+alias clrhist='cat /dev/null > ~/.zsh_history && fc -R ~/.zsh_history'
 
 alias setproxy="export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897"
 alias unsetproxy="unset ALL_PROXY"
@@ -53,3 +56,5 @@ eval "$(fnm env --use-on-cd)"
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

@@ -60,7 +60,7 @@ dns:
     "+.idianwei.cn":
       - 10.88.200.1
     "geosite:cn,private":
-      - https://223.5.5.5/dns-query#h3=true
+      - 'https://223.5.5.5/dns-query#h3=true'
       # - https://223.6.6.6/dns-query#h3=true
       - 180.184.1.1
   fallback-filter:

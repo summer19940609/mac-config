@@ -45,9 +45,12 @@ dns:
   fake-ip-filter:
     - "+.lan"
     - "+.local"
+    - '+.msftconnecttest.com'
+    - '+.msftnsci.com'
   nameserver:
     - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
+    - 'tls://8.8.8.8#dns'
     # - system
   nameserver-policy:
     "+.mwbyd.cn":

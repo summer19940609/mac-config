@@ -19,10 +19,10 @@ DOMAIN-SUFFIX,farwine.com
 DOMAIN-SUFFIX,exinariuminix.info
 
 # ali
-DOMAIN,oneagent-filter.alibaba-inc.com
+# DOMAIN,oneagent-filter.alibaba-inc.com
 
-PROCESS-NAME,CloudShell
-PROCESS-NAME,AliLangClient
+# PROCESS-NAME,CloudShell
+# PROCESS-NAME,AliLangClient
 
 DOMAIN,h-adashx.ut.taobao.com
 

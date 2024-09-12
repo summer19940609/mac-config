@@ -10,16 +10,16 @@ secret: "b441844acc7baea8ec021e7c47c7fec8"
 geo-auto-update: true
 geo-update-interval: 3
 geodata-mode: true
-geodata-loader: standard
 geox-url:
   geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
   geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
   mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
 
 find-process-mode: strict
-global-client-fingerprint: chrome
+keep-alive-interval: 1800
+global-client-fingerprint: random
 
-unified-delay: false
+unified-delay: true
 
 tcp-concurrent: true
 

@@ -1,0 +1,54 @@
+DISABLE_MAGIC_FUNCTIONS=true
+
+autoload -Uz compinit && compinit 
+
+# zsh git 提示
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+PROMPT='%F{green}→%f %F{magenta}%1~%f ${vcs_info_msg_0_} %F{green}$%f '
+zstyle ':vcs_info:git:*' formats '[%F{cyan}%b%f]'
+
+# PROMPT='%F{green}→%f %F{magenta}%1~%f %F{green}$%f '
+
+export EDITOR='code'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+alias gco="git checkout"
+alias glo="git log --oneline"
+alias gb="git branch"
+alias gst="git status"
+alias ll="ls -lAh"
+alias src="source ~/.zshrc"
+alias clrhist='cat /dev/null > ~/.zsh_history && fc -R ~/.zsh_history'
+
+# 代理
+export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
+alias setproxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897'
+alias unsetproxy='unset https_proxy http_proxy all_proxy'
+
+# java管理
+# export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+# export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+# export JAVA_HOME=$JAVA_11_HOME
+# alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
+# alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
+
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# DEFAULT_USER="xxxxx"
+
+# export NVM_DIR="$HOME/.nvm"
+#   [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+#   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+eval "$(pyenv init -)"

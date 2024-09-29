@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 ipv6: false
 log-level: warning
-external-controller: 127.0.0.1:9090
+external-controller: 127.0.0.1:9469
 secret: "b441844acc7baea8ec021e7c47c7fec8"
 
 geo-auto-update: true

@@ -19,7 +19,7 @@ find-process-mode: strict
 keep-alive-interval: 1800
 global-client-fingerprint: random
 
-unified-delay: true
+unified-delay: false
 
 tcp-concurrent: true
 
@@ -39,7 +39,6 @@ dns:
   enabled: true
   prefer-h3: true
   ipv6: false
-  listen: :53
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -62,12 +61,3 @@ dns:
       - tls://223.5.5.5
       - https://1.12.12.12/dns-query
       - 180.184.1.1
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-    domain:
-      - "+.google.com"
-      - "+.facebook.com"
-      - "+.youtube.com"

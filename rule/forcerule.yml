@@ -5,7 +5,7 @@ mode: rule
 ipv6: false
 log-level: warning
 external-controller: 127.0.0.1:9469
-secret: "b441844acc7baea8ec021e7c47c7fec8"
+secret: "b486f732af5f5600d231581a4403f097"
 
 geo-auto-update: true
 geo-update-interval: 3

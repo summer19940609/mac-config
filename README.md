@@ -63,10 +63,28 @@ brew install zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-brew install autojump fnm pyenv ffmpeg git wget zsh-syntax-highlighting zsh-autosuggestions
+brew install autojump fnm pyenv ffmpeg git wget zsh-syntax-highlighting zsh-autosuggestions jmeter youtube-dl
 
-brew install another-redis-desktop-manager orbstack font-jetbrains-mono reqable iterm2 input-source-pro utools visual-studio-code microsoft-edge karabiner-elements syntax-highlight --cask
+brew install dozer mos clash-verge-rev input-source-pro google-chrome another-redis-desktop-manager orbstack font-jetbrains-mono reqable iterm2 input-source-pro utools visual-studio-code microsoft-edge karabiner-elements syntax-highlight --cask
 
+
+
+==> Casks
+another-redis-desktop-manager	qlcolorcode
+charles				qlimagesize
+clash-verge-rev			qlmarkdown
+dozer				qlstephen
+font-jetbrains-mono		qlvideo
+google-chrome			quicklook-json
+iina				quicklookase
+input-source-pro		sourcetree
+iterm2				sublime-text
+microsoft-edge			switchkey
+mos				syntax-highlight
+neteasemusic			temurin
+playcover-nightly		utools
+postman				visual-studio-code
+proxyman
 
 ```
 

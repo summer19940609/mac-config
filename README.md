@@ -13,23 +13,23 @@ dock 栏显示/隐藏无延迟
 `defaults write com.apple.Dock autohide-delay -float 0 && killall Dock`
 
 延迟
-
+```
 defaults write com.apple.dock autohide-delay -int 0（时间设为最短）
 
 defaults write com.apple.dock autohide-delay -int 0.5（时间设为 0.5s）
-
+```
 延迟动画
-
+```
 defaults write com.apple.dock autohide-time-modifier -int 0.5;killall Dock
-
+```
 恢复：defaults delete com.apple.dock autohide-time-modifier;killall Dock
 
 macOS 14 输入法提示去处
-
+```
 sudo mkdir -p /Library/Preferences/FeatureFlags/Domain
 
 sudo /usr/libexec/PlistBuddy -c "Add 'redesigned_text_cursor:Enabled' bool false" /Library/Preferences/FeatureFlags/Domain/UIKit.plist
-
+```
 
 
 
@@ -105,15 +105,15 @@ git remote prune origin
 ```
 
 ### ssh
-
+```
 ~/.ssh/config
 
 HostkeyAlgorithms +ssh-rsa
 
 PubkeyAcceptedAlgorithms +ssh-rsa
-
+```
 ### 配置
-
+```
 ~/.npmrc
 
 sass_binary_site=https://registry.npmmirror.com/node-sass/
@@ -121,7 +121,7 @@ sass_binary_site=https://registry.npmmirror.com/node-sass/
 ~/.huskyrc
 
 eval "$(fnm env)"
-
+```
 
 ### docker、orbstack
 
@@ -152,12 +152,13 @@ export NVM_DIR="$HOME/.nvm"
 ```
 
 ### fnm use
+```
 eval "$(fnm env --use-on-cd --shell zsh)"  # zshrc
 
 cat ~/.huskyrc
 
 eval "$(fnm env)"
-
+```
 
 
 ### 输入法自动切换

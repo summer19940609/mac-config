@@ -1,2 +1,5 @@
 DOMAIN,ocsp.apple.com
 DOMAIN,ocsp2.apple.com
+
+# ali
+DOMAIN,oneagent-filter.alibaba-inc.com

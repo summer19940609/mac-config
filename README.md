@@ -165,11 +165,6 @@ export NVM_DIR="$HOME/.nvm"
 
 ### 当前安装的软件记录
 
-![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116125851.png)
-
-![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo/blog/20210116130023.png)
-
-![uFrFnb](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@master/uPic/uFrFnb.png)
 
 ### 图床设置
 
@@ -177,8 +172,15 @@ export NVM_DIR="$HOME/.nvm"
 
 ### 输入法自动切换
 
-![VGc0oc](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@master/uPic/VGc0oc.png)
 
 ### 油猴脚本安装列表
 
-![FDruzl](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@master/uPic/FDruzl.png)
+https://gitee.com/cunkai/HomebrewCN
+
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)"
+
+
+
+

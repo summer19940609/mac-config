@@ -4,27 +4,5 @@ DOMAIN,ic.adobe.io
 DOMAIN,fqaq3pq1o9.adobe.io
 DOMAIN,ij0gdyrfka.adobe.io
 
-DOMAIN-SUFFIX,adobestats.io
-
-DOMAIN,amdc.m.taobao.com
-DOMAIN,u3.ucweb.com
-
-DOMAIN-KEYWORD,pangolin
-DOMAIN-KEYWORD,pglstatp
-
-DOMAIN-SUFFIX,bbums.cn
-DOMAIN,bbums.org.cn
-DOMAIN-SUFFIX,farwine.com
-
-DOMAIN-SUFFIX,exinariuminix.info
-
-# ali
-DOMAIN,oneagent-filter.alibaba-inc.com
-
-PROCESS-NAME,CloudShell
-# PROCESS-NAME,AliLangClient
-
-DOMAIN,h-adashx.ut.taobao.com
-
 # 垃圾保险公司，https://www.v2ex.com/t/1059369#reply22
 DOMAIN-SUFFIX,zhelibao.com

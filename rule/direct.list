@@ -27,10 +27,6 @@ DOMAIN,time-macos.apple.com
 DOMAIN,ad.12306.cn
 DOMAIN,sdkapp.uve.weibo.com
 
-# 谷歌下载
-# DOMAIN,xn--ngstr-lra8j.com
-DOMAIN,services.googleapis.cn
-
 PROCESS-NAME,EasyConnect
 PROCESS-NAME,ECAgent
 PROCESS-NAME,ECAgentProxy
@@ -38,6 +34,7 @@ PROCESS-NAME,EasyMonitor
 
 # Amy 机场域名
 DOMAIN-SUFFIX,hknoyk.xyz
+DOMAIN-SUFFIX,amyconvert.com
 
 DOMAIN-KEYWORD,MiHome
 DOMAIN-KEYWORD,mihome

@@ -1,26 +1,8 @@
-- [mac-config](#mac-config)
-  - [mac 安装任何来源](#mac 安装任何来源)
-  - [Quick Look plugins](#quick-look-plugins)
-  - [brew](#brew)
-  - [git](#git)
-  - [npm](#npm)
-  - [vscode](#vscode)
-  - [mysql（非 docker 安装方式）](#mysql 非 docker 安装方式)
-  - [docker](#docker)
-  - [pyenv](#pyenv)
-  - [nvm 安装 node](#nvm 安装 node)
-  - [当前安装的软件记录](#当前安装的软件记录)
-  - [图床设置](#图床设置)
-  - [输入法自动切换](#输入法自动切换)
-  - [油猴脚本安装列表](#油猴脚本安装列表)
-
 # mac-config
 
 ### mac 安装任何来源
 
 `sudo spctl --master-disable`
-
-![PNlHBc](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@master/uPic/PNlHBc.png)
 
 取消开机声音
 
@@ -29,7 +11,6 @@
 dock 栏显示/隐藏无延迟
 
 `defaults write com.apple.Dock autohide-delay -float 0 && killall Dock`
-
 
 延迟
 
@@ -43,6 +24,14 @@ defaults write com.apple.dock autohide-time-modifier -int 0.5;killall Dock
 
 恢复：defaults delete com.apple.dock autohide-time-modifier;killall Dock
 
+macOS 14 输入法提示去处
+
+sudo mkdir -p /Library/Preferences/FeatureFlags/Domain
+
+sudo /usr/libexec/PlistBuddy -c "Add 'redesigned_text_cursor:Enabled' bool false" /Library/Preferences/FeatureFlags/Domain/UIKit.plist
+
+
+
 
 ### Quick Look plugins
 
@@ -52,9 +41,12 @@ https://github.com/sindresorhus/quick-look-plugins
 
 ### brew
 
-切换国内中科大源
+https://gitee.com/cunkai/HomebrewCN
 
-https://zhuanlan.zhihu.com/p/102760018
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)"
+
 
 安装指定版本的 Command Line Tools for Xcode
 
@@ -64,37 +56,34 @@ https://developer.apple.com/download/more/
 // 更新
 brew update && brew upgrade && brew cu -a -y
 
-// 安装 oh-my-zsh
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 
-// zsh-nvm
-git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+// zsh-syntax-highlighting + zsh-autosuggestions
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-// zsh-autosuggestions
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+brew install autojump fnm pyenv ffmpeg git wget zsh-syntax-highlighting zsh-autosuggestions
 
-// zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+brew install another-redis-desktop-manager orbstack font-jetbrains-mono reqable iterm2 input-source-pro utools visual-studio-code microsoft-edge karabiner-elements syntax-highlight --cask
 
-// autojump
-brew install autojump
 
-// git-open
-git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
-
-// bat
-brew install bat
 ```
 
 ### git
-
-使用 vscode 作为 git 默认编辑器
-
 ```
-git config --global user.name xxxxxx
-git config --global user.email xxxxxx
-git config --global core.editor "code --wait"
-git config --global -e
+code ~/.gitconfig
+
+[user]
+	name = xia.nianjun
+	email = xia.nianjun@mwee.cn
+	useConfigOnly = true
+[core]
+	editor = code --wait
+[oh-my-zsh]
+	hide-dirty = 1
+	hide-status = 1
+
 ```
 
 ### npm
@@ -102,51 +91,50 @@ git config --global -e
 使用淘宝仓库
 
 ```
-npm config set registry https://registry.npm.taobao.org/
+npm i nrm -g
+nrm ls
+nrm add mw XXXXXXXXXXXXX
+nrm use mw
+nrm use taobao
 ```
 
 ### vscode
-
-vscode 配置通过编辑器自带的功能同步
-
-同步远程分支
 
 ```
 git remote prune origin
 ```
 
-### mysql（非 docker 安装方式）
+### ssh
 
-1. 安装：`brew install mysql`
-2. 开启 mysql：`mysql.server start`
-3. 使用 mysql 的配置脚本：`/usr/local/opt/mysql/bin/mysql_secure_installation //mysql 提供的配置向导`
+~/.ssh/config
 
-启动这个脚本后，即可根据如下命令提示进行初始化设置，本地数据库密码 123456
+HostkeyAlgorithms +ssh-rsa
 
-### docker
+PubkeyAcceptedAlgorithms +ssh-rsa
+
+### 配置
+
+~/.npmrc
+
+sass_binary_site=https://registry.npmmirror.com/node-sass/
+
+~/.huskyrc
+
+eval "$(fnm env)"
+
+
+### docker、orbstack
 
 mirrors 配置
 
 ```
 "registry-mirrors": [
-    "https://hub-mirror.c.163.com",
-    "https://mirror.baidubce.com"
+
 ]
 ```
 
 ### pyenv
 
-python 版本管理
-
-zsh 中 pyenv 启动懒加载，使用 pyenv-lazy 插件
-
-`git clone https://github.com/davidparsson/zsh-pyenv-lazy.git ~/.oh-my-zsh/custom/plugins/pyenv-lazy`
-
-```
-pillow 安装出错
-python -m pip install --upgrade pip
-python -m pip install --upgrade pillow
-```
 
 ### nvm 安装 node
 
@@ -163,23 +151,90 @@ export NVM_DIR="$HOME/.nvm"
 
 ```
 
-### 当前安装的软件记录
+### fnm use
+eval "$(fnm env --use-on-cd --shell zsh)"  # zshrc
+
+cat ~/.huskyrc
+
+eval "$(fnm env)"
 
 
-### 图床设置
-
-`uPic_hosts.json` uPic 导出的配置
 
 ### 输入法自动切换
 
 
 ### 油猴脚本安装列表
 
-https://gitee.com/cunkai/HomebrewCN
 
-/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+### zshrc
+```
+DISABLE_MAGIC_FUNCTIONS=true
 
-/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)"
+autoload -Uz compinit && compinit
+
+# zsh git 提示
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+PROMPT='%F{green}→%f %F{magenta}%1~%f ${vcs_info_msg_0_} %F{green}$%f '
+zstyle ':vcs_info:git:*' formats '[%F{cyan}%b%f]'
+
+# PROMPT='%F{green}→%f %F{magenta}%1~%f %F{green}$%f'
+
+export EDITOR='code'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+alias gco="git checkout"
+alias glo="git log --oneline"
+alias gb="git branch"
+alias gst="git status"
+alias ll="ls -lAh"
+alias src="source ~/.zshrc"
+alias clrhist='cat /dev/null > ~/.zsh_history && fc -R ~/.zsh_history'
+
+# zsh-autosuggestions 卡顿
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
+
+# 代理
+# export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
+alias setproxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897'
+alias unsetproxy='unset https_proxy http_proxy all_proxy'
+
+# java管理
+# export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+# export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+# export JAVA_HOME=$JAVA_11_HOME
+# alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
+# alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
+
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# DEFAULT_USER="xxxxx"
+
+# export NVM_DIR="$HOME/.nvm"
+#   [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+#   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# eval "$(pyenv init -)"
+
+```
 
 
 

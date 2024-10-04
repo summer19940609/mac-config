@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 ipv6: false
 log-level: warning
-external-controller: 127.0.0.1:9469
+external-controller: 127.0.0.1:49469
 secret: "b486f732af5f5600d231581a4403f097"
 
 geo-auto-update: true
@@ -25,15 +25,7 @@ tcp-concurrent: true
 
 profile:
   store-selected: true
-  store-fake-ip: true
-
-tun:
-  enable: true
-  stack: mixed
-  dns-hijack:
-    - "any:53"
-  auto-route: true
-  auto-detect-interface: true
+  store-fake-ip: false
 
 dns:
   enabled: true

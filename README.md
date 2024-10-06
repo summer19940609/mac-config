@@ -6,6 +6,9 @@ xcode-select --install
 ```
 
 How to remove the ‘Last Login’ prompt from iTerm/Terminal on macOS?
+
+https://stackoverflow.com/questions/15769615/remove-last-login-message-for-new-tabs-in-terminal
+
 ```
 touch .hushlogin
 ```

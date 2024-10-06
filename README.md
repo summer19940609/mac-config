@@ -4,6 +4,11 @@
 ```
 xcode-select --install
 ```
+
+How to remove the ‘Last Login’ prompt from iTerm/Terminal on macOS?
+```
+touch .hushlogin
+```
 ### mac 安装任何来源
 
 `sudo spctl --master-disable`

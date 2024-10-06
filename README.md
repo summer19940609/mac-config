@@ -1,9 +1,9 @@
 # mac-config
 
 ### 开发命令行工具
-···
+```
 xcode-select --install
-···
+```
 ### mac 安装任何来源
 
 `sudo spctl --master-disable`

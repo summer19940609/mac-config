@@ -203,9 +203,21 @@ eval "$(fnm env)"
 
 ### zshrc
 ```
+printf '\33c\e[3J'
+
+# 历史记录文件和大小
+HISTFILE=~/.zsh_history
+# HISTSIZE=1000
+# SAVEHIST=1000
+# 忽略以空格开头的命令
+setopt HIST_IGNORE_SPACE
+setopt PROMPT_SUBST
+# 忽略重复记录
+setopt HIST_IGNORE_DUPS
+
 DISABLE_MAGIC_FUNCTIONS=true
 
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit 
 
 # zsh git 提示
 autoload -Uz vcs_info

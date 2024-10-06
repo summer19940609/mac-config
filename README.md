@@ -67,8 +67,10 @@ brew update && brew upgrade && brew cu -a -y
 // zsh-syntax-highlighting + zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zshrc
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 brew install autojump fnm pyenv ffmpeg git wget zsh-syntax-highlighting zsh-autosuggestions jmeter youtube-dl
 

@@ -26,7 +26,10 @@ defaults write com.apple.dock autohide-delay -int 0.5（时间设为 0.5s）
 ```
 defaults write com.apple.dock autohide-time-modifier -int 0.5;killall Dock
 ```
-恢复：defaults delete com.apple.dock autohide-time-modifier;killall Dock
+恢复：
+```
+defaults delete com.apple.dock autohide-time-modifier;killall Dock
+```
 
 macOS 14 输入法提示去处
 ```
@@ -47,10 +50,11 @@ https://github.com/sindresorhus/quick-look-plugins
 
 https://gitee.com/cunkai/HomebrewCN
 
+```
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/HomebrewUninstall.sh)"
-
+```
 
 安装指定版本的 Command Line Tools for Xcode
 
@@ -59,7 +63,6 @@ https://developer.apple.com/download/more/
 ```
 // 更新
 brew update && brew upgrade && brew cu -a -y
-
 
 // zsh-syntax-highlighting + zsh-autosuggestions
 brew install zsh-syntax-highlighting
@@ -70,7 +73,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 brew install autojump fnm pyenv ffmpeg git wget zsh-syntax-highlighting zsh-autosuggestions jmeter youtube-dl
 
 brew install dozer mos clash-verge-rev input-source-pro google-chrome another-redis-desktop-manager orbstack font-jetbrains-mono reqable iterm2 input-source-pro utools visual-studio-code microsoft-edge karabiner-elements syntax-highlight --cask
-
 
 
 ==> Casks

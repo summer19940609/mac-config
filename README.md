@@ -193,9 +193,11 @@ export NVM_DIR="$HOME/.nvm"
 ```
 eval "$(fnm env --use-on-cd --shell zsh)"  # zshrc
 
+~/.config/husky/init.sh 或 ~/.huskyrc
+
 cat ~/.huskyrc
 
-eval "$(fnm env)"
+eval "$(fnm env --use-on-cd)"
 ```
 
 

@@ -211,17 +211,32 @@ printf '\33c\e[3J'
 
 # 历史记录文件和大小
 HISTFILE=~/.zsh_history
-# HISTSIZE=1000
-# SAVEHIST=1000
-# 忽略以空格开头的命令
+HISTSIZE=10000
+SAVEHIST=10000
+
+# autocd：直接通过路径更改目录
+# extendedglob：使用额外的模式匹配特性
+# nomatch：未匹配的模式导致错误
+# beep：错误时发出蜂鸣声
+# notify：立即报台作业状态的变化
+setopt extendedglob nomatch notify
+unsetopt autocd beep
+
 setopt HIST_IGNORE_SPACE
-setopt PROMPT_SUBST
 # 忽略重复记录
 setopt HIST_IGNORE_DUPS
 
+# 关掉 flowcontrol
+unsetopt flowcontrol
+
 DISABLE_MAGIC_FUNCTIONS=true
 
-autoload -Uz compinit && compinit 
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
 
 # zsh git 提示
 autoload -Uz vcs_info
@@ -272,6 +287,9 @@ alias unsetproxy='unset https_proxy http_proxy all_proxy'
 
 eval "$(fnm env --use-on-cd --shell zsh)"
 
+# 先尝试从历史记录中查找建议，如果找不到，再从补全引擎中查找。
+export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
+
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -284,6 +302,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 #   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # eval "$(pyenv init -)"
+
 
 ```
 

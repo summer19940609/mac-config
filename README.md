@@ -155,6 +155,16 @@ PubkeyAcceptedAlgorithms +ssh-rsa
 ~/.npmrc
 
 sass_binary_site=https://registry.npmmirror.com/node-sass/
+chromedriver_cdnurl=https://registry.npmmirror.com/chromedriver
+phantomjs_cdnurl=https://registry.npmmirror.com/phantomjs/
+electron_mirror=https://registry.npmmirror.com/electron/
+puppeteer_download_host=https://registry.npmmirror.com/
+sentrycli_cdnurl=https://registry.npmmirror.com/sentry-cli/
+sqlite3_binary_site=https://registry.npmmirror.com/sqlite3/
+python_mirror=https://registry.npmmirror.com/python/
+canvas_binary_host_mirror=https://registry.npmmirror.com/node-canvas-prebuilt/
+
+unsafe-perm=true
 
 ~/.huskyrc
 

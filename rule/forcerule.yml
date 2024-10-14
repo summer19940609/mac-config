@@ -7,35 +7,42 @@ log-level: warning
 external-controller: 127.0.0.1:49469
 secret: "b486f732af5f5600d231581a4403f097"
 
-geo-auto-update: true
-geo-update-interval: 3
-geodata-mode: true
+# 自定义 geodata url
 geox-url:
-  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
-  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+  
+geo-auto-update: true
+geo-update-interval: 6
 
 find-process-mode: strict
 keep-alive-interval: 1800
-global-client-fingerprint: random
+
+global-client-fingerprint: chrome
 
 unified-delay: false
 
-tcp-concurrent: true
+# tcp-concurrent: true
 
-profile:
-  store-selected: true
-  store-fake-ip: false
+profile: # 存储 select 选择记录
+  store-selected: false
+  # 持久化 fake-ip
+  store-fake-ip: true
 
 dns:
   enabled: true
   prefer-h3: true
   ipv6: false
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-range: 198.18.0.1/16 # fake-ip 池设置
+  respect-rules: false
   default-nameserver:
-    - 223.5.5.5
+    - 114.114.114.114
     - 8.8.8.8
+    - tls://1.12.12.12:853
+    - tls://223.5.5.5:853
+    - system # append DNS server from system configuration. If not found, it would print an error log and skip.
   nameserver:
     - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
@@ -46,7 +53,8 @@ dns:
       - 10.88.200.1
     "+.idianwei.cn":
       - 10.88.200.1
-    "geosite:cn,private":
+    "geosite:category-ads-all": rcode://success
+    "geosite:cn,private,apple":
       - https://23434.alidns.com/dns-query
       - https://223.5.5.5/dns-query
       - https://1.12.12.12/dns-query

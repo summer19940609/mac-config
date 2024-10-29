@@ -45,3 +45,6 @@ IP-CIDR,182.254.116.0/24
 DOMAIN,mirror.ghproxy.com
 
 DOMAIN-SUFFIX,koyso.com
+
+# 山姆
+DOMAIN-SUFFIX,file,myqcloud.com

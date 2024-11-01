@@ -5,3 +5,10 @@
 skip-proxy = %APPEND% sams.walmartmobile.cn
 always-real-ip = %APPEND% sams.walmartmobile.cn
 
+[URL Rewrite]
+
+^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get) - direct
+
+[MITM]
+
+hostname = %APPEND% -api-sams.walmartmobile.cn

@@ -2,8 +2,6 @@
 #!desc=略
 
 [General]
-skip-proxy = %APPEND% sams.walmartmobile.cn
-always-real-ip = %APPEND% sams.walmartmobile.cn
 
 [URL Rewrite]
 

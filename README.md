@@ -219,8 +219,6 @@ eval "$(fnm env --use-on-cd)"
 
 ### zshrc
 ```
-printf '\33c\e[3J'
-
 # 历史记录文件和大小
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -245,18 +243,17 @@ DISABLE_MAGIC_FUNCTIONS=true
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
   autoload -Uz compinit
   compinit
 fi
 
 # zsh git 提示
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-PROMPT='%F{green}→%f %F{magenta}%1~%f ${vcs_info_msg_0_} %F{green}$%f '
-zstyle ':vcs_info:git:*' formats '[%F{cyan}%b%f]'
+# autoload -Uz vcs_info
+# precmd_vcs_info() { vcs_info }
+# precmd_functions+=( precmd_vcs_info )
+# setopt prompt_subst
+# PROMPT='%F{green}→%f %F{magenta}%1~%f ${vcs_info_msg_0_} %F{green}$%f '
+# zstyle ':vcs_info:git:*' formats '[%F{cyan}%b%f]'
 
 # PROMPT='%F{green}→%f %F{magenta}%1~%f %F{green}$%f'
 
@@ -286,7 +283,6 @@ zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 
 # 代理
-# export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
 alias setproxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897'
 alias unsetproxy='unset https_proxy http_proxy all_proxy'
 
@@ -307,13 +303,12 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 [ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
 
-# DEFAULT_USER="xxxxx"
-
-# export NVM_DIR="$HOME/.nvm"
-#   [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-#   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 # eval "$(pyenv init -)"
+
+# brew install romkatv/gitstatus/gitstatus
+source /usr/local/opt/gitstatus/gitstatus.prompt.zsh
+
+PROMPT='%F{green}→%f %F{magenta}%1~%f $GITSTATUS_PROMPT '
 
 
 ```

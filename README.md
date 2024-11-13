@@ -306,7 +306,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # eval "$(pyenv init -)"
 
 # brew install romkatv/gitstatus/gitstatus
-source /usr/local/opt/gitstatus/gitstatus.prompt.zsh
+source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.zsh
 
 PROMPT='%F{green}→%f %F{magenta}%1~%f $GITSTATUS_PROMPT '
 

@@ -29,7 +29,10 @@ profile: # 存储 select 选择记录
   store-selected: false
   # 持久化 fake-ip
   store-fake-ip: true
-
+  
+hosts:
+  'local.mwee.com': 127.0.0.1
+  
 dns:
   enabled: true
   prefer-h3: true

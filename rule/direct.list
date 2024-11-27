@@ -22,8 +22,6 @@ DOMAIN-SUFFIX,atlassian.com
 DOMAIN,gs2.ww.prod.dl.playstation.net.com
 DOMAIN,gst.prod.dl.playstation.net
 
-DOMAIN,time-macos.apple.com
-
 DOMAIN,ad.12306.cn
 DOMAIN,sdkapp.uve.weibo.com
 
@@ -39,12 +37,6 @@ DOMAIN-SUFFIX,amyconvert.com
 DOMAIN-KEYWORD,MiHome
 DOMAIN-KEYWORD,mihome
 
-# 微信
-IP-CIDR,182.254.116.0/24
-
 DOMAIN,mirror.ghproxy.com
 
 DOMAIN-SUFFIX,koyso.com
-
-# 山姆
-DOMAIN-SUFFIX,file,myqcloud.com

@@ -169,6 +169,23 @@ unsafe-perm=true
 ~/.huskyrc
 
 eval "$(fnm env)"
+
+
+# 安装其他版本
+$ fnm install 16
+
+# 在当前 Shell 使用指定版本
+$ fnm use 16
+
+# 查看本地已安装的版本
+$ fnm ls
+
+# 查看官方已发布的所有版本
+$ fnm ls-remote | grep v16
+
+# 速度慢的时候，可以切换到国内源
+$ fnm install 16 --node-dist-mirror=https://npmmirror.com/mirrors/node
+
 ```
 
 ### docker、orbstack

@@ -166,9 +166,11 @@ canvas_binary_host_mirror=https://registry.npmmirror.com/node-canvas-prebuilt/
 
 unsafe-perm=true
 
-~/.huskyrc
+→ ~ $ cat ~/.config/husky/init.sh
+# eval "$(fnm env --use-on-cd)"
 
-eval "$(fnm env)"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 
 # 安装其他版本

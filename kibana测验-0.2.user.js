@@ -16,13 +16,17 @@
     // 定义按钮配置
     const buttons = [
         {
-            text: "msh",
+            text: "node-mw-msh",
             url: "http://log.mwbyd.cn/ali/app/kibana#/discover?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))&_a=(columns:!(_source),index:AZFt0P_BjNRlzHRlcbbz,interval:auto,query:(match_all:()),sort:!('@timestamp',desc))",
         },
         {
             text: "queue-book",
             url: "http://log.mwbyd.cn/ali/app/kibana#/discover?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))&_a=(columns:!(_source),index:AZFzmgzNjNRlzHRll3em,interval:auto,query:(match_all:()),sort:!('@timestamp',desc))",
-        }
+        },
+        {
+            text: "node-app-api",
+            url: "http://log.mwbyd.cn/ali/app/kibana#/discover?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))&_a=(columns:!(_source),index:AZFuWSYfjNRlzHRlymq0,interval:auto,query:(match_all:()),sort:!('@timestamp',desc))",
+        },
     ]
 
     // 高亮
@@ -35,9 +39,9 @@
 
         const buttonContainer = document.createElement('div');
         buttonContainer.id = 'button-container';
-        buttonContainer.style.top = '4px';
+        buttonContainer.style.top = '2px';
         buttonContainer.style.right = '40%';
-        buttonContainer.style.fontSize = '20px';
+        buttonContainer.style.fontSize = '18px';
         buttonContainer.style.padding = '5px';
         buttonContainer.style.background = '#c4ffc5';
         buttonContainer.style.position = 'fixed';
@@ -47,11 +51,26 @@
         buttonContainer.style.alignItems = 'center';
         buttonContainer.style.justifyContent = 'center';
 
+        const span = document.createElement('span');
+        span.innerHTML = '快捷操作：';
+        buttonContainer.appendChild(span)
+
         buttons.forEach(btnConfig => {
             const link = document.createElement('a');
+            // 保存原始的颜色
+            const originalColor = link.style.color;
+
             link.innerHTML = btnConfig.text;
             link.href = btnConfig.url;
             link.style.marginRight = '5px';
+            // 添加鼠标悬停时的样式
+            link.addEventListener('mouseover', function () {
+                link.style.color = 'red';
+            });
+            // 移出鼠标悬停时的样式
+            link.addEventListener('mouseout', function () {
+                link.style.color = originalColor;
+            });
             // link.target = '_blank'; // 新窗口打开
             buttonContainer.appendChild(link);
         });

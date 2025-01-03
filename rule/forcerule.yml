@@ -25,13 +25,13 @@ unified-delay: false
 
 # tcp-concurrent: true
 
-profile: # 存储 select 选择记录
-  store-selected: false
-  # 持久化 fake-ip
-  store-fake-ip: true
+# profile: # 存储 select 选择记录
+#   store-selected: false
+#   # 持久化 fake-ip
+#   store-fake-ip: true
   
-# hosts:
-#   'local.mwee.com': 127.0.0.1
+hosts:
+  'local.mwee.com': 127.0.0.1
   
 dns:
   enabled: true
@@ -50,8 +50,6 @@ dns:
   default-nameserver:
     - 119.29.29.29
     - 8.8.8.8
-    - tls://1.12.12.12:853
-    - tls://223.5.5.5:853
     - system
   nameserver:
     - https://8.8.8.8/dns-query

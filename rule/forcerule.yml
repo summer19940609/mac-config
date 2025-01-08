@@ -59,6 +59,8 @@ dns:
       - 10.88.200.1
     "+.test.cn":
       - 10.88.200.1
+    "+.mweer.com":
+      - 10.88.200.1
     "+.idianwei.cn":
       - 10.88.200.1
     "geosite:category-ads-all": rcode://success

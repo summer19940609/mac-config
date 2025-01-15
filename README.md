@@ -43,7 +43,7 @@ defaults write com.apple.dock autohide-time-modifier -int 0.5;killall Dock
 defaults delete com.apple.dock autohide-time-modifier;killall Dock
 ```
 
-macOS 14 输入法提示去处
+macOS 14 输入法提示去除
 ```
 sudo mkdir -p /Library/Preferences/FeatureFlags/Domain
 

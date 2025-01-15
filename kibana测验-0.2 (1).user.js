@@ -27,6 +27,10 @@
             text: "node-app-api",
             url: "http://log.mwbyd.cn/ali/app/kibana#/discover?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))&_a=(columns:!(_source),index:AZFuWSYfjNRlzHRlymq0,interval:auto,query:(match_all:()),sort:!('@timestamp',desc))",
         },
+        {
+            text: "c_api_common",
+            url: "http://log.mwbyd.cn/ali/app/kibana#/discover?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now%2Fd,mode:quick,to:now%2Fd))&_a=(columns:!(url,request_time,level),index:AZGTnrKgrXrUFj5QLS3T,interval:s,query:(match_all:()),sort:!('@timestamp',desc))"
+        }
     ]
 
     // 高亮
@@ -39,8 +43,8 @@
 
         const buttonContainer = document.createElement('div');
         buttonContainer.id = 'button-container';
-        buttonContainer.style.top = '2px';
-        buttonContainer.style.right = '40%';
+        buttonContainer.style.left = '50%';
+        buttonContainer.style.transform = 'translateX(-50%)';
         buttonContainer.style.fontSize = '18px';
         buttonContainer.style.padding = '5px';
         buttonContainer.style.background = '#c4ffc5';

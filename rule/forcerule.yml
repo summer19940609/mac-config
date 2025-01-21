@@ -46,6 +46,10 @@ dns:
     - +.local
     - time.*.com
     - ntp.*.com
+    - +.apple.com
+    - dlg.io.mi.com
+    - +.oray.com
+    - +.sunlogin.net
   respect-rules: false
   default-nameserver:
     - 119.29.29.29

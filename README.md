@@ -50,8 +50,14 @@ sudo mkdir -p /Library/Preferences/FeatureFlags/Domain
 sudo /usr/libexec/PlistBuddy -c "Add 'redesigned_text_cursor:Enabled' bool false" /Library/Preferences/FeatureFlags/Domain/UIKit.plist
 ```
 
+切换中英文延迟
+
 hidutil property --set '{"CapsLockDelayOverride":0}'
 
+
+开启任意位置拖动窗口功能,重启, 需要按住control+command，然后再去用鼠标拖动窗口的任意位置
+
+defaults write -g NSWindowShouldDragOnGesture -bool true
 
 
 ### Quick Look plugins

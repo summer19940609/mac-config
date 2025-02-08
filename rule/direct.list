@@ -37,6 +37,7 @@ DOMAIN-SUFFIX,amyconvert.com
 DOMAIN-KEYWORD,MiHome
 DOMAIN-KEYWORD,mihome
 
-DOMAIN,mirror.ghproxy.com
-
 DOMAIN-SUFFIX,koyso.com
+
+# 谷歌play下载
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com

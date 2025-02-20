@@ -70,6 +70,6 @@ dns:
     "geosite:category-ads-all": rcode://success
     "geosite:cn,private,apple":
       - https://23434.alidns.com/dns-query
-      # - https://1.12.12.12/dns-query
+      - https://1.12.12.12/dns-query
       # - 180.184.1.1
       # - 202.96.209.133

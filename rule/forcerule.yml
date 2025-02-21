@@ -50,7 +50,6 @@ dns:
     - dlg.io.mi.com
     - +.oray.com
     - +.sunlogin.net
-  respect-rules: false
   nameserver:
     - 223.5.5.5
     - 119.29.29.29  

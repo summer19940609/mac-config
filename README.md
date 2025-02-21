@@ -341,4 +341,10 @@ PROMPT='%F{green}→%f %F{magenta}%1~%f ${GITSTATUS_PROMPT:+[}${GITSTATUS_PROMPT
 
 
 
+prepend:
+  - 'DOMAIN,alilang-unify-struct-log.cn-hangzhou.log.aliyuncs.com,REJECT'
+append: []
+delete: []
+
+
 

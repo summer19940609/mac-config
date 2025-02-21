@@ -56,8 +56,8 @@ dns:
     - 8.8.8.8
     - system
   nameserver:
-    - https://8.8.8.8/dns-query
-    - https://1.1.1.1/dns-query
+    - 223.5.5.5
+    - 119.29.29.29  
   nameserver-policy:
     "+.mwbyd.cn":
       - 10.88.200.1
@@ -67,9 +67,3 @@ dns:
       - 10.88.200.1
     "+.idianwei.cn":
       - 10.88.200.1
-    "geosite:category-ads-all": rcode://success
-    "geosite:cn,private,apple":
-      - https://23434.alidns.com/dns-query
-      - https://1.12.12.12/dns-query
-      # - 180.184.1.1
-      # - 202.96.209.133

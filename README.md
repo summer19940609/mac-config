@@ -50,6 +50,11 @@ sudo mkdir -p /Library/Preferences/FeatureFlags/Domain
 sudo /usr/libexec/PlistBuddy -c "Add 'redesigned_text_cursor:Enabled' bool false" /Library/Preferences/FeatureFlags/Domain/UIKit.plist
 ```
 
+```
+# 关闭 CursorUIViewService 防止导致卡顿，并重启
+sudo mkdir -p /Library/Preferences/FeatureFlags/Domain && sudo /usr/libexec/PlistBuddy -c "Add 'redesigned_text_cursor:Enabled' bool false" /Library/Preferences/FeatureFlags/Domain/UIKit.plist && sudo shutdown -r now
+```
+
 切换中英文延迟
 
 hidutil property --set '{"CapsLockDelayOverride":0}'

@@ -38,7 +38,10 @@ dns:
   prefer-h3: true
   ipv6: false
   use-hosts: true
+  use-system-hosts: true
   enhanced-mode: fake-ip
+  hosts:
+    '*.mwbyd.cn': 10.1.21.39
   fake-ip-range: 198.18.0.1/16 # fake-ip 池设置
   fake-ip-filter:
     - '*.lan'
@@ -57,11 +60,3 @@ dns:
     "geosite:cn,private":
       - 223.5.5.5
       - 119.29.29.29
-    "+.mwbyd.cn":
-      - 10.88.0.1
-    "+.test.cn":
-      - 10.88.0.1
-    "+.mweer.com":
-      - 10.88.0.1
-    "+.idianwei.cn":
-      - 10.88.0.1

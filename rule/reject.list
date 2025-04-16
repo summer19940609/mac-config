@@ -7,14 +7,5 @@ DOMAIN,ij0gdyrfka.adobe.io
 # 垃圾保险公司，https://www.v2ex.com/t/1059369#reply22
 DOMAIN-SUFFIX,zhelibao.com
 
-DOMAIN,app-analytics-services.com
-
-# 注释此选项有助于大多数App开发者分析崩溃信息；如果您拒绝一切崩溃数据统计、搜集
-DOMAIN,e.crashlytics.com
-
 # mumu模拟器pro
 DOMAIN,mumu.nie.netease.com
-
-DOMAIN,dns.weixin.qq.com
-DOMAIN,dns.weixin.qq.com.cn
-

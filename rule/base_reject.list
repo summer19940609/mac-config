@@ -6,5 +6,13 @@ DOMAIN,ocsp2.apple.com
 # PROCESS-NAME,CloudShell
 # PROCESS-NAME,AliLangClient
 
+PROCESS-NAME,clash
+PROCESS-NAME,clash-meta
+PROCESS-NAME,verge-clash
+PROCESS-NAME,verge-clash-meta
+PROCESS-NAME,mihomo
+PROCESS-NAME,verge-mihomo
+PROCESS-NAME,verge-mihomo-alpha
+
 
 AND,((NETWORK,UDP),(DST-PORT,443))

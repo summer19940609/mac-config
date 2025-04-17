@@ -28,7 +28,9 @@ unified-delay: false
 #   store-selected: false
 #   # 持久化 fake-ip
 #   store-fake-ip: true
-
+hosts:
+  '*.mwbyd.cn': 10.1.21.39
+  
 dns:
   enabled: true
   prefer-h3: true
@@ -36,21 +38,12 @@ dns:
   use-hosts: true
   use-system-hosts: true
   enhanced-mode: fake-ip
-  # hosts:
-  #   '*.mwbyd.cn': 10.1.21.39
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
-    - +.local
-    - time.*.com
-    - ntp.*.com
-    - +.apple.com
-    - dlg.io.mi.com
-    - +.oray.com
-    - +.sunlogin.net
   nameserver:
-    - system
+    - dhcp://en0
     - 8.8.8.8
     - 1.1.1.1
   nameserver-policy:
@@ -59,3 +52,4 @@ dns:
     "geosite:cn,private":
       - 223.5.5.5
       - 119.29.29.29
+    "geosite:category-ads-all": rcode://success

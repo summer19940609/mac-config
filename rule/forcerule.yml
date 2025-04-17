@@ -42,6 +42,7 @@ dns:
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
+    - geosite:fakeip-filter
   nameserver:
     - dhcp://en0
     - 8.8.8.8

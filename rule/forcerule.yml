@@ -7,7 +7,6 @@ log-level: warning
 external-controller: 127.0.0.1:49469
 secret: "b486f732af5f5600d231581a4403f097"
 
-# 自定义 geodata url
 geox-url:
   geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
   geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
@@ -37,9 +36,9 @@ dns:
   use-hosts: true
   use-system-hosts: true
   enhanced-mode: fake-ip
-  hosts:
-    '*.mwbyd.cn': 10.1.21.39
-  fake-ip-range: 198.18.0.1/16 # fake-ip 池设置
+  # hosts:
+  #   '*.mwbyd.cn': 10.1.21.39
+  fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
@@ -51,9 +50,12 @@ dns:
     - +.oray.com
     - +.sunlogin.net
   nameserver:
+    - system
     - 8.8.8.8
     - 1.1.1.1
   nameserver-policy:
+    +.mwbyd.cn:
+      - 100.100.2.136
     "geosite:cn,private":
       - 223.5.5.5
       - 119.29.29.29

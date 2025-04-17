@@ -5,3 +5,6 @@ DOMAIN,ocsp2.apple.com
 # DOMAIN,oneagent-filter.alibaba-inc.com
 # PROCESS-NAME,CloudShell
 # PROCESS-NAME,AliLangClient
+
+
+AND,((NETWORK,UDP),(DST-PORT,443)),REJECT

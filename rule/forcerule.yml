@@ -42,15 +42,11 @@ dns:
   fake-ip-filter:
     - '*.lan'
     - localhost.ptlogin2.qq.com
-    - geosite:fakeip-filter
   nameserver:
     - dhcp://en0
     - 8.8.8.8
     - 1.1.1.1
   nameserver-policy:
-    +.mwbyd.cn:
-      - 100.100.2.136
     "geosite:cn,private":
       - 223.5.5.5
       - 119.29.29.29
-    "geosite:category-ads-all": rcode://success

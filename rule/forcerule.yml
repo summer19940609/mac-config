@@ -28,9 +28,7 @@ unified-delay: false
 #   store-selected: false
 #   # 持久化 fake-ip
 #   store-fake-ip: true
-hosts:
-  '*.mwbyd.cn': 10.1.21.39
-  
+
 dns:
   enabled: true
   prefer-h3: true

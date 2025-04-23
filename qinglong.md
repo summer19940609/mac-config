@@ -19,10 +19,10 @@ const puppeteer = require('puppeteer-core');
 
 ```
 // 启动浏览器
-		const browser = await puppeteer.launch({
-			headless: 'new',
-			args: ['--no-sandbox', '--disable-setuid-sandbox'],
-			// executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
-			executablePath: '/usr/bin/chromium-browser'
-		});
+const browser = await puppeteer.launch({
+	headless: 'new',
+	args: ['--no-sandbox', '--disable-setuid-sandbox'],
+	// executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
+	executablePath: '/usr/bin/chromium-browser'
+});
 ```

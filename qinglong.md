@@ -1,3 +1,8 @@
+docker pull whyour/qinglong:latest
+
+docker pull whyour/qinglong:debian
+
+
 ## 青龙安装puppeteer
 
 依赖安装chromium

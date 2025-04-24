@@ -2,6 +2,15 @@ docker pull whyour/qinglong:latest
 
 docker pull whyour/qinglong:debian
 
+### 设置源（推荐）
+```
+Node 软件包镜像源
+https://registry.npmmirror.com/
+Python 软件包镜像源
+https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+Linux 软件包镜像源
+https://mirrors.aliyun.com
+```
 
 ## 青龙安装puppeteer
 

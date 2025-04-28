@@ -1,0 +1,17 @@
+prepend:
+  - 'DOMAIN,fastly.jsdelivr.net,PROXY'
+  - 'DOMAIN,downloads.cursor.com,PROXY'
+  - 'DOMAIN,oneagent-filter.alibaba-inc.com,REJECT'
+  - 'PROCESS-NAME,CloudShell,REJECT'
+  - 'PROCESS-NAME,AliLangClient,REJECT'
+  - 'DOMAIN,dl.pstmn.io,REJECT'
+  - 'PROCESS-NAME,clash,REJECT'
+  - 'PROCESS-NAME,clash-meta,REJECT'
+  - 'PROCESS-NAME,verge-clash,REJECT'
+  - 'PROCESS-NAME,verge-clash-meta,REJECT'
+  - 'PROCESS-NAME,mihomo,REJECT'
+  - 'PROCESS-NAME,verge-mihomo,REJECT'
+  - 'PROCESS-NAME,verge-mihomo-alpha,REJECT'
+  - 'AND,((NETWORK,UDP),(DST-PORT,443)),REJECT'
+append: []
+delete: []

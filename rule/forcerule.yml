@@ -29,10 +29,10 @@ unified-delay: false
 
 # tcp-concurrent: true
 
-# profile: # 存储 select 选择记录
-#   store-selected: false
-#   # 持久化 fake-ip
-#   store-fake-ip: true
+profile: # 存储 select 选择记录
+  store-selected: true
+  # 持久化 fake-ip
+  # store-fake-ip: true
 
 dns:
   enabled: true

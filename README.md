@@ -59,6 +59,8 @@ sudo mkdir -p /Library/Preferences/FeatureFlags/Domain && sudo /usr/libexec/Plis
 
 hidutil property --set '{"CapsLockDelayOverride":0}'
 
+brew install --cask capslocknodelay
+
 
 开启任意位置拖动窗口功能,重启, 需要按住control+command，然后再去用鼠标拖动窗口的任意位置
 

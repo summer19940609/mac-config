@@ -350,7 +350,7 @@ PROMPT='%F{green}→%f %F{magenta}%1~%f ${GITSTATUS_PROMPT:+[}${GITSTATUS_PROMPT
 
 
 ```
-
+### clash自定义规则
 prepend:
   - 'DOMAIN,alilang-unify-struct-log.cn-hangzhou.log.aliyuncs.com,REJECT'
 append: []

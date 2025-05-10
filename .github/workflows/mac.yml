@@ -16,10 +16,13 @@ jobs:
       
       - name: 设置Pandoc
         uses: docker://pandoc/core:2.9
+        with:
+          entrypoint: /bin/sh
+          args: -c "apk add --no-cache pandoc && pandoc --version"
         
       - name: 转换为HTML
         run: |
-          pandoc README.md -s -o README.html --metadata=title:" " --css= -Vinclude-before='<style>body { font-size: 16px !important; }</style>'
+          docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/core:2.9 README.md -s -o README.html --metadata=title:" " --css= -Vinclude-before='<style>body { font-size: 16px !important; }</style>'
           
       - name: 同步到verygoodbye项目
         run: |
@@ -45,4 +48,3 @@ jobs:
           git add README.html
           git commit -m "转换README.md为HTML" || echo "无需更新"
           git push
-

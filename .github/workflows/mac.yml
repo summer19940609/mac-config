@@ -1,0 +1,48 @@
+name: Pandoc转换并同步到verygoodbye项目
+
+on:
+  push:
+    paths:
+      - 'README.md'
+
+jobs:
+  convert_and_sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: 设置Pandoc
+        uses: docker://pandoc/core:2.9
+        
+      - name: 转换为HTML
+        run: |
+          pandoc README.md -s -o README.html --metadata=title:" " --css= -Vinclude-before='<style>body { font-size: 16px !important; }</style>'
+          
+      - name: 同步到verygoodbye项目
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          
+          # 克隆verygoodbye项目
+          git clone https://github.com/summer19940609/verygoodbye.git
+          
+          # 复制README.html到verygoodbye项目并重命名为mac.html
+          cp README.html verygoodbye/mac.html
+          
+          # 提交更改到verygoodbye项目
+          cd verygoodbye
+          git add mac.html
+          git commit -m "更新mac.html" || echo "无需更新"
+          git push https://${GITHUB_TOKEN}@github.com/summer19940609/verygoodbye.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: 提交更改到当前仓库
+        run: |
+          git add README.html
+          git commit -m "转换README.md为HTML" || echo "无需更新"
+          git push
+

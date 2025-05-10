@@ -9,14 +9,14 @@ jobs:
   convert_and_sync:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # 关键授权：允许工作流写入仓库内容
+      contents: write  # 授予写入权限
 
     steps:
       - name: 检出当前仓库
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true  # 保持认证状态
+          token: ${{ secrets.GITHUB_TOKEN }}  # 关键修复1：显式传递token
 
       - name: 用Pandoc转换MD为HTML
         uses: docker://pandoc/core:latest
@@ -25,30 +25,34 @@ jobs:
           
       - name: 同步到verygoodbye仓库
         run: |
-          # 配置Git用户（必须设置）
+          # 配置Git身份
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions Bot"
-
-          # 克隆目标仓库（使用同一账户下的令牌）
-          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/summer19940609/verygoodbye.git
+          git config --global user.name "GitHub Actions"
           
-          # 复制并重命名文件
+          # 关键修复2：使用完整克隆语法
+          repo_url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/summer19940609/verygoodbye.git"
+          git clone $repo_url
+          
+          # 处理文件
           cp README.html verygoodbye/mac.html
           
           # 提交变更
           cd verygoodbye
           git add mac.html
-          if git commit -m "自动更新mac.html [由工作流触发]"; then
-            git push origin HEAD
+          
+          # 关键修复3：添加错误处理
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "自动更新mac.html [$(date +'%Y-%m-%d %H:%M')]"
+            git push $repo_url HEAD:main
           else
-            echo "没有检测到文件变更，跳过提交"
+            echo "没有检测到文件变更"
           fi
 
       - name: 提交HTML到当前仓库
+        if: always()  # 即使上一步失败也执行
         run: |
           git add README.html
-          if git commit -m "自动生成README.html [由工作流触发]"; then
-            git push origin HEAD
-          else
-            echo "没有检测到文件变更，跳过提交"
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "自动生成README.html [$(date +'%Y-%m-%d %H:%M')]"
+            git push
           fi

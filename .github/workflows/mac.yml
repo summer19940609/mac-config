@@ -15,14 +15,13 @@ jobs:
           fetch-depth: 0
       
       - name: 设置Pandoc
-        uses: docker://pandoc/core:2.9
+        uses: pandoc/pandoc-action-builder@v1.0.0
         with:
-          entrypoint: /bin/sh
-          args: -c "apk add --no-cache pandoc && pandoc --version"
+          args: --version
         
       - name: 转换为HTML
         run: |
-          docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/core:2.9 README.md -s -o README.html --metadata=title:" " --css= -Vinclude-before='<style>body { font-size: 16px !important; }</style>'
+          pandoc README.md -s -o README.html --metadata=title:" " --css= -Vinclude-before='<style>body { font-size: 16px !important; }</style>'
           
       - name: 同步到verygoodbye项目
         run: |

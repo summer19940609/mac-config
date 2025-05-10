@@ -10,18 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 检出代码
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       
-      - name: 设置Pandoc
-        uses: pandoc/pandoc-action-builder@v1.0.0
+      - name: Convert with Pandoc
+        uses: docker://pandoc/core:latest
         with:
-          args: --version
-        
-      - name: 转换为HTML
-        run: |
-          pandoc README.md -s -o README.html --metadata=title:" " --css= -Vinclude-before='<style>body { font-size: 16px !important; }</style>'
+          args: "README.md -s -o README.html"
           
       - name: 同步到verygoodbye项目
         run: |

@@ -431,8 +431,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # brew install romkatv/gitstatus/gitstatus
 source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.zsh
-
-PROMPT=&#39;%F{green}→%f %F{magenta}%1~%f ${GITSTATUS_PROMPT:+[}${GITSTATUS_PROMPT}${GITSTATUS_PROMPT:+]}${GITSTATUS_PROMPT:+ }%(!.%F{red}%B&gt;%b%f .%F{yellow}%B&gt;%b%f &#39;
+PROMPT=&#39;%F{green}→%f %F{magenta}%1~%f ${GITSTATUS_PROMPT:+[}${GITSTATUS_PROMPT}${GITSTATUS_PROMPT:+]}${GITSTATUS_PROMPT:+ }$ &#39;
 </code></pre>
 <pre><code>### clash自定义规则
 prepend:

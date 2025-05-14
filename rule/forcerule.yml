@@ -49,6 +49,8 @@ dns:
     - '*'
     - +.lan
     - +.local
+  default-nameserver:
+    - 223.5.5.5
   nameserver:
     # - dhcp://en0
     - 8.8.8.8

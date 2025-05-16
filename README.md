@@ -5,6 +5,9 @@
 ### 开发命令行工具
 ```
 xcode-select --install
+
+sudo xattr -rd com.apple.quarantine xxxx
+
 ```
 
 How to remove the ‘Last Login’ prompt from iTerm/Terminal on macOS?

@@ -7,10 +7,6 @@ log-level: warning
 external-controller: 127.0.0.1:49469
 secret: "b486f732af5f5600d231581a4403f097"
 
-# geox-url:
-#   geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-#   geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-#   mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
 geox-url:
   geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
   geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
@@ -27,7 +23,7 @@ global-client-fingerprint: chrome
 
 unified-delay: false
 
-# tcp-concurrent: true
+tcp-concurrent: true
 
 profile: # 存储 select 选择记录
   store-selected: true

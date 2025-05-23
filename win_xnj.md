@@ -38,3 +38,17 @@ Defender Control v2.1
 
 https://github.com/ionuttbara/windows-defender-remover
 
+
+优雅的跳过 win10/win11 新系统强制登录微软账号
+
+OOBE 界面直接 [shift+f10] 弹出 CMD ，往里头输 [oobe\bypassnro] 优雅重启
+
+oobe\bypassnro（失效）
+
+no@thankyou.com (未知）
+
+
+**最新 start ms-cxh:localonly 调出账户设置窗口，快速创建账号然后确定重启即可**
+
+
+

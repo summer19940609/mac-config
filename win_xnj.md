@@ -1,3 +1,9 @@
+```
+irm https://get.activated.win | iex
+```
+https://github.com/massgravel/Microsoft-Activation-Scripts 激活工具
+
+
 
 **去除搜索界面信息流**
 ```

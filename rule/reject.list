@@ -9,3 +9,23 @@ DOMAIN-SUFFIX,zhelibao.com
 
 # mumu模拟器pro
 DOMAIN,mumu.nie.netease.com
+
+# LINE ads
+DOMAIN,a.line.me
+DOMAIN,d.line-scdn.net
+DOMAIN,ad.line-scdn.net
+DOMAIN,linecrs.line-scdn.net
+DOMAIN,vos.line-scdn.net
+DOMAIN,crs-event.line.me
+DOMAIN,crs-hometab-event.line.me
+DOMAIN,uts-front.line-apps.com
+# bilibili pcdn
+DOMAIN-SUFFIX,v1d.szbdyd.com
+DOMAIN-SUFFIX,mcdn.bilivideo.cn
+# QQMusic pcdn
+DOMAIN,tp2p.kg.qq.com
+DOMAIN,twns.p2ptun.qq.com
+# NeteaseMusic pcdn
+DOMAIN,sd-gl.xinqiucc.com
+DOMAIN,xyp-n.kuiniuca.com
+DOMAIN,sdk1xyajs.data.kuiniuca.com

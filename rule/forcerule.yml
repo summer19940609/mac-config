@@ -52,10 +52,10 @@ dns:
     - 8.8.8.8
     - 8.8.4.4
   nameserver-policy:
-    "*.qpic.cn": - 119.29.29.29
-    "*.qlogo.cn": - 119.29.29.29
-    "*.xhscdn.com":  - 119.29.29.29
-    "*.xiaohongshu.com": - 119.29.29.29
+    "*.qpic.cn": 119.29.29.29
+    "*.qlogo.cn": 119.29.29.29
+    "*.xhscdn.com": 119.29.29.29
+    "*.xiaohongshu.com": 119.29.29.29
     "geosite:cn,private,apple":
       - https://23434.alidns.com/dns-query
       - https://doh.pub/dns-query

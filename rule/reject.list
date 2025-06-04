@@ -29,3 +29,6 @@ DOMAIN,twns.p2ptun.qq.com
 DOMAIN,sd-gl.xinqiucc.com
 DOMAIN,xyp-n.kuiniuca.com
 DOMAIN,sdk1xyajs.data.kuiniuca.com
+
+# 微信广告
+DOMAIN-SUFFIX,wxs.qq.com

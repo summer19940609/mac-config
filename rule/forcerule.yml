@@ -19,7 +19,7 @@ geo-update-interval: 6
 find-process-mode: strict
 keep-alive-interval: 1800
 
-global-client-fingerprint: chrome
+global-client-fingerprint: random # 随机指纹
 
 unified-delay: false
 

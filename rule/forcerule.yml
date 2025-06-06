@@ -71,3 +71,4 @@ dns:
     "geosite:cn,private,apple":
       - https://23434.alidns.com/dns-query
       - https://doh.pub/dns-query
+      - 210.22.70.3 #LT

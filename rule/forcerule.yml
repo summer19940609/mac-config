@@ -23,7 +23,10 @@ global-client-fingerprint: chrome
 
 unified-delay: false
 
-tcp-concurrent: true
+tcp-concurrent: false
+# tcp-concurrent: true
+
+keep-alive-interval: 1800
 
 profile: # 存储 select 选择记录
   store-selected: true

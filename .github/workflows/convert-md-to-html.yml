@@ -49,14 +49,14 @@ jobs:
         run: |
           cp win_xnj.html verygoodbye/win-xnj.html
 
-      # 步骤6：提交并推送到目标仓库
       - name: Commit and push to verygoodbye
         run: |
           cd verygoodbye
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+          git remote set-url origin https://${{ secrets.DEPLOY_TOKEN }}@github.com/summer19940609/verygoodbye.git  # 强制使用 Token 认证
           git add win-xnj.html
           git commit -m "Auto-update win-xnj.html (generated at $(date))"
-          git push
+          git push origin HEAD:main  # 明确推送到 main 分支
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # 使用 PAT 推送
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # 仍需保留环境变量

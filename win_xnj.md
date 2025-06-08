@@ -37,24 +37,24 @@ DISM.exe /Online /Set-ReservedStorageState /State:Disabled
 
 WUB
 
-> https://www.sordum.org/9470/windows-update-blocker-v1-8/
+```https://www.sordum.org/9470/windows-update-blocker-v1-8/ ```
 
 ### 关闭 Windows Defender
 
-> https://iknow.lenovo.com.cn/spider/detail/kd/181036
+```https://iknow.lenovo.com.cn/spider/detail/kd/181036```
 
 Defender Control v2.1
 
-> https://github.com/ionuttbara/windows-defender-remover
+```https://github.com/ionuttbara/windows-defender-remover```
 
 
 优雅的跳过 win10/win11 新系统强制登录微软账号
 
 OOBE 界面直接 [shift+f10] 弹出 CMD ，往里头输 [oobe\bypassnro] 优雅重启
 
-> oobe\bypassnro（失效）
+```oobe\bypassnro（失效）```
 
-> no@thankyou.com (未知）
+```no@thankyou.com (未知）```
 
 
 **最新 ```start ms-cxh:localonly``` 调出账户设置窗口，快速创建账号然后确定重启即可**

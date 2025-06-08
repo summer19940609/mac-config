@@ -42,20 +42,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: summer19940609/verygoodbye
-          token: ${{ secrets.GITHUB_TOKEN }}
-          path: verygoodbye  # 拉取到子目录
-
-      - name: Copy HTML to target repo
-        run: |
-          # 复制生成的 HTML 到目标仓库
-          cp win_xnj.html verygoodbye/win-xnj.html
-
+          token: ${{ secrets.DEPLOY_TOKEN }}  # 使用 PAT
+          path: verygoodbye
+      
       - name: Commit and push to target repo (verygoodbye)
         run: |
           cd verygoodbye
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-
+      
           git add win-xnj.html
           if git diff --cached --quiet; then
             echo "No changes to commit."
@@ -63,3 +58,5 @@ jobs:
             git commit -m "Auto-deploy win-xnj.html from mac-config"
             git push
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # 确保 push 时使用 PAT

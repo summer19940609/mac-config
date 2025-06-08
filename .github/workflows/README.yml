@@ -32,10 +32,10 @@ jobs:
 
       - name: Copy and Commit
         run: |
-          cp README.html verygoodbye/mac-xnj.html
+          cp README.html verygoodbye/mac.html
           cd verygoodbye
-          git add mac-xnj.html.html
-          git commit -m "Auto-update mac-xnj.html (generated at $(date))"
+          git add mac.html.html
+          git commit -m "Auto-update mac.html (generated at $(date))"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}

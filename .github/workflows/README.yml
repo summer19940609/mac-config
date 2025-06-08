@@ -34,7 +34,7 @@ jobs:
         run: |
           cp README.html verygoodbye/mac.html
           cd verygoodbye
-          git add mac.html.html
+          git add mac.html
           git commit -m "Auto-update mac.html (generated at $(date))"
           git push
         env:

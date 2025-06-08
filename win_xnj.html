@@ -1,0 +1,28 @@
+<p>测试1</p>
+<pre><code>irm https://get.activated.win | iex</code></pre>
+<p>https://github.com/massgravel/Microsoft-Activation-Scripts
+激活工具</p>
+<p><strong>去除搜索界面信息流</strong></p>
+<pre><code>reg add &quot;HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\explorer&quot; /v DisableSearchBoxSuggestions /t reg_dword /d 1 /f</code></pre>
+<p><strong>推迟 3000 天更新</strong></p>
+<pre><code>reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings&quot; /v FlightSettingsMaxPauseDays /t reg_dword /d 3000 /f</code></pre>
+<p>https://www.sordum.org/9470/windows-update-blocker-v1-8/</p>
+<p>https://github.com/tsgrgo/windows-update-disabler</p>
+<p>https://github.com/ionuttbara/windows-defender-remover</p>
+<p>关闭 Windows 11 系统广告的工具：OFGB</p>
+<p>https://github.com/xM4ddy/OFGB</p>
+<h3 id="清除系统保留空间">清除系统保留空间</h3>
+<pre><code>DISM.exe /Online /Set-ReservedStorageState /State:Disabled</code></pre>
+<h3 id="禁用win更新">禁用win更新</h3>
+<p>WUB</p>
+<p>https://www.sordum.org/9470/windows-update-blocker-v1-8/</p>
+<h3 id="关闭-windows-defender">关闭 Windows Defender</h3>
+<p>https://iknow.lenovo.com.cn/spider/detail/kd/181036</p>
+<p>Defender Control v2.1</p>
+<p>https://github.com/ionuttbara/windows-defender-remover</p>
+<p>优雅的跳过 win10/win11 新系统强制登录微软账号</p>
+<p>OOBE 界面直接 [shift+f10] 弹出 CMD ，往里头输 [oobe] 优雅重启</p>
+<p>oobe（失效）</p>
+<p>no@thankyou.com (未知）</p>
+<p><strong>最新 start
+ms-cxh:localonly 调出账户设置窗口，快速创建账号然后确定重启即可</strong></p>

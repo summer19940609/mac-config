@@ -1,4 +1,4 @@
-测试3
+测试4
 
 ```
 irm https://get.activated.win | iex

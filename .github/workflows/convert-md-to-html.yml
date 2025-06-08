@@ -24,13 +24,18 @@ jobs:
           git config --global user.email "actions@github.com"
 
       - name: Push to verygoodbye
-        uses: ad-m/github-push-action@master
+        uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.DEPLOY_TOKEN }}
           repository: summer19940609/verygoodbye
-          branch: main
-          force: true
-          directory: .
-          target_branch: main
-          source_file: "win_xnj.html"
-          destination_file: "win-xnj.html"
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          path: verygoodbye
+
+      - name: Copy and Commit
+        run: |
+          cp win_xnj.html verygoodbye/win-xnj.html
+          cd verygoodbye
+          git add win-xnj.html
+          git commit -m "Auto-update win-xnj.html (generated at $(date))"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}

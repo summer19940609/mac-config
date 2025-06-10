@@ -41,3 +41,6 @@ DOMAIN-SUFFIX,koyso.com
 
 # 谷歌play下载
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+
+# 微信
+IP-CIDR,182.254.116.0/24

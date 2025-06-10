@@ -65,9 +65,9 @@ dns:
     - 8.8.8.8
     - 8.8.4.4
   nameserver-policy:
-    "*.qq.com": 119.29.29.29
-    "*.tencent.com": 119.29.29.29
-    "*.weixin.com": 119.29.29.29
+    "+.qq.com": 119.29.29.29
+    "+.tencent.com": 119.29.29.29
+    "+.weixin.com": 119.29.29.29
     "geosite:cn,private,apple":
       - https://23434.alidns.com/dns-query
       - https://doh.pub/dns-query

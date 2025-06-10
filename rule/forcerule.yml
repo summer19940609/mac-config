@@ -57,6 +57,7 @@ dns:
     - '*'
     - +.lan
     - +.local
+    - *.10099.com
   default-nameserver:
     - 223.5.5.5
   nameserver:

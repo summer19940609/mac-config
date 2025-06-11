@@ -3,7 +3,7 @@ name: Convert Markdown to HTML and Deploy
 on:
   push:
     branches: [main]
-    paths: ['README.md']
+    paths: ['README.md', 'pandoc.css']
 
 jobs:
   convert-and-deploy:

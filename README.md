@@ -48,6 +48,22 @@ defaults write com.apple.dock autohide-time-modifier -int 0.5;killall Dock
 defaults delete com.apple.dock autohide-time-modifier;killall Dock
 ```
 
+### 菜单栏间距调整
+```bash
+# 指定间距
+defaults -currentHost write -globalDomain NSStatusItemSpacing -int 10
+# 指定内边距
+defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6
+# 当前间距查询
+defaults -currentHost read -globalDomain NSStatusItemSpacing
+defaults -currentHost read -globalDomain NSStatusItemSelectionPadding
+# 重置
+defaults -currentHost delete -globalDomain NSStatusItemSpacing
+defaults -currentHost delete -globalDomain NSStatusItemSelectionPadding
+```
+
+
+
 macOS 14 输入法提示去除
 ```
 sudo mkdir -p /Library/Preferences/FeatureFlags/Domain

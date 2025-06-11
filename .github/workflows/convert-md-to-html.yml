@@ -15,7 +15,7 @@ jobs:
       - name: Convert Markdown to HTML
         run: |
           sudo apt-get install -y pandoc
-          pandoc win_xnj.md -o win_xnj.html
+          pandoc --standalone --self-contained --css pandoc.css win_xnj.md --output win_xnj.html
           echo "<!-- Generated at $(date) -->" >> win_xnj.html
 
       - name: Configure Git

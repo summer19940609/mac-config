@@ -65,4 +65,14 @@ OOBE 界面直接 [shift+f10] 弹出 CMD ，往里头输 [oobe\bypassnro] 优雅
 **最新 ```start ms-cxh:localonly``` 调出账户设置窗口，快速创建账号然后确定重启即可**
 
 
+### 卸载edge
+
+```bash
+https://github.com/ShadowWhisperer/Remove-MS-Edge
+
+Uninstall Microsoft Edge silently, through an executable or batch script.
+
+```
+
+
 

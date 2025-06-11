@@ -72,6 +72,8 @@ https://github.com/ShadowWhisperer/Remove-MS-Edge
 
 Uninstall Microsoft Edge silently, through an executable or batch script.
 
+https://github.com/rcmaehl/MSEdgeRedirect
+
 ```
 
 

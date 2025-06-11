@@ -3,7 +3,7 @@ name: Convert Markdown to HTML and Deploy
 on:
   push:
     branches: [main]
-    paths: ['win_xnj.md']
+    paths: ['win_xnj.md', 'pandoc.css']
 
 jobs:
   convert-and-deploy:

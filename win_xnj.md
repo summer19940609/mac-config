@@ -30,6 +30,8 @@ https://github.com/ionuttbara/windows-defender-remover
 
 https://github.com/xM4ddy/OFGB
 
+https://github.com/zetaloop/OFGB （汉化）
+
 ### 清除系统保留空间
 ```
 DISM.exe /Online /Set-ReservedStorageState /State:Disabled

@@ -79,4 +79,11 @@ https://github.com/rcmaehl/MSEdgeRedirect
 ```
 
 
+### 安装 Microsoft store
+
+wsreset -i 联网自动下载安装 Microsoft store
+
+或者下载 xbox，然后安装
+
+
 

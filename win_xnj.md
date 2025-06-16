@@ -86,4 +86,9 @@ wsreset -i 联网自动下载安装 Microsoft store
 或者下载 xbox，然后安装
 
 
+### win10 卓越性能
+
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+
+
 

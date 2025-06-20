@@ -100,4 +100,8 @@ wsreset -i 联网自动下载安装 Microsoft store
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 
 
+### 运行库
 
+mefcl.com/grlpackage.html
+
+游戏运行库、游戏常用运行库 合集 | Game Runtime Libraries Package（v6.4.25.0614）

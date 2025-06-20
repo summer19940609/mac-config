@@ -63,9 +63,18 @@ OOBE 界面直接 [shift+f10] 弹出 CMD ，往里头输 [oobe\bypassnro] 优雅
 
 日志查看软件，Emeditor，https://www.emeditor.com/
 
+方法二 命令：
 
-**最新 ```start ms-cxh:localonly``` 调出账户设置窗口，快速创建账号然后确定重启即可**
+```bash
+start ms-cxh:localonly
+```
 
+方法三 命令：
+
+```bash
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f
+重启命令：shutdown -r -t 0
+```
 
 ### 卸载edge
 

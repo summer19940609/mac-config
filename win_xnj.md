@@ -105,3 +105,8 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 mefcl.com/grlpackage.html
 
 游戏运行库、游戏常用运行库 合集 | Game Runtime Libraries Package（v6.4.25.0614）
+
+
+### 关闭VBS
+
+Win11 24H2 中关闭 VBS，可以下载雷电模拟器。

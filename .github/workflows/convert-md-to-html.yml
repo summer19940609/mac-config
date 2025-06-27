@@ -16,7 +16,8 @@ jobs:
         run: |
           sudo apt-get install -y pandoc
           pandoc --standalone --self-contained --css pandoc.css win_xnj.md --output win_xnj.html
-          echo "<!-- Generated at $(date) -->" >> win_xnj.html
+          # 在body标签内最上方插入编辑时间和换行
+          sed -i '/<body>/a <p>Last updated: '"$(date)"'</p>\n' win_xnj.html
 
       - name: Configure Git
         run: |

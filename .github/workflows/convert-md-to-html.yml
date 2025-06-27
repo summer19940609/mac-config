@@ -16,8 +16,8 @@ jobs:
         run: |
           sudo apt-get install -y pandoc
           pandoc --standalone --self-contained --css pandoc.css win_xnj.md --output win_xnj.html
-          # 在body标签内最上方插入编辑时间和换行
-          sed -i '/<body>/a <p>Last updated: '"$(date)"'</p>\n' win_xnj.html
+          # 在body标签内最上方插入中文编辑时间和换行，使用YYYY-MM-DD格式
+          sed -i '/<body>/a <p>更新时间: '"$(date +"%Y-%m-%d")"'</p>\n' win_xnj.html
 
       - name: Configure Git
         run: |
@@ -36,7 +36,7 @@ jobs:
           cp win_xnj.html verygoodbye/win-xnj.html
           cd verygoodbye
           git add win-xnj.html
-          git commit -m "Auto-update win-xnj.html (generated at $(date))"
+          git commit -m "Auto-update win-xnj.html (generated at $(date +"%Y-%m-%d"))"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}

@@ -74,17 +74,15 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy = DIRECT, tag = CN REGIO
 
 
 [Plugin]
-https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy = 漏网之鱼, enabled = true
+https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy = 节点选择, enabled = false
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled = true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled = true
 https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled = true
-https://kelee.one/Tool/Loon/Lpx/QuickSearch.lpx, enabled = true
-https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy = 漏网之鱼, enabled = true
-https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled = true
-https://kelee.one/Tool/Loon/Lpx/TestFlightRegionUnlock.lpx, policy = DIRECT, enabled = true
-https://kelee.one/Tool/Loon/Lpx/BoxJs.lpx, policy = 漏网之鱼, enabled = true
-https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx, policy = 漏网之鱼, enabled = true
-https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy = 漏网之鱼, enabled = true
+https://kelee.one/Tool/Loon/Lpx/QuickSearch.lpx, enabled = false
+https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy = 节点选择, enabled = true
+https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled = false
+https://kelee.one/Tool/Loon/Lpx/TestFlightRegionUnlock.lpx, policy = DIRECT, enabled = false
+https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy = 节点选择, enabled = false
 https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx, enabled=true

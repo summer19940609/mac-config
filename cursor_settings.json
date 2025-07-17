@@ -1,13 +1,13 @@
 {
     "debug.console.fontFamily": "JetBrains Mono",
-    "debug.console.fontSize": 14,
+    "debug.console.fontSize": 12,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.accessibilitySupport": "off",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.codeLensFontFamily": "JetBrains Mono",
     "editor.cursorBlinking": "smooth",
     "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.insertSpaces": false,
     "editor.lineNumbers": "on",
     "editor.minimap.maxColumn": 80,
@@ -71,7 +71,8 @@
     },
     "workbench.colorCustomizations": {
         "focusBorder": "#F7F7F7",
-        "editor.selectionHighlightBorder": "#0000"
+        "editor.selectionHighlightBorder": "#0000",
+        "titleBar.activeForeground": "#ff6f00",  // 活动窗口标题栏文字颜色
     },
     "gitlens.graph.minimap.enabled": false,
     "editor.cursorSmoothCaretAnimation": "on",
@@ -82,8 +83,6 @@
     "terminal.integrated.shellIntegration.history": 1000,
     "editor.bracketPairColorization.enabled": true,
     "terminal.integrated.cursorStyle": "line",
-    "chat.commandCenter.enabled": false,
-    "update.mode": "none",
     "window.commandCenter": true,
     "cursor.cpp.enablePartialAccepts": true,
     "workbench.editor.tabSizingFixedMaxWidth": 100,
@@ -94,4 +93,5 @@
     "window.newWindowDimensions": "inherit",
     "explorer.confirmDelete": false,
     "cursor.general.disableHttp2": true,
+    "git.blame.editorDecoration.enabled": true,
 }

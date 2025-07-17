@@ -94,4 +94,8 @@
     "explorer.confirmDelete": false,
     "cursor.general.disableHttp2": true,
     "git.blame.editorDecoration.enabled": true,
+    "projectManager.git.baseFolders": [
+        "~/Desktop/jingdigital"
+    ],
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
 }

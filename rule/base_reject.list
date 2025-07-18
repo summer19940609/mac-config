@@ -1,16 +1,4 @@
 DOMAIN,ocsp.apple.com
 DOMAIN,ocsp2.apple.com
 
-# ali
-# DOMAIN,oneagent-filter.alibaba-inc.com
-# PROCESS-NAME,CloudShell
-# PROCESS-NAME,AliLangClient
-
-# PROCESS-NAME,clash
-# PROCESS-NAME,clash-meta
-# PROCESS-NAME,verge-clash
-# PROCESS-NAME,verge-clash-meta
-# PROCESS-NAME,verge-mihomo
-# PROCESS-NAME,verge-mihomo-alpha
-
-AND,((NETWORK,UDP),(DST-PORT,443))
+# AND,((NETWORK,UDP),(DST-PORT,443))

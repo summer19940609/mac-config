@@ -22,9 +22,9 @@ touch .hushlogin
 
 `sudo spctl --master-disable`
 
-关闭AWDL：sudo ifconfig awdl0 down
+关闭AWDL：`sudo ifconfig awdl0 down`
 
-开启AWDL：sudo ifconfig awdl0 up
+开启AWDL：`sudo ifconfig awdl0 up`
 
 取消开机声音
 

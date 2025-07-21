@@ -1,100 +1,56 @@
-{
-    "debug.console.fontFamily": "JetBrains Mono",
-    "debug.console.fontSize": 12,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.accessibilitySupport": "off",
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.codeLensFontFamily": "JetBrains Mono",
-    "editor.cursorBlinking": "smooth",
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 14,
-    "editor.insertSpaces": false,
-    "editor.lineNumbers": "on",
-    "editor.minimap.maxColumn": 80,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.renderLineHighlight": "all",
-    "editor.scrollBeyondLastLine": false,
-    "editor.smoothScrolling": true,
-    "editor.stickyScroll.enabled": false,
-    "editor.tabCompletion": "on",
-    "editor.unicodeHighlight.allowedLocales": {
-        "zh-hans": true,
-        "zh-hant": true
-    },
-    "editor.unicodeHighlight.includeStrings": false,
-    "editor.unicodeHighlight.nonBasicASCII": false,
-    "explorer.fileNesting.expand": false,
-    "files.autoSave": "afterDelay",
-    "files.exclude": {
-        ".DS_Store": true,
-        "**/bower_components": true,
-        "**/build": true,
-        "**/tmp": true,
-        "node_modules": true
-    },
-    "files.watcherExclude": {
-        "**/bower_components/**": true,
-        "**/dist/**": true,
-        "**/tmp/**": true
-    },
-    "git.autofetch": true,
-    "git.autofetchPeriod": 60,
-    "git.confirmSync": false,
-    "gitlens.showWhatsNewAfterUpgrades": false,
-    "scm.inputFontSize": 14,
-    "search.quickOpen.history.filterSortOrder": "recency",
-    "security.workspace.trust.untrustedFiles": "open",
-    "terminal.integrated.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontSize": 14,
-    "update.showReleaseNotes": false,
-    "window.dialogStyle": "custom",
-    "window.title": "${rootName}",
-    "workbench.colorTheme": "Default Light Modern",
-    "workbench.editor.empty.hint": "hidden",
-    "workbench.editor.splitInGroupLayout": "vertical",
-    "workbench.editor.wrapTabs": true,
-    "workbench.list.smoothScrolling": true,
-    "workbench.tree.enableStickyScroll": false,
-    "terminal.integrated.persistentSessionReviveProcess": "never",
-    "editor.copyWithSyntaxHighlighting": false,
-    "editor.dragAndDrop": false,
-    "editor.padding.top": 2,
-    "editor.scrollbar.verticalScrollbarSize": 24,
-    "editor.find.addExtraSpaceOnTop": false,
-    "editor.find.seedSearchStringFromSelection": "never",
-    "workbench.editor.highlightModifiedTabs": true,
-    "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 1,
-    "search.exclude": {
-        "**/node_modules": false
-    },
-    "workbench.colorCustomizations": {
-        "focusBorder": "#F7F7F7",
-        "editor.selectionHighlightBorder": "#0000",
-        "titleBar.activeForeground": "#ff6f00",  // 活动窗口标题栏文字颜色
-    },
-    "gitlens.graph.minimap.enabled": false,
-    "editor.cursorSmoothCaretAnimation": "on",
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.value": 15,
-    "breadcrumbs.enabled": true,
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.shellIntegration.history": 1000,
-    "editor.bracketPairColorization.enabled": true,
-    "terminal.integrated.cursorStyle": "line",
-    "window.commandCenter": true,
-    "cursor.cpp.enablePartialAccepts": true,
-    "workbench.editor.tabSizingFixedMaxWidth": 100,
-    "workbench.editor.tabSizingFixedMinWidth": 100,
-    "workbench.activityBar.orientation": "vertical",
-    "git.allowNoVerifyCommit": true,
-    "git.confirmNoVerifyCommit": false,
-    "window.newWindowDimensions": "inherit",
-    "explorer.confirmDelete": false,
-    "cursor.general.disableHttp2": true,
-    "git.blame.editorDecoration.enabled": true,
-    "projectManager.git.baseFolders": [
-        "~/Desktop/jingdigital"
-    ],
-    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+
+export EDITOR='code'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+alias gco="git checkout"
+alias glo="git log --oneline"
+alias gb="git branch"
+alias gst="git status"
+alias ll="ls -lAh"
+
+alias setproxy="export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897"
+alias unsetproxy="unset ALL_PROXY"
+
+alias zsh-rosetta="arch -x86_64 zsh"
+alias killdock="killall Dock"
+alias src="source ~/.zshrc"
+
+# java管理
+export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+export JAVA_HOME=$JAVA_11_HOME
+alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
+alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
+
+# 先尝试从历史记录中查找建议，如果找不到，再从补全引擎中查找。
+export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
+
+alias awdldown='curl -sL https://github.com/meterup/awdl_wifi_scripts/raw/refs/heads/main/awdl-daemon.sh | bash'
+alias awdlup='curl -s https://github.com/meterup/awdl_wifi_scripts/raw/refs/heads/main/cleanup-and-reenable-awdl.sh | bash &> /dev/null'
+
+alias awdloff='sudo ifconfig awdl0 down'
+
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.zsh
+
+# 优化git仓库检测函数
+function git_prompt_info() {
+  if git status --porcelain=v1 >/dev/null 2>&1; then
+    echo " [${GITSTATUS_PROMPT}]"
+  fi
 }
+
+# 设置提示符，只在git仓库中显示git信息
+PROMPT='%F{green}→%f %F{magenta}%1~%f$(git_prompt_info) '
+
+[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh

@@ -79,14 +79,14 @@ sudo mkdir -p /Library/Preferences/FeatureFlags/Domain && sudo /usr/libexec/Plis
 
 切换中英文延迟
 
-hidutil property --set '{"CapsLockDelayOverride":0}'
+`hidutil property --set '{"CapsLockDelayOverride":0}'`
 
-brew install --cask capslocknodelay
+`brew install --cask capslocknodelay`
 
 
-开启任意位置拖动窗口功能,重启, 需要按住control+command，然后再去用鼠标拖动窗口的任意位置
+开启任意位置拖动窗口功能,重启, 需要按住`control+command`，然后再去用鼠标拖动窗口的任意位置
 
-defaults write -g NSWindowShouldDragOnGesture -bool true
+`defaults write -g NSWindowShouldDragOnGesture -bool true`
 
 
 ### Quick Look plugins

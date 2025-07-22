@@ -49,6 +49,7 @@ FINAL,漏网之鱼
 [Remote Rule]
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/reject.list, policy=REJECT, tag=REJECT, enabled=true
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/base_reject.list, policy=REJECT, tag=REJECT, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/rule/rejectAd.list, policy=REJECT, tag=rejectAd.list, enabled=true
 
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/direct.list, policy=DIRECT, enabled=true, tag=DIRECT
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Lan/Lan.list, policy=DIRECT, enabled=true, tag=Lan
@@ -74,17 +75,17 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy = DIRECT, tag = CN REGIO
 
 
 [Plugin]
-https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy = 节点选择, enabled = false
-https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled = true
-https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled = true
-https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled = true
-https://kelee.one/Tool/Loon/Lpx/QuickSearch.lpx, enabled = false
-https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy = 节点选择, enabled = true
-https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled = false
-https://kelee.one/Tool/Loon/Lpx/TestFlightRegionUnlock.lpx, policy = DIRECT, enabled = false
-https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy = 节点选择, enabled = false
-https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy=节点选择, enabled=false
+https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/blockAds.plugin, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QuickSearch.lpx, enabled=false
+https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=节点选择, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=false
+https://kelee.one/Tool/Loon/Lpx/TestFlightRegionUnlock.lpx, policy=DIRECT, enabled=false
+https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=节点选择, enabled=false
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/weibo.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx, enabled=true
 
 [Mitm]

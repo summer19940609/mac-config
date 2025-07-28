@@ -1,0 +1,46 @@
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+
+export EDITOR='code'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+alias gco="git checkout"
+alias glo="git log --oneline"
+alias gb="git branch"
+alias gst="git status -s"
+alias ll="ls -lAh"
+
+# alias setproxy="export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897"
+# alias unsetproxy="unset ALL_PROXY"
+
+alias zsh-rosetta="arch -x86_64 zsh"
+alias killdock="killall Dock"
+alias src="source ~/.zshrc"
+
+# java管理
+export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+export JAVA_HOME=$JAVA_11_HOME
+alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
+alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
+
+# 先尝试从历史记录中查找建议，如果找不到，再从补全引擎中查找。
+export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
+
+alias awdloff='sudo ifconfig awdl0 down'
+
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.zsh
+
+# # 设置提示符，只在git仓库中显示git信息
+PROMPT='%F{green}→%f %F{magenta}%1~%f${GITSTATUS_PROMPT:+ [$GITSTATUS_PROMPT]} '
+
+[ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh

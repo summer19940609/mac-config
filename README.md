@@ -69,6 +69,11 @@ macOS 14 输入法提示去除
 sudo mkdir -p /Library/Preferences/FeatureFlags/Domain
 
 sudo /usr/libexec/PlistBuddy -c "Add 'redesigned_text_cursor:Enabled' bool false" /Library/Preferences/FeatureFlags/Domain/UIKit.plist
+
+
+# 关闭 macos 自带的切换输入法提示体验更佳！
+sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
+
 ```
 
 ```

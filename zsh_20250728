@@ -44,3 +44,6 @@ source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.zsh
 PROMPT='%F{green}→%f %F{magenta}%1~%f${GITSTATUS_PROMPT:+ [$GITSTATUS_PROMPT]} '
 
 [ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
+
+# 输入法切换延迟问题
+hidutil property --set '{"CapsLockDelayOverride":0}' >/dev/null 2>&1

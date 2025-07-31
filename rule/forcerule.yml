@@ -60,8 +60,8 @@ dns:
     - +.10099.com
   default-nameserver:
     - 223.5.5.5
+    - 119.29.29.29
   nameserver:
-    # - dhcp://en0
     - 8.8.8.8
     - 8.8.4.4
   nameserver-policy:
@@ -72,3 +72,4 @@ dns:
       - https://23434.alidns.com/dns-query
       - https://doh.pub/dns-query
       - 210.22.70.3 #LT
+      - 202.96.199.132  #DX

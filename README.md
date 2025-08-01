@@ -3,6 +3,14 @@
 
 # mac-config
 
+### 重新索引
+
+```
+sudo mdutil -a -i off
+sudo mdutil -a -i on
+sudo mdutil -E
+```
+
 ### 开发命令行工具
 ```
 xcode-select --install

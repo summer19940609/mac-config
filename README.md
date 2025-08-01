@@ -3,7 +3,7 @@
 
 # mac-config
 
-### 重新索引
+### 重建索引
 
 ```
 sudo mdutil -a -i off

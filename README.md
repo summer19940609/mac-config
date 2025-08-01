@@ -3,6 +3,16 @@
 
 # mac-config
 
+
+### 定时任务
+```
+→ ~ EDITOR=vi crontab -e
+crontab: installing new crontab
+→ ~ crontab -l
+0 */1 * * * kill -9 $(pgrep CursorUIViewService) > /dev/null 2>&1
+0 */1 * * * kill -9 $(pgrep SCIM) > /dev/null 2>&1
+```
+
 ### 重建索引
 
 ```

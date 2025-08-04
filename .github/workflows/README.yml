@@ -7,7 +7,7 @@ on:
 
 jobs:
   convert-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout mac-config
         uses: actions/checkout@v4
@@ -30,6 +30,8 @@ jobs:
         run: |
           cd mac-config
           pandoc --standalone --self-contained --css pandoc.css README.md --output README.html
+          # 插入中文更新时间到body标签内最上方
+          sed -i '/<body>/a \    <p style="margin-top: 0; margin-bottom: 1em;">更新时间: '"$(date +"%Y-%m-%d")"'</p>\n' README.html
           echo "<!-- Generated at $(date) -->" >> README.html
 
       - name: Configure Git
@@ -42,7 +44,7 @@ jobs:
           cp mac-config/README.html verygoodbye/mac.html
           cd verygoodbye
           git add mac.html
-          git commit -m "Auto-update mac.html (generated at $(date))"
+          git commit -m "Auto-update mac.html (更新时间: $(date +"%Y-%m-%d"))"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}

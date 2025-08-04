@@ -134,6 +134,8 @@ pre {
   word-wrap: break-word;
 }
 
+pre code { display: block; background: #f5f5f5; padding: 10px; }
+
 b, strong {
   font-weight: bold;
 }

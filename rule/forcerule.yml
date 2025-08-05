@@ -28,7 +28,7 @@ tcp-concurrent: false
 keep-alive-interval: 1800
 
 profile: # 存储 select 选择记录
-  store-selected: true
+  store-selected: false
   # 持久化 fake-ip
   # store-fake-ip: true
 

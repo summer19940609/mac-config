@@ -11,3 +11,8 @@ DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,gravatar.com
 
 DOMAIN,gemini.google.com
+
+
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,openai.com

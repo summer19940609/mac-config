@@ -394,5 +394,8 @@ delete: []
 ```
 orb config set rosetta true   # 开启
 orb config set rosetta false  # 关闭
+
+orb restart
+
 ```
 

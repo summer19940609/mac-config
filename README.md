@@ -231,10 +231,7 @@ canvas_binary_host_mirror=https://registry.npmmirror.com/node-canvas-prebuilt/
 unsafe-perm=true
 
 → ~ $ cat ~/.config/husky/init.sh
-# eval "$(fnm env --use-on-cd)"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+eval "$(fnm env --use-on-cd)"
 
 
 # 安装其他版本
@@ -266,21 +263,6 @@ mirrors 配置
 
 ### pyenv
 
-
-### nvm 安装 node
-
-```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash 或者
-
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
-
-安装了 `nvm-lazy` 后不需要下面的命令
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-```
 
 ### fnm use
 ```

@@ -387,3 +387,12 @@ delete: []
 
 
 
+### orbstack
+
+开启 Rosetta，在 Apple Silicon (ARM) 上运行 Intel 架构 (x86/x86_64/amd64) 镜像。
+
+```
+orb config set rosetta true   # 开启
+orb config set rosetta false  # 关闭
+```
+

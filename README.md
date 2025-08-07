@@ -399,3 +399,14 @@ orb restart
 
 ```
 
+
+### 系统pyhton环境
+
+```
+步骤	命令
+创建虚拟环境	python3 -m venv venv
+激活	source venv/bin/activate
+安装包	pip install ragas
+退出	deactivate
+```
+

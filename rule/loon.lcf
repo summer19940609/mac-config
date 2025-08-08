@@ -77,6 +77,7 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy = DIRECT, tag = CN REGIO
 
 
 [Plugin]
+https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/General.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy=节点选择, enabled=false
 https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/DNS.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled=true

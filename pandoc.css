@@ -16,8 +16,21 @@ body {
   line-height: 1.7;
   padding: 1em;
   margin: auto;
-  max-width: 42em;
   background: #fefefe;
+  width: 75%;
+  padding-right: 25%;
+}
+
+#TOC {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+  background: #f8f8f8;
+  border-left: 1px solid #ddd;
 }
 
 a {

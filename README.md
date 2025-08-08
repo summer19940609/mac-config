@@ -275,10 +275,6 @@ cat ~/.huskyrc
 eval "$(fnm env --use-on-cd)"
 ```
 
-
-### 输入法自动切换
-
-
 ### 油猴脚本安装列表
 
 
@@ -400,13 +396,12 @@ orb restart
 ```
 
 
-### 系统pyhton环境
+### 系统python环境
 
 ```
-步骤	命令
-创建虚拟环境	python3 -m venv venv
-激活	source venv/bin/activate
-安装包	pip install ragas
-退出	deactivate
+python3 -m venv venv		#创建虚拟环境	
+source venv/bin/activate 	#激活
+pip install ragas			#安装包
+deactivate					#退出
 ```
 

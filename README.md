@@ -285,43 +285,9 @@ eval "$(fnm env --use-on-cd)"
 
 ### zshrc
 ```
-# 历史记录文件和大小
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-
-# autocd：直接通过路径更改目录
-# extendedglob：使用额外的模式匹配特性
-# nomatch：未匹配的模式导致错误
-# beep：错误时发出蜂鸣声
-# notify：立即报台作业状态的变化
-setopt extendedglob nomatch notify
-unsetopt autocd beep
-
-setopt HIST_IGNORE_SPACE
-# 忽略重复记录
-setopt HIST_IGNORE_DUPS
-
-# 关掉 flowcontrol
-unsetopt flowcontrol
-
-DISABLE_MAGIC_FUNCTIONS=true
-
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-  autoload -Uz compinit
-  compinit
-fi
-
-# zsh git 提示
-# autoload -Uz vcs_info
-# precmd_vcs_info() { vcs_info }
-# precmd_functions+=( precmd_vcs_info )
-# setopt prompt_subst
-# PROMPT='%F{green}→%f %F{magenta}%1~%f ${vcs_info_msg_0_} %F{green}$%f '
-# zstyle ':vcs_info:git:*' formats '[%F{cyan}%b%f]'
-
-# PROMPT='%F{green}→%f %F{magenta}%1~%f %F{green}$%f'
 
 export EDITOR='code'
 
@@ -332,25 +298,15 @@ export LC_CTYPE=en_US.UTF-8
 alias gco="git checkout"
 alias glo="git log --oneline"
 alias gb="git branch"
-alias gst="git status"
+alias gst="git status -s"
 alias ll="ls -lAh"
+
+# alias setproxy="export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897"
+# alias unsetproxy="unset ALL_PROXY"
+
+alias zsh-rosetta="arch -x86_64 zsh"
+alias killdock="killall Dock"
 alias src="source ~/.zshrc"
-alias clrhist='cat /dev/null > ~/.zsh_history && fc -R ~/.zsh_history'
-
-# zsh-autosuggestions 卡顿
-pasteinit() {
-  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
-  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
-}
-pastefinish() {
-  zle -N self-insert $OLD_SELF_INSERT
-}
-zstyle :bracketed-paste-magic paste-init pasteinit
-zstyle :bracketed-paste-magic paste-finish pastefinish
-
-# 代理
-alias setproxy='export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897'
-alias unsetproxy='unset https_proxy http_proxy all_proxy'
 
 # java管理
 # export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
@@ -359,31 +315,41 @@ alias unsetproxy='unset https_proxy http_proxy all_proxy'
 # alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
 # alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
 
-eval "$(fnm env --use-on-cd --shell zsh)"
+# pip源 阿里源
+export PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple
+
+# 阿里云源
+export FNM_NODE_DIST_MIRROR=https://npmmirror.com/mirrors/node/
+export NPM_CONFIG_REGISTRY=https://npmmirror.com/mirrors/npm/
+
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
 
 # 先尝试从历史记录中查找建议，如果找不到，再从补全引擎中查找。
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
 
+alias awdloff='sudo ifconfig awdl0 down'
+
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.zsh
+
+# # 设置提示符，只在git仓库中显示git信息
+PROMPT='%F{green}→%f %F{magenta}%1~%f${GITSTATUS_PROMPT:+ ($GITSTATUS_PROMPT)} '
+
 [ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
 
-# eval "$(pyenv init -)"
-
-# brew install romkatv/gitstatus/gitstatus
-source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.zsh
-PROMPT='%F{green}→%f %F{magenta}%1~%f ${GITSTATUS_PROMPT:+[}${GITSTATUS_PROMPT}${GITSTATUS_PROMPT:+]}${GITSTATUS_PROMPT:+ }$ '
+# 设置CapsLock延迟为0
+hidutil property --set '{"CapsLockDelayOverride":0}' > /dev/null 2>&1
 
 ```
 
 
 ```
 ### clash自定义规则
-prepend:
-  - 'DOMAIN,alilang-unify-struct-log.cn-hangzhou.log.aliyuncs.com,REJECT'
-append: []
-delete: []
+
 ```
 
 

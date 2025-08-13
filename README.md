@@ -24,7 +24,12 @@ sudo mdutil -a -i on
 sudo mdutil -E
 
 // 清理Preboot，重建索引
-sudo mdutil -X /; sudo mdutil -X /System/Volumes/Preboot
+
+# 删除根卷的索引
+sudo mdutil -X /
+# 删除Preboot分区索引
+sudo mdutil -X /System/Volumes/Preboot
+# 删除Data分区索引
 sudo mdutil -X /System/Volumes/Data
 
 ```

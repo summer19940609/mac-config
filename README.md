@@ -22,6 +22,11 @@ crontab: installing new crontab
 sudo mdutil -a -i off
 sudo mdutil -a -i on
 sudo mdutil -E
+
+// 清理Preboot，重建索引
+sudo mdutil -X /; sudo mdutil -X /System/Volumes/Preboot
+sudo mdutil -X /System/Volumes/Data
+
 ```
 
 ### 开发命令行工具

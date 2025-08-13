@@ -1,6 +1,6 @@
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 
 export EDITOR='code'
 
@@ -22,11 +22,20 @@ alias killdock="killall Dock"
 alias src="source ~/.zshrc"
 
 # java管理
-export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
-export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
-export JAVA_HOME=$JAVA_11_HOME
-alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
-alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
+# export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+# export JAVA_11_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+# export JAVA_HOME=$JAVA_11_HOME
+# alias jdk8="export JAVA_HOME=$JAVA_8_HOME"
+# alias jdk11="export JAVA_HOME=$JAVA_11_HOME"
+
+# pip源 阿里源
+export PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple
+
+# 阿里云源
+export FNM_NODE_DIST_MIRROR=https://npmmirror.com/mirrors/node/
+export NPM_CONFIG_REGISTRY=https://npmmirror.com/mirrors/npm/
+
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
 
 # 先尝试从历史记录中查找建议，如果找不到，再从补全引擎中查找。
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
@@ -41,9 +50,9 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source $(brew --prefix)/opt/gitstatus/gitstatus.prompt.zsh
 
 # # 设置提示符，只在git仓库中显示git信息
-PROMPT='%F{green}→%f %F{magenta}%1~%f${GITSTATUS_PROMPT:+ [$GITSTATUS_PROMPT]} '
+PROMPT='%F{green}→%f %F{magenta}%1~%f${GITSTATUS_PROMPT:+ ($GITSTATUS_PROMPT)} '
 
 [ -f $HOMEBREW_PREFIX/etc/profile.d/autojump.sh ] && . $HOMEBREW_PREFIX/etc/profile.d/autojump.sh
 
-# 输入法切换延迟问题
-hidutil property --set '{"CapsLockDelayOverride":0}' >/dev/null 2>&1
+# 设置CapsLock延迟为0
+hidutil property --set '{"CapsLockDelayOverride":0}' > /dev/null 2>&1

@@ -59,6 +59,7 @@ dns:
     "+.tencent.com": 119.29.29.29
     "+.weixin.com": 119.29.29.29
     "geosite:cn,private,apple":
+      - quic://dns.alidns.com
       - https://23434.alidns.com/dns-query
       - https://doh.pub/dns-query
       - 210.22.70.3 #LT

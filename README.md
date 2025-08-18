@@ -192,6 +192,8 @@ code ~/.gitconfig
 	useConfigOnly = true
 [core]
 	editor = code --wait
+	# 忽略大小写
+    ignorecase = false
 [oh-my-zsh]
 	hide-dirty = 1
 	hide-status = 1

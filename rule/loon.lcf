@@ -20,12 +20,13 @@ proxy-test-url = http://www.gstatic.com/generate_204
 resource-parser = https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
 geoip-url = https://geodata.kelee.one/Country-Masaiki.mmdb
 ipasn-url = https://geodata.kelee.one/GeoLite2-ASN-P3TERX.mmdb
-skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, e.crashlynatics.com
-bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
 
 [Proxy]
 
 [Remote Proxy]
+花云 = https://api-huacloud.dev/sub?target=loon&insert=true&emoji=true&tfo=true&filename=Flower_SS&url=https%3A%2F%2Fapi.xmancdn.com%2Fosubscribe.php%3Fsid%3D164771%26token%3DDdsaaMQeOIcw%26sip002%3D1,udp=true,block-quic=true,fast-open=true,vmess-aead=default,skip-cert-verify=false,enabled=true,flexible-sni=true
 
 [Remote Filter]
 香港节点 = NameRegex, FilterKey = "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
@@ -57,18 +58,18 @@ https://raw.githubusercontent.com/sooyaaabo/Loon/main/Rule/PCDN.list, policy=REJ
 
 https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list, policy=REJECT, tag=秋风广告规则, enabled=true
 
-https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/direct.list, policy=DIRECT, enabled=true, tag=个人DIRECT
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Lan/Lan.list, policy=DIRECT, enabled=true, tag=Lan
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/China/China.list, policy=DIRECT, enabled=true, tag=China
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia.list, policy=DIRECT, enabled=true, tag=ChinaMedia
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WeChat/WeChat.list, policy=DIRECT, enabled=true, tag=WeChat
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list, policy=DIRECT, enabled=true, tag=Apple
+https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/direct.list, policy=DIRECT, tag=个人DIRECT, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Lan/Lan.list, policy=DIRECT, tag=Lan, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/China/China.list, policy=DIRECT, tag=China, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia.list, policy=DIRECT, tag=ChinaMedia, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WeChat/WeChat.list, policy=DIRECT, tag=WeChat, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list, policy=DIRECT, tag=Apple, enabled=true
 
-https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/proxy.list, policy=节点选择, enabled=true, tag=proxy
-https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, policy=节点选择, enabled=true, tag=ProxyGFWlist
-https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, policy=节点选择, enabled=true, tag=ProxyMedia
+https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/proxy.list, policy=节点选择, tag=proxy, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, policy=节点选择, tag=ProxyGFWlist, enabled=true
+https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, policy=节点选择, tag=ProxyMedia, enabled=true
 
-https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy = DIRECT, tag = CN REGION, enabled = true
+https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy=DIRECT, tag=CN REGION, enabled=true
 
 
 [Host]
@@ -81,9 +82,9 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy = DIRECT, tag = CN REGIO
 
 
 [Plugin]
-https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/General.plugin, enabled=true
+https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/General.plugin, enabled=false
 https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy=节点选择, enabled=false
-https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/DNS.plugin, enabled=true
+https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/DNS.plugin, enabled=false
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
@@ -95,6 +96,8 @@ https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
 
 [Mitm]
+ca-p12 = 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
+ca-passphrase = GY6KJ469
 hostname =
 ca-p12 = 
 ca-passphrase = 

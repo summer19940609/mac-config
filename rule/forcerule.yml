@@ -63,5 +63,3 @@ dns:
       - https://23434-u87m9jszwi5va1hk.alidns.com/dns-query
       - 23434-u87m9jszwi5va1hk.alidns.com
       - https://doh.pub/dns-query
-      - 210.22.70.3 #LT
-      - 202.96.199.132  #DX

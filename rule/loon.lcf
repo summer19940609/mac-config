@@ -26,7 +26,6 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 [Proxy]
 
 [Remote Proxy]
-花云 = https://api-huacloud.dev/sub?target=loon&insert=true&emoji=true&tfo=true&filename=Flower_SS&url=https%3A%2F%2Fapi.xmancdn.com%2Fosubscribe.php%3Fsid%3D164771%26token%3DDdsaaMQeOIcw%26sip002%3D1,udp=true,block-quic=true,fast-open=true,vmess-aead=default,skip-cert-verify=false,enabled=true,flexible-sni=true
 
 [Remote Filter]
 香港节点 = NameRegex, FilterKey = "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"

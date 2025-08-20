@@ -60,7 +60,8 @@ dns:
     "+.weixin.com": 119.29.29.29
     "geosite:cn,private,apple":
       # - quic://dns.alidns.com
-      - https://23434.alidns.com/dns-query
+      - https://23434-u87m9jszwi5va1hk.alidns.com/dns-query
+      - 23434-u87m9jszwi5va1hk.alidns.com
       - https://doh.pub/dns-query
       - 210.22.70.3 #LT
       - 202.96.199.132  #DX

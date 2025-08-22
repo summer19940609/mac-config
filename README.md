@@ -180,6 +180,12 @@ playcover-nightly		utools
 postman				visual-studio-code
 proxyman
 
+
+# 屏蔽 Apple music 自启动
+brew install --cask notunes
+
+
+
 ```
 
 ### git

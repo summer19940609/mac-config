@@ -327,7 +327,7 @@ export PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple
 
 # 阿里云源
 export FNM_NODE_DIST_MIRROR=https://npmmirror.com/mirrors/node/
-export NPM_CONFIG_REGISTRY=https://npmmirror.com/mirrors/npm/
+export NPM_CONFIG_REGISTRY=https://registry.npmmirror.com/
 
 export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node/
 

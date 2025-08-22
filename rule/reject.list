@@ -1,4 +1,4 @@
-DOMAIN,api.open.oppomobile.com
+# DOMAIN,api.open.oppomobile.com
 # macOS 上的 photoshop 在开启 clash 的情况下如何避免盗版检测
 DOMAIN,ic.adobe.io
 DOMAIN,fqaq3pq1o9.adobe.io
@@ -6,12 +6,3 @@ DOMAIN,ij0gdyrfka.adobe.io
 
 # mumu模拟器pro
 DOMAIN,mumu.nie.netease.com
-
-DOMAIN,tp2p.kg.qq.com
-DOMAIN,twns.p2ptun.qq.com
-
-DOMAIN,sd-gl.xinqiucc.com
-DOMAIN,xyp-n.kuiniuca.com
-DOMAIN,sdk1xyajs.data.kuiniuca.com
-DOMAIN,ac.dun.163.com
-DOMAIN,fp-upload.dun.163.com

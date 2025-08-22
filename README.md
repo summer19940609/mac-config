@@ -381,5 +381,18 @@ python3 -m venv .venv		#创建虚拟环境
 source .venv/bin/activate 	#激活
 pip install ragas			#安装包
 deactivate					#退出
+
+```
+
+### 禁用Siri
+
+```
+defaults write com.apple.assistant.support 'Siri Data Sharing Opt-In Status' -int 2
+
+defaults write com.apple.assistant.backedup 'Use device speaker for TTS' -int 3
+
+defaults write com.apple.assistant.support 'Assistant Enabled' -bool false
+
+defaults write com.apple.SetupAssistant 'DidSeeSiriSetup' -bool True
 ```
 

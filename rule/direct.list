@@ -6,17 +6,10 @@ DOMAIN-KEYWORD,mwee
 DOMAIN-KEYWORD,mwbyd
 DOMAIN-SUFFIX,9now.net
 DOMAIN-KEYWORD,test
-
-DOMAIN-SUFFIX,idianwei.cn
-
 DOMAIN-KEYWORD,keruyun
 
 DOMAIN-SUFFIX,ls.apple.com
 DOMAIN-SUFFIX,gs-loc.apple.com
-
-DOMAIN-SUFFIX,i1069.net
-DOMAIN-SUFFIX,myapi.us
-DOMAIN-SUFFIX,wenjiushuobuzhidao.top
 
 DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamserver.net
@@ -38,16 +31,10 @@ PROCESS-NAME,EasyMonitor
 DOMAIN-SUFFIX,hknoyk.xyz
 DOMAIN-SUFFIX,amyconvert.com
 
-DOMAIN-KEYWORD,MiHome
-DOMAIN-KEYWORD,mihome
-
 DOMAIN-SUFFIX,koyso.com
 
 # 谷歌play下载
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-
-# 微信
-IP-CIDR,182.254.116.0/24
 
 DOMAIN,dns.weixin.qq.com
 DOMAIN,dns.weixin.qq.com.cn

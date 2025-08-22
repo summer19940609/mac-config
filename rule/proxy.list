@@ -1,29 +1,9 @@
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,v2ex.com
-
-DOMAIN-SUFFIX,poe.com
-DOMAIN-SUFFIX,poecdn.net
-DOMAIN-SUFFIX,quoracdn.net
-DOMAIN-SUFFIX,recaptcha.net
-DOMAIN-SUFFIX,singular.net
-DOMAIN-SUFFIX,sprig.com
-
-DOMAIN-SUFFIX,imgur.com
-DOMAIN-SUFFIX,imgc.cc
-DOMAIN-SUFFIX,imgse.com
-
 # clash 配置更新常用订阅网址
 DOMAIN-SUFFIX,v1.mk
 DOMAIN,sub.xeton.dev
 DOMAIN,sub.id9.cc
 
 DOMAIN,download.dbeaver.com
-
-DOMAIN,dl.pstmn.io
-DOMAIN,sentry-app.postmanlabs.com
-DOMAIN,update.getpostman.com
-DOMAIN,www.getpostman.com
-DOMAIN,in.appcenter.ms
 
 DOMAIN-KEYWORD,cygames
 DOMAIN-KEYWORD,starlight-stage
@@ -79,22 +59,11 @@ DOMAIN-SUFFIX,suo.yt
 # docker
 DOMAIN,production.cloudflare.docker.com
 
-DOMAIN,ark.leafxxx.win
-
-DOMAIN-SUFFIX,ipleak.net
-
-DOMAIN-SUFFIX,nodejs.org
-
-DOMAIN,apple-relay.apple.com
-DOMAIN,zh.z-library.sk
-
-DOMAIN,wiki.metacubex.one
 DOMAIN-SUFFIX,tagss.pro
 
 DOMAIN-SUFFIX,bianyuan.xyz
 
 DOMAIN-SUFFIX,greasyfork.org
-
 
 DOMAIN,ipa.store
 

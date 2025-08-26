@@ -75,12 +75,12 @@ hr {
  */
 
 pre {
-    padding: var(--base-size-16);
+    padding: 1rem;
     overflow: auto;
     font-size: 85%;
     line-height: 1.45;
-    color: var(--fgColor-default, var(--color-fg-default));
-    background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+    color: #1f2328;
+    background-color: #f6f8fa;
     border-radius: 6px;
 }
 

@@ -31,7 +31,7 @@ jobs:
           cd mac-config
           pandoc --standalone --self-contained --css pandoc.css README.md --output README.html --toc --toc-depth=6
           # 插入中文更新时间到body标签内最上方
-          sed -i '/<body>/a \    <p style="margin-top: 0; margin-bottom: 1em;">更新时间: '"$(date +"%Y-%m-%d")"'</p>\n' README.html
+          sed -i '/<body>/a \    <p>更新时间: '"$(date +"%Y-%m-%d")"'</p>\n' README.html
           echo "<!-- Generated at $(date) -->" >> README.html
 
       - name: Configure Git

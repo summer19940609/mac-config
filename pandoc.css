@@ -38,7 +38,8 @@ html {
  */
 
 body {
-  margin: 0;
+  width: 80%;
+  margin: auto;
 }
 
 /**
@@ -79,8 +80,10 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+    font-family: monospace, monospace;
+    font-size: 1em;
+    padding: 20px;
+    background: #f4f4f4;
 }
 
 /* Text-level semantics

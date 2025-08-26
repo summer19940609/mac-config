@@ -402,3 +402,14 @@ defaults write com.apple.assistant.support 'Assistant Enabled' -bool false
 defaults write com.apple.SetupAssistant 'DidSeeSiriSetup' -bool True
 ```
 
+### adb记录
+
+```
+brew install --cask android-platform-tools
+
+
+adb devices
+adb shell
+settings put global vivo_screen_refresh_rate_mode 90
+```
+

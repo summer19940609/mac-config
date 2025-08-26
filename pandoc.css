@@ -75,10 +75,13 @@ hr {
  */
 
 pre {
-    font-family: monospace, monospace;
-    font-size: 1em;
-    padding: 20px;
-    background: #f4f4f4;
+    padding: var(--base-size-16);
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    color: var(--fgColor-default, var(--color-fg-default));
+    background-color: var(--bgColor-muted, var(--color-canvas-subtle));
+    border-radius: 6px;
 }
 
 /* Text-level semantics

@@ -23,8 +23,7 @@ global-client-fingerprint: random # 随机指纹
 
 unified-delay: false
 
-# tcp-concurrent: false
-tcp-concurrent: true
+tcp-concurrent: false
 
 keep-alive-interval: 15
 keep-alive-idle: 15

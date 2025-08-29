@@ -14,7 +14,6 @@ $if(keywords)$
   <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$title$</title>
-<!-- 仅引入外部 CSS，不内置任何样式 -->
 $for(css)$
   <link rel="stylesheet" href="$css$" />
 $endfor$
@@ -41,19 +40,18 @@ $endif$
 </header>
 $endif$
 
-<!-- 目录切换按钮：样式完全由 pandoc.css 控制 -->
+<!-- 目录切换按钮 -->
 <button class="toc-toggle">显示目录</button>
 
 $for(include-before)$
 $include-before$
 $endfor$
 
-<!-- 关键：强制包裹 #TOC 容器，确保 CSS 选择器生效 -->
+<!-- 强制包裹#TOC容器 -->
 $if(toc)$
   <div id="TOC">
-    <!-- 目录标题：如需样式可在 pandoc.css 中定义 #TOC > h2 -->
     <h2>目录</h2>
-    $toc$ <!-- Pandoc 生成的目录列表插入此处 -->
+    $toc$
   </div>
 $endif$
 
@@ -63,28 +61,25 @@ $for(include-after)$
 $include-after$
 $endfor$
 
-<!-- 保留优化后的交互脚本，仅负责逻辑不涉及样式 -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // 1. 获取核心元素（带容错）
     const toc = document.getElementById('TOC');
     const toggleBtn = document.querySelector('.toc-toggle');
     const tocTitle = toc ? toc.querySelector('h2') : null;
 
-    // 2. 容错处理：避免元素缺失导致报错
     if (!toc || !toggleBtn) {
       if (toggleBtn) toggleBtn.textContent = "目录未生成";
-      console.warn('目录或切换按钮缺失，请检查：1. 已添加 --toc 参数 2. pandoc.css 已引入');
+      console.warn('目录或切换按钮缺失，请检查--toc参数和CSS引入');
       return;
     }
 
-    // 3. 按钮点击：切换目录显示/隐藏 + 动态更新按钮文字
+    // 切换目录显示状态
     toggleBtn.addEventListener('click', function() {
       const isActive = toc.classList.toggle('active');
       toggleBtn.textContent = isActive ? "隐藏目录" : "显示目录";
     });
 
-    // 4. 目录标题点击：支持点击标题切换（需在 pandoc.css 中添加 cursor: pointer 优化体验）
+    // 目录标题点击切换
     if (tocTitle) {
       tocTitle.addEventListener('click', function() {
         const isActive = toc.classList.toggle('active');
@@ -92,7 +87,7 @@ $endfor$
       });
     }
 
-    // 5. 移动端适配：点击目录链接后自动隐藏目录
+    // 移动端点击链接后隐藏目录
     const tocLinks = toc.querySelectorAll('a');
     tocLinks.forEach(link => {
       link.addEventListener('click', function() {

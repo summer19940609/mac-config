@@ -6,6 +6,18 @@
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
+### 启动台行列
+```
+# 7行9列，设置生效
+defaults write com.apple.dock springboard-rows -int 7
+defaults write com.apple.dock springboard-columns -int 9
+defaults write com.apple.dock ResetLaunchPad -bool true;killall Dock
+
+# 恢复默认
+defaults write com.apple.dock springboard-rows Default defaults write com.apple.dock springboard-columns Default killall Dock
+
+```
+
 
 ### 定时任务
 ```

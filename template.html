@@ -55,10 +55,17 @@ $include-after$
 $endfor$
 
 <script>
-  // 目录切换功能
+  // 确保DOM完全加载后执行
   document.addEventListener('DOMContentLoaded', function() {
+    // 获取目录元素并检查是否存在
     const toc = document.getElementById('TOC');
     const toggleBtn = document.querySelector('.toc-toggle');
+    
+    // 检查元素是否存在，避免null错误
+    if (!toc || !toggleBtn) {
+      console.warn('目录元素或切换按钮未找到');
+      return;
+    }
     
     // 点击按钮切换目录显示/隐藏
     toggleBtn.addEventListener('click', function() {

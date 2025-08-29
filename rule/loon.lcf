@@ -59,7 +59,8 @@ https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/reject.lis
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/base_reject.list, policy=个人REJECT, tag=REJECT, enabled=true
 https://raw.githubusercontent.com/sooyaaabo/Loon/main/Rule/PCDN.list, policy=REJECT, tag=PCDN REJECT, enabled=true
 
-https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list, policy=REJECT, tag=秋风广告规则, enabled=true
+#https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list, policy=REJECT, tag=秋风广告规则, enabled=true
+https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/rejectAd.list, policy=REJECT, tag=广告拦截合集-规则@奶思, enabled=true
 
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/direct.list, policy=DIRECT, tag=个人DIRECT, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Lan/Lan.list, policy=DIRECT, tag=Lan, enabled=true

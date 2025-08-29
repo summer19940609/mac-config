@@ -59,7 +59,7 @@ https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/reject.lis
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/base_reject.list, policy=个人REJECT, tag=REJECT, enabled=true
 https://raw.githubusercontent.com/sooyaaabo/Loon/main/Rule/PCDN.list, policy=REJECT, tag=PCDN REJECT, enabled=true
 
-#https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list, policy=REJECT, tag=秋风广告规则, enabled=true
+# https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list, policy=REJECT, tag=秋风广告规则, enabled=true
 https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/rejectAd.list, policy=REJECT, tag=广告拦截合集-规则@奶思, enabled=true
 
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/direct.list, policy=DIRECT, tag=个人DIRECT, enabled=true
@@ -75,9 +75,6 @@ https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, 
 
 https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy=DIRECT, tag=CN REGION, enabled=true
 
-
-[Host]
-
 [Rewrite]
 
 [Script]
@@ -88,7 +85,7 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy=DIRECT, tag=CN REGION, e
 [Plugin]
 https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/blockAds.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/LoonGallery.lpx, policy=节点选择, enabled=false
-#https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/DNS.plugin, enabled=false
+# https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/DNS.plugin, enabled=false
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true

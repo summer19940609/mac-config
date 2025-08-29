@@ -51,27 +51,31 @@ xcode-select --install
 sudo xattr -rd com.apple.quarantine xxxx
 ```
 
-How to remove the ‘Last Login’ prompt from iTerm/Terminal on macOS?
+> How to remove the ‘Last Login’ prompt from iTerm/Terminal on macOS?
 
-https://stackoverflow.com/questions/15769615/remove-last-login-message-for-new-tabs-in-terminal
+> https://stackoverflow.com/questions/15769615/remove-last-login-message-for-new-tabs-in-terminal
 
 ```
 touch .hushlogin
 ```
+
 ### mac 安装任何来源
 ```
 `sudo spctl --master-disable`
 
+#### AWDL
+```
 关闭AWDL：`sudo ifconfig awdl0 down`
 
 开启AWDL：`sudo ifconfig awdl0 up`
-
-取消开机声音
-
+```
+#### 取消开机声音
+```
 sudo nvram StartupMute=%01
+```
 
-dock 栏显示/隐藏无延迟
-
+#### dock栏设置
+```
 defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
 
 延迟
@@ -85,6 +89,7 @@ defaults write com.apple.dock autohide-time-modifier -int 0.5;killall Dock
 恢复：
 defaults delete com.apple.dock autohide-time-modifier;killall Dock
 ```
+
 ### 菜单栏间距调整
 ```bash
 # 指定间距

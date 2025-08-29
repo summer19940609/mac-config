@@ -40,30 +40,39 @@ $endif$
 </header>
 $endif$
 
-<!-- 添加目录切换按钮 -->
+<!-- 目录切换按钮 -->
 <button class="toc-toggle">目录</button>
 
 $for(include-before)$
 $include-before$
 $endfor$
+
+<!-- 这里是关键：确保$toc$变量存在 -->
 $if(toc)$
 $toc$
 $endif$
+
 $body$
 $for(include-after)$
 $include-after$
 $endfor$
 
 <script>
-  // 确保DOM完全加载后执行
   document.addEventListener('DOMContentLoaded', function() {
-    // 获取目录元素并检查是否存在
+    // 双重检查元素是否存在
     const toc = document.getElementById('TOC');
     const toggleBtn = document.querySelector('.toc-toggle');
     
-    // 检查元素是否存在，避免null错误
-    if (!toc || !toggleBtn) {
-      console.warn('目录元素或切换按钮未找到');
+    // 如果元素不存在，尝试修复或提示
+    if (!toc) {
+      console.error('未生成目录，请确保使用了--toc参数');
+      // 隐藏切换按钮，因为没有目录可切换
+      if (toggleBtn) toggleBtn.style.display = 'none';
+      return;
+    }
+    
+    if (!toggleBtn) {
+      console.error('未找到目录切换按钮');
       return;
     }
     
@@ -72,11 +81,11 @@ $endfor$
       toc.classList.toggle('active');
     });
     
-    // 点击目录链接后隐藏目录（可选）
+    // 点击目录链接后隐藏目录（移动设备）
     const tocLinks = toc.querySelectorAll('a');
     tocLinks.forEach(link => {
       link.addEventListener('click', function() {
-        if (window.innerWidth < 768) { // 仅在移动设备上点击后隐藏
+        if (window.innerWidth < 768) {
           toc.classList.remove('active');
         }
       });
@@ -85,3 +94,4 @@ $endfor$
 </script>
 </body>
 </html>
+    

@@ -61,7 +61,8 @@ touch .hushlogin
 
 ### mac 安装任何来源
 ```
-`sudo spctl --master-disable`
+sudo spctl --master-disable
+```
 
 #### AWDL
 ```
@@ -70,6 +71,7 @@ touch .hushlogin
 开启AWDL：`sudo ifconfig awdl0 up`
 ```
 #### 取消开机声音
+
 ```
 sudo nvram StartupMute=%01
 ```
@@ -104,7 +106,7 @@ defaults -currentHost delete -globalDomain NSStatusItemSpacing
 defaults -currentHost delete -globalDomain NSStatusItemSelectionPadding
 ```
 
-
+### 输入法提示
 
 macOS 14 输入法提示去除
 ```
@@ -127,9 +129,6 @@ sudo mkdir -p /Library/Preferences/FeatureFlags/Domain && sudo /usr/libexec/Plis
 
 `hidutil property --set '{"CapsLockDelayOverride":0}'`
 
-`brew install --cask capslocknodelay`
-
-
 开启任意位置拖动窗口功能,重启, 需要按住`control+command`，然后再去用鼠标拖动窗口的任意位置
 
 `defaults write -g NSWindowShouldDragOnGesture -bool true`
@@ -139,7 +138,7 @@ sudo mkdir -p /Library/Preferences/FeatureFlags/Domain && sudo /usr/libexec/Plis
 
 quicklook 插件
 
-https://github.com/sindresorhus/quick-look-plugins
+> https://github.com/sindresorhus/quick-look-plugins
 
 ### brew
 

@@ -1,6 +1,5 @@
 # mac-config
 
-
 ```
 # 防止在网络驱动器上创建.DS_Store 文件
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
@@ -60,7 +59,7 @@ https://stackoverflow.com/questions/15769615/remove-last-login-message-for-new-t
 touch .hushlogin
 ```
 ### mac 安装任何来源
-
+```
 `sudo spctl --master-disable`
 
 关闭AWDL：`sudo ifconfig awdl0 down`
@@ -69,27 +68,23 @@ touch .hushlogin
 
 取消开机声音
 
-`sudo nvram StartupMute=%01`
+sudo nvram StartupMute=%01
 
 dock 栏显示/隐藏无延迟
 
-`defaults write com.apple.Dock autohide-delay -float 0 && killall Dock`
+defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
 
 延迟
-```
 defaults write com.apple.dock autohide-delay -int 0（时间设为最短）
 
 defaults write com.apple.dock autohide-delay -int 0.5（时间设为 0.5s）
-```
+
 延迟动画
-```
 defaults write com.apple.dock autohide-time-modifier -int 0.5;killall Dock
-```
+
 恢复：
-```
 defaults delete com.apple.dock autohide-time-modifier;killall Dock
 ```
-
 ### 菜单栏间距调整
 ```bash
 # 指定间距

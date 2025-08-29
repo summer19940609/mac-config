@@ -129,7 +129,7 @@ sudo mkdir -p /Library/Preferences/FeatureFlags/Domain && sudo /usr/libexec/Plis
 
 `hidutil property --set '{"CapsLockDelayOverride":0}'`
 
-开启任意位置拖动窗口功能,重启, 需要按住`control+command`，然后再去用鼠标拖动窗口的任意位置
+开启任意位置拖动窗口功能,重启, 需要按住`control+command`，然后再去用鼠标拖动窗口的任意位置。
 
 `defaults write -g NSWindowShouldDragOnGesture -bool true`
 

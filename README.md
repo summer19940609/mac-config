@@ -15,7 +15,6 @@ defaults write com.apple.dock ResetLaunchPad -bool true;killall Dock
 
 # 恢复默认
 defaults write com.apple.dock springboard-rows Default defaults write com.apple.dock springboard-columns Default killall Dock
-
 ```
 
 

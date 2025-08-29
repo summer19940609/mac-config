@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$title$</title>
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+$if(title)$
+<header id="title-block-header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+<p class="author">$author$</p>
+$endfor$
+$if(date)$
+<p class="date">$date$</p>
+$endif$
+</header>
+$endif$
+
+<!-- 添加目录切换按钮 -->
+<button class="toc-toggle">目录</button>
+
+$for(include-before)$
+$include-before$
+$endfor$
+$if(toc)$
+$toc$
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+
+<script>
+  // 目录切换功能
+  document.addEventListener('DOMContentLoaded', function() {
+    const toc = document.getElementById('TOC');
+    const toggleBtn = document.querySelector('.toc-toggle');
+    
+    // 点击按钮切换目录显示/隐藏
+    toggleBtn.addEventListener('click', function() {
+      toc.classList.toggle('active');
+    });
+    
+    // 点击目录链接后隐藏目录（可选）
+    const tocLinks = toc.querySelectorAll('a');
+    tocLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        if (window.innerWidth < 768) { // 仅在移动设备上点击后隐藏
+          toc.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

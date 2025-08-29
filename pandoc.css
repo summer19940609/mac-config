@@ -2,6 +2,11 @@
 
 /* Document
    ========================================================================== */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
 /**
  * 1. Correct the line height in all browsers.

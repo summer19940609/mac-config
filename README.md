@@ -5,7 +5,7 @@
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
-### 启动台行列
+### 启动台行列设置
 ```
 # 7行9列，设置生效
 defaults write com.apple.dock springboard-rows -int 6

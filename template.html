@@ -14,6 +14,7 @@ $if(keywords)$
   <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$title$</title>
+<!-- 仅引入外部 CSS，不内置任何样式 -->
 $for(css)$
   <link rel="stylesheet" href="$css$" />
 $endfor$
@@ -27,66 +28,77 @@ $endfor$
 <body>
 $if(title)$
 <header id="title-block-header">
-<h1 class="title">$title$</h1>
+  <h1 class="title">$title$</h1>
 $if(subtitle)$
-<p class="subtitle">$subtitle$</p>
+  <p class="subtitle">$subtitle$</p>
 $endif$
 $for(author)$
-<p class="author">$author$</p>
+  <p class="author">$author$</p>
 $endfor$
 $if(date)$
-<p class="date">$date$</p>
+  <p class="date">$date$</p>
 $endif$
 </header>
 $endif$
 
-<!-- 目录切换按钮 -->
-<button class="toc-toggle">目录</button>
+<!-- 目录切换按钮：样式完全由 pandoc.css 控制 -->
+<button class="toc-toggle">显示目录</button>
 
 $for(include-before)$
 $include-before$
 $endfor$
 
-<!-- 这里是关键：确保$toc$变量存在 -->
+<!-- 关键：强制包裹 #TOC 容器，确保 CSS 选择器生效 -->
 $if(toc)$
-$toc$
+  <div id="TOC">
+    <!-- 目录标题：如需样式可在 pandoc.css 中定义 #TOC > h2 -->
+    <h2>目录</h2>
+    $toc$ <!-- Pandoc 生成的目录列表插入此处 -->
+  </div>
 $endif$
 
 $body$
+
 $for(include-after)$
 $include-after$
 $endfor$
 
+<!-- 保留优化后的交互脚本，仅负责逻辑不涉及样式 -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // 双重检查元素是否存在
+    // 1. 获取核心元素（带容错）
     const toc = document.getElementById('TOC');
     const toggleBtn = document.querySelector('.toc-toggle');
-    
-    // 如果元素不存在，尝试修复或提示
-    if (!toc) {
-      console.error('未生成目录，请确保使用了--toc参数');
-      // 隐藏切换按钮，因为没有目录可切换
-      if (toggleBtn) toggleBtn.style.display = 'none';
+    const tocTitle = toc ? toc.querySelector('h2') : null;
+
+    // 2. 容错处理：避免元素缺失导致报错
+    if (!toc || !toggleBtn) {
+      if (toggleBtn) toggleBtn.textContent = "目录未生成";
+      console.warn('目录或切换按钮缺失，请检查：1. 已添加 --toc 参数 2. pandoc.css 已引入');
       return;
     }
-    
-    if (!toggleBtn) {
-      console.error('未找到目录切换按钮');
-      return;
-    }
-    
-    // 点击按钮切换目录显示/隐藏
+
+    // 3. 按钮点击：切换目录显示/隐藏 + 动态更新按钮文字
     toggleBtn.addEventListener('click', function() {
-      toc.classList.toggle('active');
+      const isActive = toc.classList.toggle('active');
+      toggleBtn.textContent = isActive ? "隐藏目录" : "显示目录";
     });
-    
-    // 点击目录链接后隐藏目录（移动设备）
+
+    // 4. 目录标题点击：支持点击标题切换（需在 pandoc.css 中添加 cursor: pointer 优化体验）
+    if (tocTitle) {
+      tocTitle.addEventListener('click', function() {
+        const isActive = toc.classList.toggle('active');
+        toggleBtn.textContent = isActive ? "隐藏目录" : "显示目录";
+      });
+    }
+
+    // 5. 移动端适配：点击目录链接后自动隐藏目录
     const tocLinks = toc.querySelectorAll('a');
     tocLinks.forEach(link => {
       link.addEventListener('click', function() {
         if (window.innerWidth < 768) {
           toc.classList.remove('active');
+          toggleBtn.textContent = "显示目录";
         }
       });
     });
@@ -94,4 +106,3 @@ $endfor$
 </script>
 </body>
 </html>
-    

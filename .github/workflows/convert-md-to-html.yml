@@ -29,7 +29,7 @@ jobs:
       - name: Convert Markdown to HTML
         run: |
           cd mac-config
-          pandoc --standalone --self-contained --css pandoc.css win_xnj.md --output win_xnj.html
+          pandoc --standalone --self-contained --css pandoc.css win_xnj.md --output win_xnj.html --template template.html
           # 在body标签内最上方插入中文编辑时间和换行，使用YYYY-MM-DD格式
           sed -i '/<body>/a \    <p style="margin-top: 0; margin-bottom: 1em;">更新时间: '"$(date +"%Y-%m-%d")"'</p>\n' win_xnj.html
           echo "<!-- Generated at $(date) -->" >> win_xnj.html

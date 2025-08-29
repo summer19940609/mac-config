@@ -1,8 +1,8 @@
 [General]
 ip-mode = v4-only
 ipv6-vif = off
-dns-server = system
-doh-server = https://23434-u87m9jszwi5va1hk.alidns.com/dns-query,https://doh.pub/dns-query
+dns-server = system,223.5.5.5,119.29.29.29,8.8.8.8
+# doh-server = https://23434-u87m9jszwi5va1hk.alidns.com/dns-query,https://doh.pub/dns-query
 sni-sniffing = true
 disable-stun = false
 dns-reject-mode = LoopbackIP

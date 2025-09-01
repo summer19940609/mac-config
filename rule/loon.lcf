@@ -54,15 +54,12 @@ iosapps.itunes.apple.com = iosapps.itunes.apple.com.download.ks-cdn.com
 DOMAIN,dns.weixin.com.cn,DIRECT
 DOMAIN,dns.weixin.com,DIRECT
 
-GEOIP, cn, DIRECT
 FINAL,漏网之鱼
 
 [Remote Rule]
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/reject.list, policy=个人REJECT, tag=REJECT, enabled=true
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/base_reject.list, policy=个人REJECT, tag=REJECT, enabled=true
 https://raw.githubusercontent.com/sooyaaabo/Loon/main/Rule/PCDN.list, policy=REJECT, tag=PCDN REJECT, enabled=true
-
-# https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list, policy=REJECT, tag=秋风广告规则, enabled=true
 https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/rejectAd.list, policy=REJECT, tag=广告拦截合集-规则@奶思, enabled=true
 
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/direct.list, policy=DIRECT, tag=个人DIRECT, enabled=true
@@ -76,7 +73,7 @@ https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/proxy.list
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, policy=节点选择, tag=ProxyGFWlist, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, policy=节点选择, tag=ProxyMedia, enabled=true
 
-# https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/GeoIP_CN.list, policy=大陆网址, tag=GeoIP_CN, enabled=true
+https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/GeoIP_CN.list, policy=大陆网址, tag=GeoIP_CN, enabled=true
 
 
 [Rewrite]

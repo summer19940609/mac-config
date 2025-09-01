@@ -69,6 +69,7 @@ $endfor$
 
     if (!toc || !toggleBtn) {
       if (toggleBtn) toggleBtn.textContent = "目录未生成";
+      toggleBtn.remove(); // 移除按钮
       console.warn('目录或切换按钮缺失，请检查--toc参数和CSS引入');
       return;
     }

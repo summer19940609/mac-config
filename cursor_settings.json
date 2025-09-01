@@ -64,14 +64,14 @@
     "editor.find.seedSearchStringFromSelection": "never",
     "workbench.editor.highlightModifiedTabs": true,
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0.8,
     "search.exclude": {
         "**/node_modules": false
     },
     "workbench.colorCustomizations": {
         "focusBorder": "#F7F7F7",
         "editor.selectionHighlightBorder": "#0000",
-        "titleBar.activeForeground": "#ff6f00",  // 活动窗口标题栏文字颜色
+        "titleBar.activeForeground": "#902EE6"  // 活动窗口标题栏文字颜色
     },
     "gitlens.graph.minimap.enabled": false,
     "editor.cursorSmoothCaretAnimation": "on",
@@ -91,9 +91,10 @@
     "git.confirmNoVerifyCommit": false,
     "window.newWindowDimensions": "inherit",
     "explorer.confirmDelete": false,
-    "git.blame.editorDecoration.enabled": true,
     "projectManager.git.baseFolders": [
         "~/Desktop/jingdijital"
     ],
     "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "hediet.vscode-drawio.resizeImages": null,
+    "git.blame.statusBarItem.template": "${subject}, ${authorName} (${authorDateAgo})",
 }

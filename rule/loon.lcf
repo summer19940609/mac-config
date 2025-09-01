@@ -53,6 +53,8 @@ iosapps.itunes.apple.com = iosapps.itunes.apple.com.download.ks-cdn.com
 [Rule]
 DOMAIN,dns.weixin.com.cn,DIRECT
 DOMAIN,dns.weixin.com,DIRECT
+
+GEOIP, CN
 FINAL,漏网之鱼
 
 [Remote Rule]
@@ -74,7 +76,8 @@ https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/proxy.list
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list, policy=节点选择, tag=ProxyGFWlist, enabled=true
 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list, policy=节点选择, tag=ProxyMedia, enabled=true
 
-https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy=DIRECT, tag=CN REGION, enabled=true
+# https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/GeoIP_CN.list, policy=大陆网址, tag=GeoIP_CN, enabled=true
+
 
 [Rewrite]
 

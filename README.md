@@ -1,4 +1,4 @@
-# mac-config
+# mac-config 记录
 
 ```
 # 防止在网络驱动器上创建.DS_Store 文件

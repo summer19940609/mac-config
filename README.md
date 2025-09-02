@@ -56,7 +56,7 @@ sudo xattr -rd com.apple.quarantine xxxx
 > https://stackoverflow.com/questions/15769615/remove-last-login-message-for-new-tabs-in-terminal
 
 ```
-touch .hushlogin
+touch .hushlogin 
 ```
 
 ### mac 安装任何来源

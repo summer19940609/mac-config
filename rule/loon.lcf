@@ -8,7 +8,7 @@ dns-reject-mode = LoopbackIP
 domain-reject-mode = DNS
 udp-fallback-mode = REJECT
 interface-mode = auto
-test-timeout = 5
+test-timeout = 3
 disconnect-on-policy-change = false
 
 proxy-test-url = http://www.gstatic.com/generate_204

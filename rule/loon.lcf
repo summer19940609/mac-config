@@ -7,14 +7,11 @@ disable-stun = false
 dns-reject-mode = LoopbackIP
 domain-reject-mode = DNS
 udp-fallback-mode = REJECT
-# wifi-access-http-port = 7222
-# wifi-access-socks5-port = 7221
-allow-wifi-access = false
 interface-mode = auto
 test-timeout = 5
 disconnect-on-policy-change = false
 
-proxy-test-url = http://www.google.com/generate_204
+proxy-test-url = http://www.gstatic.com/generate_204
 internet-test-url = http://connectivitycheck.platform.hicloud.com/generate_204
 
 resource-parser = https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
@@ -37,17 +34,18 @@ iosapps.itunes.apple.com = iosapps.itunes.apple.com.download.ks-cdn.com
 日本 = NameRegex, FilterKey = "(?i)(🇯🇵|日本|JP|Japan)"
 美国 = NameRegex, FilterKey = "(?i)(🇺🇸|美|US)"
 主要 = NameRegex, FilterKey = "(?i)(日本|JP|Japan|港|HK|台|TW|Tai|美|US)"
+全部 = NameRegex, FilterKey = "^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|邀请|好友|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
+
 
 [Proxy Group]
 香港自动 = url-test,香港,interval = 60,tolerance = 50
-台湾自动 = url-test,台湾,interval = 60,tolerance = 50
 日本自动 = url-test,日本,interval = 60,tolerance = 50
 美国自动 = url-test,美国,interval = 60,tolerance = 50
-主要自动 = url-test,主要,interval = 60,tolerance = 50
 
-节点选择 = select,常用节点,DIRECT,主要自动
-常用节点 = select,香港自动,台湾自动,日本自动,美国自动
-漏网之鱼 = select,节点选择,DIRECT
+节点选择 = select, 常用节点, DIRECT, 全球手动
+全球手动 = select, 全部
+常用节点 = select, 香港自动, 日本自动, 美国自动
+漏网之鱼 = select, 节点选择, DIRECT
 
 [Rule]
 DOMAIN,dns.weixin.com.cn,DIRECT

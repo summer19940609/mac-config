@@ -1,7 +1,7 @@
 # mac-config记录
 
 ```
-# 防止在网络驱动器上创建.DS_Store 文件
+# 防止在网络驱动器上创建.DS_Store文件
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 

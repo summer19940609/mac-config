@@ -427,3 +427,7 @@ blockquote {
   background-color: #eee;
   padding: 1px;
 }
+
+blockquote p {
+  margin-left: 5px;
+}

@@ -422,3 +422,8 @@ template {
         width: 200px;
     }
 }
+
+blockquote {
+  background-color: #eee;
+  padding: 1px;
+}

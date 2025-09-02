@@ -424,10 +424,17 @@ template {
 }
 
 blockquote {
-  background-color: #eee;
-  padding: 1px;
+    padding: 0 1em;
+    color: #59636e;
+    border-left: .25em solid #d1d9e0;
 }
 
+blockquote>:last-child {
+    margin-bottom: 0;
+}
+blockquote>:first-child {
+    margin-top: 0;
+}
 blockquote p {
   margin-left: 5px;
 }

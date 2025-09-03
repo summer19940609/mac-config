@@ -42,7 +42,6 @@ jobs:
           pandoc README.md -o README.html \
             --standalone \
             --self-contained \
-            --html5 \
             --css pandoc.css \
             --toc \
             --toc-depth=3 \

@@ -27,11 +27,10 @@ jobs:
         with:
           pandoc-version: 'latest'
 
-      - name: Install Node.js without cache
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'  # 设置为'npm'而不是false，或者完全移除这行
+          node-version: '22'
 
       - name: Install html-minifier globally
         run: npm install -g html-minifier

@@ -1,4 +1,4 @@
-name: Convert Markdown to HTML, Compress and Deploy
+name: Convert README Markdown to HTML, Compress and Deploy
 
 on:
   push:

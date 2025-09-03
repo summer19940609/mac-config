@@ -170,6 +170,9 @@ brew install autojump fnm pyenv ffmpeg git wget zsh-syntax-highlighting zsh-auto
 
 brew install only-switch
 
+# prevent iTunes or Apple Music
+brew install --cask notunes 
+
 brew install dozer mos clash-verge-rev input-source-pro google-chrome another-redis-desktop-manager orbstack font-jetbrains-mono reqable iterm2 input-source-pro utools visual-studio-code microsoft-edge karabiner-elements syntax-highlight alt-tab --cask
 
 

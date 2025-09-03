@@ -24,7 +24,6 @@ crontab: installing new crontab
 0 */1 * * * kill -9 $(pgrep CursorUIViewService) > /dev/null 2>&1
 0 */1 * * * kill -9 $(pgrep SCIM) > /dev/null 2>&1
 ```
-
 ### 重建索引
 
 ```

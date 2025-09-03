@@ -46,8 +46,7 @@ jobs:
             --toc \
             --toc-depth=3 \
             --number-sections \
-            --template template.html
-            --metadata title="Mac配置" \
+            --template template.html \
             --variable lang=zh-CN
           # 插入中文更新时间到body标签内最上方
           sed -i '/<body>/a \    <p>更新时间: '"$(date +"%Y-%m-%d")"'</p>' README.html

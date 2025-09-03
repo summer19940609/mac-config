@@ -38,7 +38,17 @@ jobs:
       - name: Convert Markdown to HTML
         run: |
           cd mac-config
-          pandoc --standalone --self-contained --css pandoc.css README.md --output README.html --toc --template template.html
+          pandoc README.md --output README.html 
+            --standalone \
+            --self-contained \
+            --html5 \
+            --css pandoc.css \
+            --toc \
+            --toc-depth=3 \
+            --number-sections \
+            --template template.html
+            --metadata title="Mac配置" \
+            --variable lang=zh-CN
           # 插入中文更新时间到body标签内最上方
           sed -i '/<body>/a \    <p>更新时间: '"$(date +"%Y-%m-%d")"'</p>' README.html
           echo "<!-- Generated at $(date) -->" >> README.html

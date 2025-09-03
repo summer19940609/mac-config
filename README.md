@@ -16,7 +16,6 @@ defaults write com.apple.dock ResetLaunchPad -bool true;killall Dock
 defaults write com.apple.dock springboard-rows Default defaults write com.apple.dock springboard-columns Default killall Dock
 ```
 
-
 ### 定时任务
 ```
 → ~ EDITOR=vi crontab -e

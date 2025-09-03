@@ -1,10 +1,9 @@
-name: Convert README Markdown to HTML, Compress and Deploy
+name: Convert Markdown to HTML, Compress and Deploy
 
 on:
   push:
     branches: [main]
     paths: ['README.md', 'pandoc.css']
-  workflow_dispatch:  # 添加手动触发功能
 
 jobs:
   convert-compress-and-deploy:
@@ -31,7 +30,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # cache: 'npm'  # 设置为'npm'而不是false，或者完全移除这行
+          cache: 'npm'  # 设置为'npm'而不是false，或者完全移除这行
 
       - name: Install html-minifier globally
         run: npm install -g html-minifier
@@ -39,15 +38,7 @@ jobs:
       - name: Convert Markdown to HTML
         run: |
           cd mac-config
-          pandoc README.md -o README.html \
-            --standalone \
-            --embed-resources \
-            --css pandoc.css \
-            --toc \
-            --toc-depth=3 \
-            --number-sections \
-            --template template.html \
-            --variable lang=zh-CN
+          pandoc --standalone --self-contained --css pandoc.css README.md --output README.html --toc --template template.html
           # 插入中文更新时间到body标签内最上方
           sed -i '/<body>/a \    <p>更新时间: '"$(date +"%Y-%m-%d")"'</p>' README.html
           echo "<!-- Generated at $(date) -->" >> README.html

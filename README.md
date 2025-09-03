@@ -39,7 +39,6 @@ sudo mdutil -X /
 sudo mdutil -X /System/Volumes/Preboot
 # 删除Data分区索引
 sudo mdutil -X /System/Volumes/Data
-
 ```
 
 ### 开发命令行工具

@@ -26,54 +26,45 @@ jobs:
         with:
           pandoc-version: 'latest'
 
-      - name: Install Python and htmlmin
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          pip3 install htmlmin
+      - name: Install Node.js without cache
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          # cache: 'npm'  # 设置为'npm'而不是false，或者完全移除这行
+
+      - name: Install html-minifier globally
+        run: npm install -g html-minifier
 
       - name: Convert Markdown to HTML
         run: |
           cd mac-config
           pandoc --standalone --self-contained --css pandoc.css README.md --output README.html --toc --template template.html
           # 插入中文更新时间到body标签内最上方
-          sed -i '/<body>/a \    <p>更新时间: '"$(date +"%Y-%m-%d")"'</p>\n' README.html
+          sed -i '/<body>/a \    <p>更新时间: '"$(date +"%Y-%m-%d")"'</p>' README.html
           echo "<!-- Generated at $(date) -->" >> README.html
 
-      - name: Compress HTML with Python
+      - name: Compress HTML with html-minifier
         run: |
           cd mac-config
           # 备份原始HTML文件
           cp README.html README.original.html
           
-          # 使用Python进行HTML压缩
-          python3 -c "
-import htmlmin
-import re
-
-# 读取HTML文件
-with open('README.html', 'r', encoding='utf-8') as f:
-    content = f.read()
-
-# 使用htmlmin进行压缩
-minified = htmlmin.minify(
-    content,
-    remove_comments=True,        # 移除注释
-    remove_empty_space=True,     # 移除空行和空格
-    remove_all_empty_space=True, # 移除所有空白
-    reduce_empty_attributes=True # 减少空属性
-)
-
-# 进一步优化：移除标签间的空白
-minified = re.sub(r'>\s+<', '><', minified)
-# 移除行首行尾空白
-minified = re.sub(r'^\s+|\s+$', '', minified, flags=re.MULTILINE)
-
-# 写入压缩后的内容
-with open('README.html', 'w', encoding='utf-8') as f:
-    f.write(minified)
-"
-
+          # 压缩HTML文件
+          html-minifier \
+            --collapse-whitespace \
+            --remove-comments \
+            --remove-optional-tags \
+            --remove-redundant-attributes \
+            --remove-script-type-attributes \
+            --remove-tag-whitespace \
+            --use-short-doctype \
+            --minify-css true \
+            --minify-js true \
+            README.html -o README.min.html
+          
+          # 替换原文件
+          mv README.min.html README.html
+          
           # 输出压缩信息
           original_size=$(wc -c < README.original.html)
           compressed_size=$(wc -c < README.html)

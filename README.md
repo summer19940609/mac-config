@@ -114,7 +114,6 @@ sudo /usr/libexec/PlistBuddy -c "Add 'redesigned_text_cursor:Enabled' bool false
 
 # 关闭 macos 自带的切换输入法提示体验更佳！
 sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO
-
 ```
 
 ```
@@ -193,9 +192,6 @@ proxyman
 
 # 屏蔽 Apple music 自启动
 brew install --cask notunes
-
-
-
 ```
 
 ### git

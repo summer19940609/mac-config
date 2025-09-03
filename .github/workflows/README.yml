@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths: ['README.md', 'pandoc.css']
+  workflow_dispatch:  # 添加手动触发功能
 
 jobs:
   convert-compress-and-deploy:

@@ -108,3 +108,10 @@ mefcl.com/grlpackage.html
 ### 关闭VBS
 
 Win11 24H2 中关闭 VBS，可以下载雷电模拟器。
+
+
+### 工具库LDTools
+
+```
+https://ldt.pc.wiki/
+```

@@ -124,6 +124,8 @@ mefcl.com/grlpackage.html
 
 Win11 24H2 中关闭 VBS，可以下载雷电模拟器。
 
+https://lddl01.ldmnq.com/downloader/ldplayerinst9.exe?n=ldplayer9_ld_407589_ld.exe
+
 
 ### 工具库LDTools
 

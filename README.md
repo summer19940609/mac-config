@@ -419,3 +419,9 @@ adb shell
 settings put global vivo_screen_refresh_rate_mode 90
 ```
 
+### Mac蓝牙问题
+
+```shell
+sudo pkill bluetoothd
+```
+

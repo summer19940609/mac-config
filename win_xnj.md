@@ -73,7 +73,7 @@ Defender Control v2.1
 
 ### 优雅的跳过 win10/win11 新系统强制登录微软账号
 
-OOBE 界面直接 [shift+f10] 弹出 CMD ，往里头输 [oobe\bypassnro] 优雅重启
+方法一 OOBE 界面直接 [shift+f10] 弹出 CMD ，往里头输 [oobe\bypassnro] 优雅重启
 
 ```oobe\bypassnro（失效）```
 

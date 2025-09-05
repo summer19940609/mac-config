@@ -130,3 +130,11 @@ Win11 24H2 中关闭 VBS，可以下载雷电模拟器。
 ```
 https://ldt.pc.wiki/
 ```
+
+### ventoy
+
+下载链接
+
+```
+https://gh-proxy.com/https://github.com/ventoy/Ventoy/releases/download/v1.1.07/ventoy-1.1.07-windows.zip
+```

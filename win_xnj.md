@@ -1,12 +1,19 @@
 # win设置记录
 
 
+### 激活相关
+
+#### 沧水kms
+
+https://kms.cangshui.net/kms/KMS-Cangshui.net.bat
+
+#### Microsoft-Activation-Scripts
+
 ```
 irm https://get.activated.win | iex
 ```
+
 https://github.com/massgravel/Microsoft-Activation-Scripts 激活工具
-
-
 
 **去除搜索界面信息流**
 ```

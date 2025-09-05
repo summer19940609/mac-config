@@ -137,4 +137,11 @@ https://ldt.pc.wiki/
 
 ```
 https://gh-proxy.com/https://github.com/ventoy/Ventoy/releases/download/v1.1.07/ventoy-1.1.07-windows.zip
+# 备用
+https://gitee.com/longpanda/Ventoy/releases/download/v1.1.06/ventoy-1.1.06-windows.zip
+# 备用
+https://mirrors.nju.edu.cn/github-release/ventoy/Ventoy/Ventoy%201.1.07%20release/ventoy-1.1.07-windows.zip
+
+https://gh-proxy.com/https://github.com/ventoy/Ventoy/releases/download/v1.1.07/ventoy-1.1.07-livecd.iso
+
 ```

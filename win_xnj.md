@@ -88,10 +88,15 @@ reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_
 
 ```bash
 https://github.com/ShadowWhisperer/Remove-MS-Edge
+# 下载链接
+https://gh-proxy.com/https://github.com/ShadowWhisperer/Remove-MS-Edge/releases/download/2.1/Remove-Edge.exe
 
 Uninstall Microsoft Edge silently, through an executable or batch script.
 
+# 仓库
 https://github.com/rcmaehl/MSEdgeRedirect
+# 下载链接
+https://gh-proxy.com/https://github.com/rcmaehl/MSEdgeRedirect/releases/download/0.8.0.0/MSEdgeRedirect.exe
 
 ```
 

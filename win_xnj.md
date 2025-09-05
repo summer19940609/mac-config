@@ -15,6 +15,10 @@ irm https://get.activated.win | iex
 
 https://github.com/massgravel/Microsoft-Activation-Scripts 激活工具
 
+### steam++
+
+https://gitee.com/rmbgame/SteamTools/releases/download/3.0.0-rc.16/Steam%20%20_v3.0.0-rc.16_win_x64.exe
+
 **去除搜索界面信息流**
 ```
 reg add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\explorer" /v DisableSearchBoxSuggestions /t reg_dword /d 1 /f

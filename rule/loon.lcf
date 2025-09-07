@@ -36,9 +36,9 @@ iosapps.itunes.apple.com = iosapps.itunes.apple.com.download.ks-cdn.com
 
 
 [Proxy Group]
-香港自动 = url-test,香港,interval = 60,tolerance = 50
-日本自动 = url-test,日本,interval = 60,tolerance = 50
-美国自动 = url-test,美国,interval = 60,tolerance = 50
+香港自动 = url-test,香港,interval = 360,tolerance = 50
+日本自动 = url-test,日本,interval = 360,tolerance = 50
+美国自动 = url-test,美国,interval = 360,tolerance = 50
 
 节点选择 = select, 常用节点, DIRECT, 全球手动
 全球手动 = select, 全部

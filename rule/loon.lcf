@@ -55,13 +55,13 @@ FINAL,漏网之鱼
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/reject.list, policy=个人REJECT, tag=REJECT, enabled=true
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/base_reject.list, policy=个人REJECT, tag=REJECT, enabled=true
 https://raw.githubusercontent.com/sooyaaabo/Loon/main/Rule/PCDN.list, policy=REJECT, tag=PCDN REJECT, enabled=true
-#https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/rejectAd.list, policy=REJECT, tag=广告拦截合集-规则@奶思, enabled=true
+# https://github.com/fmz200/wool_scripts/raw/main/Loon/rule/rejectAd.list, policy=REJECT, tag=广告拦截合集-规则@奶思, enabled=true
 
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/direct.list, policy=DIRECT, tag=个人DIRECT, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Lan/Lan.list, policy=DIRECT, tag=Lan, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/China/China.list, policy=DIRECT, tag=China, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia.list, policy=DIRECT, tag=ChinaMedia, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WeChat/WeChat.list, policy=DIRECT, tag=WeChat, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WeChat/WeChat.list, policy=DIRECT, tag=微信, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list, policy=DIRECT, tag=Apple, enabled=true
 
 https://raw.githubusercontent.com/summer19940609/mac-config/main/rule/proxy.list, policy=节点选择, tag=proxy, enabled=true
@@ -79,7 +79,7 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy = DIRECT, tag = CN, enab
 
 
 [Plugin]
-#https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/blockAds.plugin, enabled=true
+# https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/blockAds.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true

@@ -32,7 +32,7 @@ disable-keep-alive: false
 profile: # 存储 select 选择记录
   store-selected: false
   # 持久化 fake-ip
-  # store-fake-ip: true
+  store-fake-ip: true
 
 dns:
   enabled: true

@@ -47,9 +47,6 @@ iosapps.itunes.apple.com = iosapps.itunes.apple.com.download.ks-cdn.com
 漏网之鱼 = select, 节点选择, DIRECT
 
 [Rule]
-DOMAIN,dns.weixin.com.cn,DIRECT
-DOMAIN,dns.weixin.com,DIRECT
-
 FINAL,漏网之鱼
 
 [Remote Rule]

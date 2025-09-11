@@ -30,7 +30,7 @@ tcp-concurrent: false
 
 keep-alive-interval: 30
 keep-alive-idle: 600
-disable-keep-alive: false
+# disable-keep-alive: false
 
 profile:
   store-selected: true

@@ -16,10 +16,13 @@ geox-url:
 geodata-mode: false  
 geo-auto-update: true
 geo-update-interval: 6
+geodata-loader: standard
 
 find-process-mode: strict
 
-global-client-fingerprint: random # 随机指纹
+global-client-fingerprint: chrome
+
+etag-support: true
 
 unified-delay: false
 
@@ -29,10 +32,11 @@ keep-alive-interval: 15
 keep-alive-idle: 15
 disable-keep-alive: false
 
-profile: # 存储 select 选择记录
-  store-selected: false
-  # 持久化 fake-ip
+profile:
+  store-selected: true
+  # 储存 API 对策略组的选择，以供下次启动时使用
   store-fake-ip: true
+  # 储存 fakeip 映射表，域名再次发生连接时，使用原有映射地址
 
 dns:
   enabled: true

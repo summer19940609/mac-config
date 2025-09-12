@@ -15,6 +15,18 @@ irm https://get.activated.win | iex
 
 https://github.com/massgravel/Microsoft-Activation-Scripts 激活工具
 
+### win优化
+
+```
+# Optimizer
+https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe
+https://gh-proxy.com/https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe
+
+# Dism++
+https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip
+https://gh-proxy.com/https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip
+```
+
 ### steam++
 
 https://gitee.com/rmbgame/SteamTools/releases/download/3.0.0-rc.16/Steam%20%20_v3.0.0-rc.16_win_x64.exe

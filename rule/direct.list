@@ -38,3 +38,10 @@ DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 
 DOMAIN,dns.weixin.qq.com
 DOMAIN,dns.weixin.qq.com.cn
+
+# 同花顺诊股
+DOMAIN,adm.10jqka.com.cn
+DOMAIN,eq.10jqka.com.cn
+DOMAIN,ozone.10jqka.com.cn
+DOMAIN,stat.10jqka.com.cn
+DOMAIN,vaserviece.10jqka.com.cn

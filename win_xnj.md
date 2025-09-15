@@ -225,6 +225,13 @@ https://www.g.cn/chrome/
 
 - Dism++
 - Optimizer
+- Everything
+- localsend
+- SpaceSniffer磁盘空间扫描
+- wiztree
+- TrafficMonitor
+- MagicPods
+- 
 
 
 

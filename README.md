@@ -154,6 +154,8 @@ https://developer.apple.com/download/more/
 // 更新
 brew update && brew upgrade && brew cu -a -y && brew cleanup --prune 0
 
+brew update && brew upgrade && brew cu -a -y && brew cleanup
+
 // zsh-syntax-highlighting + zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions

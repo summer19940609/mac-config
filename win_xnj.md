@@ -197,7 +197,25 @@ https://geekuninstaller.com/geek.zip
 
 - 火绒
 - Bandizip
+  
 https://bandisoft.app/bandizip/BANDIZIP-SETUP-STD-ALL.EXE?20250910170411
+
+- chrome
+  
+https://google.cn/chrome/?standalone=1
+
+https://www.google.cn/chrome/
+
+https://lestore.lenovo.com/detail/21258
+
+https://www.g.cn/chrome/
+
+- 微信
+- QQ
+- EmEditor
+- vscode
+- WPS
+- 
 
 
 

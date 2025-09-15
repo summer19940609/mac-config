@@ -231,7 +231,8 @@ https://www.g.cn/chrome/
 - wiztree
 - TrafficMonitor
 - MagicPods
-- 
+- SumatraPDF
+- PotPlayer
 
 
 

@@ -215,7 +215,15 @@ https://www.g.cn/chrome/
 - EmEditor
 - vscode
 - WPS
-- 
+- 看图软件
+
+[ImageGlass] https://imageglass.org/
+
+[honeyview] https://cn.bandisoft.com/honeyview/
+
+[faststone] https://www.faststone.org/
+
+
 
 
 

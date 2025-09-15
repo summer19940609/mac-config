@@ -223,6 +223,9 @@ https://www.g.cn/chrome/
 
 [faststone] https://www.faststone.org/
 
+- Dism++
+- Optimizer
+
 
 
 

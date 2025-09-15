@@ -427,3 +427,11 @@ settings put global vivo_screen_refresh_rate_mode 90
 sudo pkill bluetoothd
 ```
 
+
+### 虚拟机
+```
+VMware Fusion下载
+
+https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Fusion&freeDownloads=true
+
+```

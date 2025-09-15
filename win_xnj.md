@@ -178,4 +178,15 @@ EmEditor注册码（序列号）分享
 
 DKAZQ-R9TYP-5SM2A-9Z8KD-3E2RK
 
+### 建筑工程相关
+
+浩辰 CAD
+
+https://www.gstarcad.com/
+
+AutoCAD
+
+https://www.ghxi.com/autocadall.html
+
+
 

@@ -189,4 +189,19 @@ AutoCAD
 https://www.ghxi.com/autocadall.html
 
 
+### 软件记录
+
+- geek卸载器
+  
+https://geekuninstaller.com/geek.zip
+
+- 火绒
+- Bandizip
+https://bandisoft.app/bandizip/BANDIZIP-SETUP-STD-ALL.EXE?20250910170411
+
+
+
+
+
+
 

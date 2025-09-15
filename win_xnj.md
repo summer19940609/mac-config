@@ -170,3 +170,12 @@ https://mirrors.nju.edu.cn/github-release/ventoy/Ventoy/Ventoy%201.1.07%20releas
 https://gh-proxy.com/https://github.com/ventoy/Ventoy/releases/download/v1.1.07/ventoy-1.1.07-livecd.iso
 
 ```
+
+
+### EmEditor
+
+EmEditor注册码（序列号）分享
+
+DKAZQ-R9TYP-5SM2A-9Z8KD-3E2RK
+
+

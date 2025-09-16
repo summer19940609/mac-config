@@ -48,3 +48,5 @@ DOMAIN,vaserviece.10jqka.com.cn
 
 
 DOMAIN-SUFFIX,steamserver.net
+
+PROCESS-NAME,svchost.exe

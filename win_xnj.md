@@ -233,7 +233,15 @@ https://www.g.cn/chrome/
 - MagicPods
 - SumatraPDF
 - PotPlayer
+- 注册表
 
+Registry Workshop - 专业的注册表工具
+
+http://www.torchsoft.com/en/rw_information.html
+
+[easy-context-menu] https://www.sordum.org/7615/easy-context-menu-v1-6/
+
+https://github.com/BluePointLilac/ContextMenuManager
 
 
 

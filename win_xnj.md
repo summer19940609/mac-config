@@ -45,6 +45,12 @@ Windows Registry Editor Version 5.00
 reg add HKLM\SOFTWARE\Microsoft\Windows\Dwm /v OverlayTestMode /t REG_DWORD /d 5 /f
 ```
 
+### 卸载小组件
+
+```
+winget uninstall MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy
+```
+
 ### steam++
 
 https://gitee.com/rmbgame/SteamTools/releases/download/3.0.0-rc.16/Steam%20%20_v3.0.0-rc.16_win_x64.exe

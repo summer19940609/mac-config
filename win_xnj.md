@@ -27,6 +27,24 @@ https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2
 https://gh-proxy.com/https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip
 ```
 
+### 关闭Windows 11系统的MPO功能
+
+https://nvidia.custhelp.com/app/answers/detail/a_id/5157/~/after-updating-to-nvidia-game-ready-driver-461.09-or-newer%2C-some-desktop-apps
+
+mpo_disable.reg
+
+```
+# reg文件
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Dwm]
+"OverlayTestMode"=dword:00000005
+
+
+# 行命令
+reg add HKLM\SOFTWARE\Microsoft\Windows\Dwm /v OverlayTestMode /t REG_DWORD /d 5 /f
+```
+
 ### steam++
 
 https://gitee.com/rmbgame/SteamTools/releases/download/3.0.0-rc.16/Steam%20%20_v3.0.0-rc.16_win_x64.exe

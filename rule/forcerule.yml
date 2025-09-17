@@ -55,20 +55,23 @@ dns:
     - localhost.ptlogin2.qq.com
     - +.push.apple.com
     - szlong.weixin.qq.com
-  default-nameserver:
+  # default-nameserver:
+  #   - 223.5.5.5
+  #   - 119.29.29.29
+  #   - system
+  nameserver:
     - 223.5.5.5
     - 119.29.29.29
-    - system
-  nameserver:
+    - 180.184.1.1
     - 8.8.8.8
     - 8.8.4.4
-  nameserver-policy:
-    "+.qq.com": 119.29.29.29
-    "+.tencent.com": 119.29.29.29
-    "+.weixin.com": 119.29.29.29
-    "geosite:cn,private,apple":
-      - 223.5.5.5
-      # - https://23434-u87m9jszwi5va1hk.alidns.com/dns-query
-      # - 23434-u87m9jszwi5va1hk.alidns.com
-      - 119.29.29.29
-      - 180.184.1.1
+  # nameserver-policy:
+  #   "+.qq.com": 119.29.29.29
+  #   "+.tencent.com": 119.29.29.29
+  #   "+.weixin.com": 119.29.29.29
+  #   "geosite:cn,private,apple":
+  #     - 223.5.5.5
+  #     # - https://23434-u87m9jszwi5va1hk.alidns.com/dns-query
+  #     # - 23434-u87m9jszwi5va1hk.alidns.com
+  #     - 119.29.29.29
+  #     - 180.184.1.1

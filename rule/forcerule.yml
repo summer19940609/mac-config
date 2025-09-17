@@ -68,5 +68,7 @@ dns:
     "+.weixin.com": 119.29.29.29
     "geosite:cn,private,apple":
       - 223.5.5.5
+      - https://23434-u87m9jszwi5va1hk.alidns.com/dns-query
+      - 23434-u87m9jszwi5va1hk.alidns.com
       - 119.29.29.29
       - 180.184.1.1

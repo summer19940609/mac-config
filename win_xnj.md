@@ -62,7 +62,11 @@ reg add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\explorer" /v Disa
 
 **推迟 3000 天更新**
 ```
+# 3000天
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v FlightSettingsMaxPauseDays /t reg_dword /d 3000 /f
+
+# 100年
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v FlightSettingsMaxPauseDays /t reg_dword /d 36525 /f
 ```
 
 https://www.sordum.org/9470/windows-update-blocker-v1-8/

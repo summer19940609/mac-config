@@ -278,7 +278,12 @@ https://github.com/BluePointLilac/ContextMenuManager
 
 删除注册表
 
-```HKEY CURRENT USER\Software\Policies\Google\Chrome```
+```
+HKEY CURRENT USER\Software\Policies\Google\Chrome
+
+HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome
+```
+
 下的 ```EnabledPlugins``` 文件夹，重启chrome
 
 

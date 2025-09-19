@@ -77,11 +77,14 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER, policy = DIRECT, tag = CN, enab
 
 
 [Plugin]
+https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, policy=节点选择, enabled=true
 # https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/blockAds.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Modules/main/Adblock.sgmodule/_end_/Adblock.plugin?type=qx-rewrite&target=loon-plugin&del=true&jqEnabled=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, policy=节点选择, enabled=false
+http://script.hub/file/_start_/https://raw.githubusercontent.com/zirawell/R-Store/refs/heads/main/Rule/QuanX/Plugin/v2er.conf/_end_/v2er.plugin?type=qx-rewrite&target=loon-plugin&del=true&jqEnabled=true, enabled=true
 https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/WeChatMiniAds.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, enabled=true

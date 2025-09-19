@@ -276,7 +276,10 @@ https://github.com/BluePointLilac/ContextMenuManager
 
 ### chrome浏览器由所属组织管理
 
-删除注册表\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Google\Chrome 下的 EnabledPlugins 文件夹，重启chrome
+删除注册表
+
+```HKEY CURRENT USER\Software\Policies\Google\Chrome```
+下的 ```EnabledPlugins``` 文件夹，重启chrome
 
 
 

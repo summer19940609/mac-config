@@ -10,8 +10,8 @@ secret: "b486f732af5f5600d231581a4403f097"
 geox-url:
   # geoip: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
   # geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb"
-  asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
+  mmdb: "https://gh-proxy.com/https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb"
+  asn: "https://gh-proxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
 
 geodata-mode: false  
 geo-auto-update: true

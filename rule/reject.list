@@ -6,3 +6,12 @@ DOMAIN,ij0gdyrfka.adobe.io
 
 # mumu模拟器pro
 DOMAIN,mumu.nie.netease.com
+
+# 防止回环
+PROCESSNAME,clash
+PROCESSNAME,clashmeta
+PROCESSNAME,vergeclash
+PROCESSNAME,vergeclashmeta
+PROCESSNAME,mihomo
+PROCESSNAME,vergemihomo
+PROCESSNAME,vergemihomoalpha

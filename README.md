@@ -435,3 +435,7 @@ VMware Fusion下载
 https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Fusion&freeDownloads=true
 
 ```
+
+### macOS 26 系统设置允许在菜单栏显示残留项目清理
+
+删除 ~/Library/Group Containers/group.com.apple.controlcenter/Library/Preferences/group.com.apple.controlcenter.plist，然后重新启动即可

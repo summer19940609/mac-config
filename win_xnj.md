@@ -283,6 +283,11 @@ https://gh-proxy.com/https://github.com/BluePointLilac/ContextMenuManager/releas
 HKEY CURRENT USER\Software\Policies\Google\Chrome
 
 HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome
+
+
+Win + R
+
+regedit
 ```
 
 下的 ```EnabledPlugins``` 文件夹，重启chrome

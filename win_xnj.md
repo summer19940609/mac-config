@@ -271,6 +271,7 @@ http://www.torchsoft.com/en/rw_information.html
 
 https://github.com/BluePointLilac/ContextMenuManager
 
+https://gh-proxy.com/https://github.com/BluePointLilac/ContextMenuManager/releases/download/3.3.3.1/ContextMenuManager.NET.4.0.exe
 
 
 

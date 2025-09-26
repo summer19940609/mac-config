@@ -1,6 +1,5 @@
 # clash 配置更新常用订阅网址
 DOMAIN-SUFFIX,v1.mk
-# DOMAIN,sub.xeton.dev
 DOMAIN,sub.id9.cc
 
 DOMAIN,download.dbeaver.com
@@ -69,6 +68,7 @@ DOMAIN,ipa.store
 
 DOMAIN-SUFFIX,yckceo.com
 
+# 谷歌play下载
 DOMAIN-SUFFIX,services.googleapis.cn
 
 DOMAIN,testingcf.jsdelivr.net

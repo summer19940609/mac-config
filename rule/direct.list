@@ -52,3 +52,5 @@ DOMAIN-SUFFIX,steamserver.net
 PROCESS-NAME,svchost.exe
 
 DOMAIN-SUFFIX,360buyimg.com
+
+DOMAIN,sub.xeton.dev

@@ -57,10 +57,10 @@ dns:
     - szlong.weixin.qq.com
     - "geosite:connectivity-check"
     - "geosite:private"
-  # default-nameserver:
-  #   - 223.5.5.5
-  #   - 119.29.29.29
-  #   - system
+  default-nameserver:
+    - 223.5.5.5
+  proxy-server-nameserver:
+    - 223.5.5.5
   nameserver:
     - 223.5.5.5
     - 119.29.29.29

@@ -15,3 +15,7 @@ PROCESSNAME,vergeclashmeta
 PROCESSNAME,mihomo
 PROCESSNAME,vergemihomo
 PROCESSNAME,vergemihomoalpha
+
+# weixin
+DOMAIN,dns.weixin.qq.com
+DOMAIN,dns.weixin.qq.com.cn

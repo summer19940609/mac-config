@@ -55,8 +55,8 @@ dns:
     - localhost.ptlogin2.qq.com
     - +.push.apple.com
     - szlong.weixin.qq.com
-    - "geosite:connectivity-check"
-    - "geosite:private"
+    - geosite:fakeip-filter
+    - geosite:connectivity-check
   default-nameserver:
     - 223.5.5.5
   proxy-server-nameserver:

@@ -1,4 +1,3 @@
-# clash 配置更新常用订阅网址
 DOMAIN-SUFFIX,v1.mk
 DOMAIN,sub.id9.cc
 
@@ -16,34 +15,6 @@ DOMAIN-SUFFIX,priconne-redive.jp
 DOMAIN-SUFFIX,worldflipper.akamaized.net
 
 DOMAIN-SUFFIX,vercel.app
-
-DOMAIN,edgeservices.bing.com
-DOMAIN,sydney.bing.com
-
-DOMAIN-KEYWORD,missav
-DOMAIN-SUFFIX,jable.tv
-DOMAIN-SUFFIX,netflav.com
-DOMAIN-SUFFIX,javdb.com
-DOMAIN-SUFFIX,myavlive.com
-DOMAIN-SUFFIX,surrit.com
-DOMAIN-SUFFIX,digicert.com
-DOMAIN-SUFFIX,mushroomtrack.com
-DOMAIN-SUFFIX,cdn.plyr.io
-DOMAIN-SUFFIX,supjav.com
-
-DOMAIN-SUFFIX,prf.hn
-DOMAIN-SUFFIX,xmtrading.com
-DOMAIN,cloud.xm-cdn.com
-DOMAIN-SUFFIX,fontawesome.com
-DOMAIN-SUFFIX,phaunaitsi.net
-DOMAIN-SUFFIX,jwpcdn.com
-DOMAIN-SUFFIX,turboviplay.com
-DOMAIN-SUFFIX,sptvp.com
-DOMAIN-SUFFIX,emturbovid.com
-DOMAIN-SUFFIX,supremejav.com
-
-DOMAIN-SUFFIX,affstrack.com
-DOMAIN-SUFFIX,vibanes.com
 
 # amy
 DOMAIN-SUFFIX,amysecure.com
@@ -66,8 +37,6 @@ DOMAIN,ipa.store
 DOMAIN-SUFFIX,yckceo.com
 
 DOMAIN,testingcf.jsdelivr.net
-
-DOMAIN,freemacsoft.net
 
 DOMAIN-SUFFIX,kelee.one
 

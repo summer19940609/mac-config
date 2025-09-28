@@ -27,6 +27,12 @@ jobs:
         with:
           pandoc-version: 'latest'
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
       - name: Convert Markdown to HTML
         run: |
           cd mac-config
@@ -34,6 +40,11 @@ jobs:
           # 在body标签内最上方插入中文编辑时间和换行，使用YYYY-MM-DD格式
           sed -i '/<body>/a \    <p style="margin-top: 0; margin-bottom: 1em;">更新时间: '"$(date +"%Y-%m-%d")"'</p>\n' win_xnj.html
           echo "<!-- Generated at $(date) -->" >> win_xnj.html
+
+      - name: Compress HTML with html-minifier-terser
+        run: |
+          cd mac-config
+          npx html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true win_xnj.html -o win_xnj.html
 
       - name: Configure Git
         run: |

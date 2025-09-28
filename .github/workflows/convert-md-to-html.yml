@@ -27,11 +27,11 @@ jobs:
         with:
           pandoc-version: 'latest'
 
-      - name: Setup Node.js
+      - name: Setup Node.js (without cache)
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
+          # 移除cache配置，因为不需要package.json
 
       - name: Convert Markdown to HTML
         run: |
@@ -44,7 +44,11 @@ jobs:
       - name: Compress HTML with html-minifier-terser
         run: |
           cd mac-config
-          npx html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true win_xnj.html -o win_xnj.html
+          # 使用npx直接运行，无需安装
+          npx html-minifier-terser@7.2.0 --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true win_xnj.html -o win_xnj_compressed.html
+          mv win_xnj_compressed.html win_xnj.html
+          # 重新添加时间戳（因为压缩可能移除了注释）
+          echo "<!-- Generated at $(date) -->" >> win_xnj.html
 
       - name: Configure Git
         run: |

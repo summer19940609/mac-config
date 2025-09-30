@@ -441,3 +441,10 @@ https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Fusio
 https://fast.v2ex.com/t/1156123
 
 删除 ~/Library/Group Containers/group.com.apple.controlcenter/Library/Preferences/group.com.apple.controlcenter.plist，然后重新启动即可
+
+
+### xx正在访问你的屏幕
+
+```
+curl -L "https://github.com/luckman212/screencapture-nag-remover/releases/download/1.3.3/screencapture-nag-remover.sh" | bash
+```

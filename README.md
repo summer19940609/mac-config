@@ -446,5 +446,5 @@ https://fast.v2ex.com/t/1156123
 ### xx正在访问你的屏幕
 
 ```
-curl -L "https://github.com/luckman212/screencapture-nag-remover/releases/download/1.3.3/screencapture-nag-remover.sh" | bash
+curl -L "https://gh-proxy.com/https://github.com/luckman212/screencapture-nag-remover/releases/download/1.3.3/screencapture-nag-remover.sh" | bash
 ```

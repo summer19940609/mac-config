@@ -448,3 +448,12 @@ https://fast.v2ex.com/t/1156123
 ```
 curl -L "https://gh-proxy.com/https://github.com/luckman212/screencapture-nag-remover/releases/download/1.3.3/screencapture-nag-remover.sh" | bash
 ```
+
+
+### 命令行可以看用到 electron 的应用
+
+```
+find /Applications -name "Electron Framework.framework"
+```
+
+

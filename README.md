@@ -456,4 +456,10 @@ curl -L "https://gh-proxy.com/https://github.com/luckman212/screencapture-nag-re
 find /Applications -name "Electron Framework.framework"
 ```
 
+### 关闭 electron 的阴影
+```
+launchctl setenv CHROME_HEADLESS 1 #每次重启都要执行
+# 或者一步到位 defaults write -g NSAutoFillHeuristicControllerEnabled -bool false
+```
+
 

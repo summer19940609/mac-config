@@ -442,6 +442,8 @@ https://fast.v2ex.com/t/1156123
 
 删除 ~/Library/Group Containers/group.com.apple.controlcenter/Library/Preferences/group.com.apple.controlcenter.plist，然后重新启动即可
 
+[](https://discussionschinese.apple.com/thread/256136485?sortBy=rank)
+
 
 ### xx正在访问你的屏幕
 

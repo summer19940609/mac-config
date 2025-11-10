@@ -300,6 +300,23 @@ services.msc
 SysMain
 ```
 
+### 自动打开 MSN 和 154.44.25.252 
+
+```
+把下面这 3 个注册表项导入注册表，重启电脑。
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet]
+"EnableActiveProbing"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
+"NoActiveProbe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
+"DisablePassivePolling"=dword:00000001
+```
+
 
 
 

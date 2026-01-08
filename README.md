@@ -464,4 +464,8 @@ launchctl setenv CHROME_HEADLESS 1 #每次重启都要执行
 # 或者一步到位 defaults write -g NSAutoFillHeuristicControllerEnabled -bool false
 ```
 
+### 关闭iTunes自动备份
+
+defaults write com.apple.iTunes DeviceBackupsDisabled -bool YES
+
 

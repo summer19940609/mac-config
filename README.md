@@ -465,7 +465,9 @@ launchctl setenv CHROME_HEADLESS 1 #每次重启都要执行
 ```
 
 ### 关闭iTunes自动备份
-
+```
 defaults write com.apple.iTunes DeviceBackupsDisabled -bool YES
 
+defaults write com.apple.AMPDevicesAgent.plist AutomaticDeviceBackupsDisabled -bool true
+```
 

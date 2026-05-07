@@ -2,19 +2,19 @@
 
 ## 目录
 
-- 激活相关
-- 系统优化
-- Windows 更新相关
-- Defender / 安全相关
-- OOBE 跳过微软账号
-- Microsoft Edge 相关
-- 系统功能调整
-- 常用工具
-- 装机软件
-- Chrome 问题修复
-- 服务优化
-- 网络探测相关
-- 建筑工程相关
+- [激活相关](#激活相关)
+- [系统优化](#系统优化)
+- [Windows 更新相关](#windows-更新相关)
+- [Defender / 安全相关](#defender--安全相关)
+- [OOBE 跳过微软账号](#oobe-跳过微软账号)
+- [Microsoft Edge 相关](#microsoft-edge-相关)
+- [Microsoft Store](#microsoft-store)
+- [系统功能调整](#系统功能调整)
+- [Ventoy](#ventoy)
+- [常用工具](#常用工具)
+- [装机软件](#装机软件)
+- [Chrome 问题修复](#chrome-问题修复)
+- [网络探测相关](#网络探测相关)
 
 ---
 
@@ -22,13 +22,13 @@
 
 ## 沧水 KMS
 
-https://kms.cangshui.net/kms/KMS-Cangshui.net.bat
+[下载地址](https://kms.cangshui.net/kms/KMS-Cangshui.net.bat)
 
 ## Microsoft Activation Scripts
 
 项目地址：
 
-https://github.com/massgravel/Microsoft-Activation-Scripts
+[Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)
 
 PowerShell：
 
@@ -42,23 +42,21 @@ irm https://get.activated.win | iex
 
 ## Optimizer
 
-https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe
-
-https://gh-proxy.com/https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe
+- [GitHub 下载](https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe)
+- [Gh-Proxy 下载](https://gh-proxy.com/https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe)
 
 ## Dism++
 
-https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip
-
-https://gh-proxy.com/https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip
+- [GitHub 下载](https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip)
+- [Gh-Proxy 下载](https://gh-proxy.com/https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip)
 
 ## Steam++
 
-https://gitee.com/rmbgame/SteamTools/releases/download/3.0.0-rc.16/Steam%20%20_v3.0.0-rc.16_win_x64.exe
+[SteamTools 下载](https://gitee.com/rmbgame/SteamTools/releases/download/3.0.0-rc.16/Steam%20%20_v3.0.0-rc.16_win_x64.exe)
 
 ## 工具库 LDTools
 
-https://ldt.pc.wiki/
+[LDTools 官网](https://ldt.pc.wiki/)
 
 ---
 
@@ -68,7 +66,7 @@ https://ldt.pc.wiki/
 
 官方说明：
 
-https://nvidia.custhelp.com/app/answers/detail/a_id/5157
+[NVIDIA 官方说明](https://nvidia.custhelp.com/app/answers/detail/a_id/5157)
 
 注册表：
 
@@ -119,21 +117,21 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings" /v Fli
 
 项目地址：
 
-https://github.com/ionuttbara/windows-defender-remover
+[Defender Remover](https://github.com/ionuttbara/windows-defender-remover)
 
 免翻墙：
 
-https://gh-proxy.com/https://github.com/ionuttbara/windows-defender-remover/releases/download/release_def_12_8_4/DefenderRemover.exe
+[Gh-Proxy 下载](https://gh-proxy.com/https://github.com/ionuttbara/windows-defender-remover/releases/download/release_def_12_8_4/DefenderRemover.exe)
 
 ## OFGB（关闭 Windows 11 广告）
 
 项目：
 
-https://github.com/xM4ddy/OFGB
+[OFGB 官方项目](https://github.com/xM4ddy/OFGB)
 
 汉化版：
 
-https://github.com/zetaloop/OFGB
+[OFGB 汉化版](https://github.com/zetaloop/OFGB)
 
 ---
 
@@ -164,11 +162,11 @@ shutdown -r -t 0
 
 ## 卸载 Edge
 
-https://github.com/ShadowWhisperer/Remove-MS-Edge
+[Remove-MS-Edge](https://github.com/ShadowWhisperer/Remove-MS-Edge)
 
 ## MSEdgeRedirect
 
-https://github.com/rcmaehl/MSEdgeRedirect
+[MSEdgeRedirect](https://github.com/rcmaehl/MSEdgeRedirect)
 
 ---
 
@@ -206,7 +204,7 @@ SysMain
 
 # Ventoy
 
-https://github.com/ventoy/Ventoy
+[Ventoy 官方项目](https://github.com/ventoy/Ventoy)
 
 ---
 

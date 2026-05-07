@@ -271,10 +271,9 @@ Windows Registry Editor Version 5.00
 "NoActiveProbe"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator]
-
-
-# 华硕主板
-
-
 "DisablePassivePolling"=dword:00000001
 ```
+
+---
+
+# 华硕主板

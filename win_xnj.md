@@ -58,8 +58,6 @@ https://gitee.com/rmbgame/SteamTools/releases/download/3.0.0-rc.16/Steam%20%20_v
 
 ## 工具库 LDTools
 
-老弟一号
-
 https://ldt.pc.wiki/
 
 ---

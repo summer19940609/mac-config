@@ -4,8 +4,9 @@
   --muted: #6b7280;
   --border: #e5e7eb;
 
-  --link: #38bdf8;
-  --link-hover: #0ea5e9;
+  /* 更柔和的淡蓝色 */
+  --link: #60a5fa;
+  --link-hover: #3b82f6;
 
   --code-bg: #f8fafc;
   --toc-bg: #f8fbff;
@@ -31,9 +32,8 @@ body {
     BlinkMacSystemFont,
     "Segoe UI",
     "Noto Sans SC",
-    "Noto Sans",
-    Helvetica,
-    Arial,
+    "PingFang SC",
+    "Microsoft YaHei",
     sans-serif;
 
   color: var(--text);
@@ -57,6 +57,7 @@ h5,
 h6 {
   line-height: 1.22;
   font-weight: 800;
+  color: #1e293b;
 }
 
 h1 {
@@ -67,6 +68,7 @@ h1 {
 h2 {
   font-size: 1.45rem;
   margin: 1.6rem 0 0.7rem;
+
   padding-bottom: 0.25rem;
 
   border-bottom: 1px solid var(--border);
@@ -92,35 +94,23 @@ p {
 }
 
 /* =========================
-   链接
+   链接（无蓝底 / 无下划线）
 ========================= */
 
 a {
-  color: var(--link-hover);
+  color: var(--link);
 
   text-decoration: none;
 
-  border-bottom: 1px solid rgba(56, 189, 248, 0.45);
-
-  background:
-    linear-gradient(
-      transparent 70%,
-      rgba(186, 230, 253, 0.65) 70%
-    );
-
   transition:
     color 0.15s ease,
-    background 0.15s ease;
+    opacity 0.15s ease;
 }
 
 a:hover {
-  color: #0284c7;
+  color: var(--link-hover);
 
-  background:
-    linear-gradient(
-      transparent 55%,
-      rgba(125, 211, 252, 0.8) 55%
-    );
+  opacity: 0.9;
 }
 
 /* =========================
@@ -214,7 +204,7 @@ blockquote {
 
   background: #f9fafb;
 
-  border-left: 4px solid #bae6fd;
+  border-left: 4px solid #bfdbfe;
 
   border-radius: 8px;
 }
@@ -230,6 +220,8 @@ img {
   display: block;
 
   margin: 1rem auto;
+
+  border-radius: 10px;
 }
 
 /* =========================
@@ -285,6 +277,8 @@ th {
   font-size: 1.1rem;
 
   font-weight: 800;
+
+  color: #1e293b;
 }
 
 #TOC ul {
@@ -297,17 +291,11 @@ th {
 }
 
 #TOC a {
-  color: #0369a1;
-
-  border-bottom: none;
-
-  background: transparent;
+  color: #60a5fa;
 }
 
 #TOC a:hover {
-  color: #0284c7;
-
-  text-decoration: underline;
+  color: #3b82f6;
 }
 
 /* =========================
@@ -330,6 +318,24 @@ h2 + h3 {
 h3 + pre,
 p + pre {
   margin-top: 0.45rem;
+}
+
+/* =========================
+   滚动条
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 /* =========================

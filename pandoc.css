@@ -3,8 +3,10 @@
   --text: #1f2937;
   --muted: #6b7280;
   --border: #e5e7eb;
+
   --link: #38bdf8;
   --link-hover: #0ea5e9;
+
   --code-bg: #f8fafc;
   --toc-bg: #f8fbff;
 }
@@ -14,15 +16,16 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
-  max-width: 920px;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 48px 28px;
+  padding: 24px 20px;
+
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -32,132 +35,255 @@ body {
     Helvetica,
     Arial,
     sans-serif;
-  line-height: 1.75;
+
   color: var(--text);
   background: var(--bg);
+
+  line-height: 1.58;
+
   word-break: break-word;
   overflow-wrap: anywhere;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.35;
-  margin: 2em 0 0.8em;
+/* =========================
+   标题
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.22;
   font-weight: 800;
 }
 
 h1 {
-  font-size: 2.3rem;
-  margin-top: 0;
+  font-size: 1.9rem;
+  margin: 0 0 0.8rem;
 }
 
 h2 {
-  font-size: 1.75rem;
-  padding-bottom: 0.35em;
+  font-size: 1.45rem;
+  margin: 1.6rem 0 0.7rem;
+  padding-bottom: 0.25rem;
+
   border-bottom: 1px solid var(--border);
 }
 
 h3 {
-  font-size: 1.35rem;
+  font-size: 1.12rem;
+  margin: 1rem 0 0.45rem;
 }
 
-p {
-  margin: 1em 0;
+h4,
+h5,
+h6 {
+  margin: 0.8rem 0 0.35rem;
 }
+
+/* =========================
+   段落
+========================= */
+
+p {
+  margin: 0.45rem 0;
+}
+
+/* =========================
+   链接
+========================= */
 
 a {
   color: var(--link-hover);
+
   text-decoration: none;
+
   border-bottom: 1px solid rgba(56, 189, 248, 0.45);
-  background: linear-gradient(transparent 70%, rgba(186, 230, 253, 0.65) 70%);
-  transition: color 0.15s ease, background 0.15s ease;
+
+  background:
+    linear-gradient(
+      transparent 70%,
+      rgba(186, 230, 253, 0.65) 70%
+    );
+
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
 }
 
 a:hover {
   color: #0284c7;
-  background: linear-gradient(transparent 55%, rgba(125, 211, 252, 0.8) 55%);
+
+  background:
+    linear-gradient(
+      transparent 55%,
+      rgba(125, 211, 252, 0.8) 55%
+    );
 }
+
+/* =========================
+   分隔线
+========================= */
 
 hr {
   border: 0;
   border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
+
+  margin: 1.2rem 0;
 }
 
-ul, ol {
-  padding-left: 1.6em;
+/* =========================
+   列表
+========================= */
+
+ul,
+ol {
+  margin: 0.55rem 0;
+  padding-left: 1.4rem;
 }
 
 li {
-  margin: 0.25em 0;
+  margin: 0.15rem 0;
 }
+
+/* =========================
+   行内代码
+========================= */
 
 code {
   padding: 0.15em 0.35em;
+
   border-radius: 5px;
+
   background: var(--code-bg);
+
   font-family:
     "Maple Mono",
     "SFMono-Regular",
     Consolas,
-    "Liberation Mono",
     Menlo,
     monospace;
+
   font-size: 0.92em;
-  word-break: break-word;
 }
+
+/* =========================
+   代码块
+========================= */
 
 pre {
   max-width: 100%;
-  padding: 1rem;
+
+  margin: 0.5rem 0 0.9rem;
+
+  padding: 0.8rem 1rem;
+
   overflow-x: auto;
+
   white-space: pre;
-  font-size: 0.9em;
-  line-height: 1.6;
+
+  line-height: 1.45;
+
   color: #1f2937;
+
   background: var(--code-bg);
+
   border: 1px solid var(--border);
-  border-radius: 10px;
+
+  border-radius: 12px;
 }
 
 pre code {
   padding: 0;
   background: transparent;
   border-radius: 0;
-  white-space: inherit;
-  word-break: normal;
-  overflow-wrap: normal;
 }
 
+/* =========================
+   引用
+========================= */
+
 blockquote {
-  margin: 1.5em 0;
-  padding: 0.2em 1em;
+  margin: 1rem 0;
+
+  padding: 0.15rem 0.85rem;
+
   color: var(--muted);
+
   background: #f9fafb;
+
   border-left: 4px solid #bae6fd;
+
   border-radius: 8px;
 }
+
+/* =========================
+   图片
+========================= */
 
 img {
   max-width: 100%;
   height: auto;
+
   display: block;
-  margin: 1.5em auto;
+
+  margin: 1rem auto;
 }
 
-/* Pandoc 目录 */
+/* =========================
+   表格
+========================= */
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin: 1rem 0;
+
+  display: block;
+
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 0.65rem 0.8rem;
+
+  border: 1px solid var(--border);
+}
+
+th {
+  background: #f8fafc;
+}
+
+/* =========================
+   Pandoc TOC
+========================= */
+
 #TOC {
-  margin: 2rem 0 3rem;
-  padding: 1.2rem 1.4rem;
+  margin: 1.2rem 0 1.6rem;
+
+  padding: 1rem 1.1rem;
+
   background: var(--toc-bg);
+
   border: 1px solid #dbeafe;
+
   border-radius: 14px;
 }
 
 #TOC::before {
   content: "目录";
+
   display: block;
+
   margin-bottom: 0.7rem;
-  font-size: 1.25rem;
+
+  font-size: 1.1rem;
+
   font-weight: 800;
 }
 
@@ -167,64 +293,79 @@ img {
 }
 
 #TOC li {
-  margin: 0.35rem 0;
+  margin: 0.25rem 0;
 }
 
 #TOC a {
   color: #0369a1;
+
   border-bottom: none;
+
   background: transparent;
 }
 
 #TOC a:hover {
   color: #0284c7;
+
   text-decoration: underline;
 }
 
-/* 表格 */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5em 0;
-  display: block;
-  overflow-x: auto;
+/* =========================
+   section 间距
+========================= */
+
+section {
+  margin: 0;
+  padding: 0;
 }
 
-th, td {
-  padding: 0.65em 0.8em;
-  border: 1px solid var(--border);
+section + section {
+  margin-top: 1.2rem;
 }
 
-th {
-  background: #f8fafc;
+h2 + h3 {
+  margin-top: 0.8rem;
 }
 
-/* 移动端 */
+h3 + pre,
+p + pre {
+  margin-top: 0.45rem;
+}
+
+/* =========================
+   移动端
+========================= */
+
 @media (max-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   body {
-    width: 100%;
-    max-width: none;
-    padding: 28px 18px;
+    max-width: 100%;
+
+    padding: 18px 14px;
+
+    line-height: 1.55;
   }
 
   h1 {
-    font-size: 1.85rem;
+    font-size: 1.65rem;
   }
 
   h2 {
-    font-size: 1.45rem;
+    font-size: 1.28rem;
   }
 
-  #TOC {
-    padding: 1rem;
-    margin: 1.5rem 0 2rem;
+  h3 {
+    font-size: 1.05rem;
   }
 
   pre {
-    font-size: 0.85em;
+    padding: 0.7rem 0.8rem;
+  }
+
+  #TOC {
+    padding: 0.9rem;
   }
 }

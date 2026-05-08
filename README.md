@@ -1,4 +1,3 @@
-````markdown
 # mac-config记录
 
 ```bash
@@ -476,4 +475,3 @@ defaults write com.apple.iTunes DeviceBackupsDisabled -bool YES
 
 defaults write com.apple.AMPDevicesAgent.plist AutomaticDeviceBackupsDisabled -bool true
 ```
-````

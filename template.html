@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="$lang$"
+      xml:lang="$lang$"
+      $if(dir)$dir="$dir$"$endif$>
+
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
 $for(author-meta)$
   <meta name="author" content="$author-meta$" />
@@ -14,10 +20,13 @@ $if(date-meta)$
 $endif$
 
 $if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+  <meta name="keywords"
+        content="$for(keywords)$$keywords$$sep$, $endfor$" />
 $endif$
 
-  <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+  <title>
+    $if(title-prefix)$$title-prefix$ - $endif$$pagetitle$
+  </title>
 
 $for(css)$
   <link rel="stylesheet" href="$css$" />
@@ -33,8 +42,10 @@ $endfor$
 </head>
 
 <body>
+
 $if(title)$
 <header id="title-block-header">
+
   <h1 class="title">$title$</h1>
 
 $if(subtitle)$
@@ -48,6 +59,7 @@ $endfor$
 $if(date)$
   <p class="date">$date$</p>
 $endif$
+
 </header>
 $endif$
 
@@ -56,10 +68,6 @@ $include-before$
 $endfor$
 
 $if(toc)$
-<button type="button" class="toc-toggle" aria-expanded="false" aria-controls="TOC">
-  显示目录
-</button>
-
 <nav id="TOC" class="toc" role="doc-toc">
   <h2>目录</h2>
   $table-of-contents$
@@ -74,29 +82,5 @@ $for(include-after)$
 $include-after$
 $endfor$
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const toc = document.getElementById('TOC');
-    const toggleBtn = document.querySelector('.toc-toggle');
-
-    if (!toc || !toggleBtn) return;
-
-    toggleBtn.addEventListener('click', function () {
-      const isActive = toc.classList.toggle('active');
-      toggleBtn.textContent = isActive ? '隐藏目录' : '显示目录';
-      toggleBtn.setAttribute('aria-expanded', String(isActive));
-    });
-
-    toc.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        if (window.innerWidth < 768) {
-          toc.classList.remove('active');
-          toggleBtn.textContent = '显示目录';
-          toggleBtn.setAttribute('aria-expanded', 'false');
-        }
-      });
-    });
-  });
-</script>
 </body>
 </html>

@@ -277,3 +277,5 @@ Windows Registry Editor Version 5.00
 ---
 
 # 华硕主板
+
+![跳线连接图](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@latest/uPic/ChatGPT%20Image%202026%E5%B9%B45%E6%9C%888%E6%97%A5%2014_23_36.png)

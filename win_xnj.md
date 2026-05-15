@@ -276,6 +276,22 @@ Windows Registry Editor Version 5.00
 
 ---
 
+# 隐藏 Windows 登录界面“小眼睛”按钮
+
+管理员 CMD / PowerShell 执行：
+
+```cmd
+reg add "HKLM\Software\Policies\Microsoft\Windows\CredUI" /v DisablePasswordReveal /t REG_DWORD /d 1 /f
+```
+
+重启生效。
+
+## 恢复默认
+
+```cmd
+reg delete "HKLM\Software\Policies\Microsoft\Windows\CredUI" /v DisablePasswordReveal /f
+```
+
 # 华硕主板
 
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo@latest/uPic/ChatGPT%20Image%202026%E5%B9%B45%E6%9C%888%E6%97%A5%2014_23_36.png)

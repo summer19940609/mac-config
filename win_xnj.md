@@ -300,7 +300,11 @@ reg delete "HKLM\Software\Policies\Microsoft\Windows\CredUI" /v DisablePasswordR
 
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo//uPic/RbzjeutjNtUq.jpg)
 
+![DR9zc2cFAUa5](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo//uPic/DR9zc2cFAUa5.jpg)
+
 ![](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo//uPic/naMRGKKZqAE3.jpg)
+
+![cgRswUKY4kNu](https://cdn.jsdelivr.net/gh/summer19940609/picture-repo//uPic/cgRswUKY4kNu.jpg)
 
 
 

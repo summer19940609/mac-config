@@ -278,8 +278,6 @@ Windows Registry Editor Version 5.00
 
 # 隐藏 Windows 登录界面“小眼睛”按钮
 
-管理员 CMD / PowerShell 执行：
-
 ```cmd
 reg add "HKLM\Software\Policies\Microsoft\Windows\CredUI" /v DisablePasswordReveal /t REG_DWORD /d 1 /f
 ```
@@ -290,6 +288,14 @@ reg add "HKLM\Software\Policies\Microsoft\Windows\CredUI" /v DisablePasswordReve
 
 ```cmd
 reg delete "HKLM\Software\Policies\Microsoft\Windows\CredUI" /v DisablePasswordReveal /f
+```
+
+# Windows 开机自动开启小键盘
+
+```cmd
+reg add "HKEY_USERS\.DEFAULT\Control Panel\Keyboard" /v InitialKeyboardIndicators /t REG_SZ /d 2 /f
+
+reg add "HKEY_CURRENT_USER\Control Panel\Keyboard" /v InitialKeyboardIndicators /t REG_SZ /d 2 /f
 ```
 
 # 华硕主板

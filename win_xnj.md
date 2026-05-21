@@ -255,6 +255,16 @@ HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome
 EnabledPlugins
 ```
 
+```cmd
+reg delete "HKEY_CURRENT_USER\Software\Policies\Google\Chrome" /f
+
+reg delete "HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome" /f
+
+reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Policies\Google\Chrome" /f
+
+taskkill /f /im chrome.exe
+```
+
 ---
 
 # 网络探测相关

@@ -24,6 +24,12 @@
 shutdown /r /fw /t 0
 ```
 
+# 桌面建立reg文件
+
+```cmd
+cd /d "%USERPROFILE%\Desktop" && type nul > fix.reg
+```
+
 # 激活相关
 
 ## 沧水 KMS

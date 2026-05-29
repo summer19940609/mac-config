@@ -253,20 +253,6 @@ SysMain
 
 ## Chrome 被“所属组织管理”
 
-删除注册表：
-
-```text
-HKEY_CURRENT_USER\Software\Policies\Google\Chrome
-
-HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome
-```
-
-删除：
-
-```text
-EnabledPlugins
-```
-
 ```cmd
 reg delete "HKEY_CURRENT_USER\Software\Policies\Google\Chrome" /f
 

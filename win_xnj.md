@@ -18,6 +18,8 @@
 
 ---
 
+2d7adcb3454dabdfad12e9e1e94d61d8aaa0858cef1e376d7e1c8ebda5e0c3ed
+
 # 关机进bios
 
 ```cmd

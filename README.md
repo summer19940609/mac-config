@@ -475,3 +475,18 @@ defaults write com.apple.iTunes DeviceBackupsDisabled -bool YES
 
 defaults write com.apple.AMPDevicesAgent.plist AutomaticDeviceBackupsDisabled -bool true
 ```
+
+## cursor commit generate
+
+~/.cursor/rules/commit.mdc
+
+```
+---
+description: Conventional Commits
+globs: "**/*"
+alwaysApply: true
+---
+
+生成 commit 时严格使用 Conventional Commits 格式，默认只输出一行。
+```
+

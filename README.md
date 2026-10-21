@@ -487,6 +487,7 @@ globs: "**/*"
 alwaysApply: true
 ---
 
-生成 commit 时严格使用 Conventional Commits 格式，默认只输出一行。
+生成 commit 时严格遵循 Conventional Commits 规范，默认只输出一行：
+<type>: <description>
 ```
 

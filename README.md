@@ -487,7 +487,7 @@ globs: "**/*"
 alwaysApply: true
 ---
 
-生成 commit 时严格遵循 Conventional Commits 规范，默认只输出一行：
-<type>: <description>
+生成 commit message 时，只输出一行，格式为 <type>: <description>。
+禁止添加 scope、禁止添加 body、禁止输出多行内容。
 ```
 
